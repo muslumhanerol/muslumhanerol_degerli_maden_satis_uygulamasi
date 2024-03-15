@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DegerliMadenSatis.Core\DegerliMadenSatis.Core.csproj" />
+    <ProjectReference Include="..\DegerliMadenSatis.Data\DegerliMadenSatis.Data.csproj" />
+  </ItemGroup>
+
 </Project>

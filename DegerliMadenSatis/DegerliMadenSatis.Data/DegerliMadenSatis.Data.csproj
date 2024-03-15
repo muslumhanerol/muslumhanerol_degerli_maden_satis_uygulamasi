@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DegerliMadenSatis.Entity\DegerliMadenSatis.Entity.csproj" />
+  </ItemGroup>
+
 </Project>
