@@ -1,11 +1,83 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "DegerliMadenSatis.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DegerliMadenSatis.Core": "1.0.0",
+          "DegerliMadenSatis.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DegerliMadenSatis.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DegerliMadenSatis.Business.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DegerliMadenSatis.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DegerliMadenSatis.Core.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DegerliMadenSatis.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DegerliMadenSatis.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DegerliMadenSatis.Data.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DegerliMadenSatis.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DegerliMadenSatis.Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DegerliMadenSatis.Business/1.0.0": {
+      "type": "project",
+      "path": "../DegerliMadenSatis.Business/DegerliMadenSatis.Business.csproj",
+      "msbuildProject": "../DegerliMadenSatis.Business/DegerliMadenSatis.Business.csproj"
+    },
+    "DegerliMadenSatis.Core/1.0.0": {
+      "type": "project",
+      "path": "../DegerliMadenSatis.Core/DegerliMadenSatis.Core.csproj",
+      "msbuildProject": "../DegerliMadenSatis.Core/DegerliMadenSatis.Core.csproj"
+    },
+    "DegerliMadenSatis.Data/1.0.0": {
+      "type": "project",
+      "path": "../DegerliMadenSatis.Data/DegerliMadenSatis.Data.csproj",
+      "msbuildProject": "../DegerliMadenSatis.Data/DegerliMadenSatis.Data.csproj"
+    },
+    "DegerliMadenSatis.Entity/1.0.0": {
+      "type": "project",
+      "path": "../DegerliMadenSatis.Entity/DegerliMadenSatis.Entity.csproj",
+      "msbuildProject": "../DegerliMadenSatis.Entity/DegerliMadenSatis.Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DegerliMadenSatis.Business >= 1.0.0",
+      "DegerliMadenSatis.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
@@ -38,7 +110,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj": {
+              "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj"
+            },
+            "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Core\\DegerliMadenSatis.Core.csproj": {
+              "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Core\\DegerliMadenSatis.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

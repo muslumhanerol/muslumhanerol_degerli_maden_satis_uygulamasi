@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "DegerliMadenSatis.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DegerliMadenSatis.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DegerliMadenSatis.Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DegerliMadenSatis.Entity/1.0.0": {
+      "type": "project",
+      "path": "../DegerliMadenSatis.Entity/DegerliMadenSatis.Entity.csproj",
+      "msbuildProject": "../DegerliMadenSatis.Entity/DegerliMadenSatis.Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DegerliMadenSatis.Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj": {
+              "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatis\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
