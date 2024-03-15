@@ -1,2 +1,0 @@
-# muslumhanerol_degerli_maden_satis_uygulamasi
- 
