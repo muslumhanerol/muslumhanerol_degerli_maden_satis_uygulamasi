@@ -1,0 +1,12 @@
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\bin\Debug\net7.0\DegerliMadenSatis.Core.deps.json
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\bin\Debug\net7.0\DegerliMadenSatis.Core.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\bin\Debug\net7.0\DegerliMadenSatis.Core.pdb
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.csproj.AssemblyReference.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.AssemblyInfoInputs.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.AssemblyInfo.cs
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.csproj.CoreCompileInputs.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\refint\DegerliMadenSatis.Core.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\DegerliMadenSatis.Core.pdb
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Core\obj\Debug\net7.0\ref\DegerliMadenSatis.Core.dll

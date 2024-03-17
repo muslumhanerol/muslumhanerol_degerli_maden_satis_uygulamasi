@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DegerliMadenSatis.Mvc/1.0.0": {
+        "dependencies": {
+          "DegerliMadenSatis.Business": "1.0.0",
+          "DegerliMadenSatis.Core": "1.0.0"
+        },
+        "runtime": {
+          "DegerliMadenSatis.Mvc.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Business/1.0.0": {
+        "dependencies": {
+          "DegerliMadenSatis.Core": "1.0.0",
+          "DegerliMadenSatis.Data": "1.0.0"
+        },
+        "runtime": {
+          "DegerliMadenSatis.Business.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Core/1.0.0": {
+        "runtime": {
+          "DegerliMadenSatis.Core.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Data/1.0.0": {
+        "dependencies": {
+          "DegerliMadenSatis.Entity": "1.0.0"
+        },
+        "runtime": {
+          "DegerliMadenSatis.Data.dll": {}
+        }
+      },
+      "DegerliMadenSatis.Entity/1.0.0": {
+        "runtime": {
+          "DegerliMadenSatis.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DegerliMadenSatis.Mvc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DegerliMadenSatis.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DegerliMadenSatis.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DegerliMadenSatis.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DegerliMadenSatis.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
