@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DegerliMadenSatis.Data"
+    "\\DegerliMadenSatis.Data",
+    "\\DegerliMadenSatis.Mvc",
+    "\\DegerliMadenSatis.Mvc\\Controllers"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.sln",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
