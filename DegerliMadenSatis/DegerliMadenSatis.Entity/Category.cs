@@ -16,6 +16,7 @@ namespace DegerliMadenSatis.Entity
         public string Url { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public List<CategoryProduct> CategoryProducts { get; set; }//Navigation Property  
 
     }
 }
