@@ -25,30 +25,37 @@ namespace DegerliMadenSatis.Data.Config
                         new Category //Kendimiz kategori oluşturduk.
                         {
                             Id = 1,
-                            Name = "10gr Külçe",
-                            Description = "Altın",
-                            Url = "10gr-külce"
+                            Name = "Nesne Altın",
+                            Description = "Altın Kategorisi",
+                            Url = "nesne-altin"
                         },
                         new Category
                         {
                             Id = 2,
-                            Name = "20gr Külçe",
-                            Description = "Altın",
-                            Url = "20gr-külce"
+                            Name = "Dijital Altın",
+                            Description = "Altın Kategorisi",
+                            Url = "dijital-altin"
                         },
-                        new Category
-                        {
-                            Id = 3,
-                            Name = "10gr Külçe",
-                            Description = "Gümüş",
-                            Url = "10gr-külce"
-                        },
+                         new Category
+                         {
+                             Id = 3,
+                             Name = "Sarrafiye",
+                             Description = "Sarrafiye Kategorisi",
+                             Url = "sarrafiye-altin"
+                         },
                         new Category
                         {
                             Id = 4,
-                            Name = "20gr Külçe",
-                            Description = "Gümüş",
-                            Url = "20gr-külce"
+                            Name = "Nesne Gümüş",
+                            Description = "Gümüş Kategorisi",
+                            Url = "nesne-gümüs"
+                        },
+                        new Category
+                        {
+                            Id = 5,
+                            Name = "Dijital Gümüş",
+                            Description = "Gümüş Kategorisi",
+                            Url = "dijital-gümüs"
                         }
             );
         }

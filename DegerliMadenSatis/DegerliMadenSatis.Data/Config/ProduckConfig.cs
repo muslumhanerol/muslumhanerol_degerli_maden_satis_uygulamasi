@@ -20,65 +20,105 @@ namespace DegerliMadenSatis.Data.Config
             builder.Property(p => p.Price).IsRequired();
             builder.Property(p => p.ImageUrl).IsRequired();
             builder.ToTable("Products"); //Tablo isminin belirlenmei
-            builder.HasData(
+            builder.HasData(               
                 new Product
                 {
                     Id = 1,
-                    Name ="10gr Külçe",
-                    Price =24000,
-                    Properties="24 Ayar saflıkta, 10 gr Külçe altın.",
-                    Url= "10gr-külce",
-                    ImageUrl= "1.png",
-                    IsHome=true 
-                },
-                new Product
-                {
-                    Id = 2,
                     Name = "20gr Külçe",
                     Price = 48000,
                     Properties = "24 Ayar saflıkta, 20 gr Külçe altın.",
-                    Url = "20gr-külce",
-                    ImageUrl = "2.png",
+                    Url = "20gr-külce-altin",
+                    ImageUrl = "1.png",
                     IsHome = false
                 },
                 new Product
                 {
-                    Id = 4,
-                    Name = "30gr Külçe",
-                    Price = 24000,
-                    Properties = "24 Ayar saflıkta, 30 gr Külçe altın.",
-                    Url = "30gr-külce",
-                    ImageUrl = "4.png",
+                    Id = 2,
+                    Name = "50gr Külçe",
+                    Price = 120000,
+                    Properties = "24 Ayar saflıkta, 50 gr Külçe altın.",
+                    Url = "50gr-külce-altin",
+                    ImageUrl = "2.png",
                     IsHome = true
                 },
                 new Product
                 {
-                    Id = 1,
-                    Name = "10gr Külçe",
-                    Price = 24000,
-                    Properties = "24 Ayar saflıkta, 10 gr Külçe altın.",
-                    Url = "10gr-külce",
-                    ImageUrl = "1.png",
+                    Id = 3,
+                    Name = "100gr Külçe",
+                    Price = 240000,
+                    Properties = "24 Ayar saflıkta, 100 gr Külçe altın.",
+                    Url = "100gr-külce-altin",
+                    ImageUrl = "3.png",
+                    IsHome = true
+                },
+                 new Product
+                 {
+                     Id = 4,
+                     Name = "250gr Külçe",
+                     Price = 620000,
+                     Properties = "24 Ayar saflıkta, 250 gr Külçe altın.",
+                     Url = "250gr-külce-altin",
+                     ImageUrl = "4.png",
+                     IsHome = true
+                 },
+                new Product
+                {
+                    Id = 5,
+                    Name = "Çeyrek Altın",
+                    Price = 4500,
+                    Properties = "24 Ayar saflıkta, çeyrek altın.",
+                    Url = "ceyrek-altin",
+                    ImageUrl = "5.png",
                     IsHome = true
                 },
                 new Product
                 {
-                    Id = 1,
-                    Name = "10gr Külçe",
-                    Price = 24000,
-                    Properties = "24 Ayar saflıkta, 10 gr Külçe altın.",
-                    Url = "10gr-külce",
-                    ImageUrl = "1.png",
+                    Id = 6,
+                    Name = "Yarim Altın",
+                    Price = 90000,
+                    Properties = "24 Ayar saflıkta, yarım altın.",
+                    Url = "yarim-altin",
+                    ImageUrl = "6.png",
+                    IsHome = false
+                },
+                new Product
+                {
+                    Id = 7,
+                    Name = "Tam Altın",
+                    Price = 180000,
+                    Properties = "24 Ayar saflıkta, tam altın.",
+                    Url = "tam-altin",
+                    ImageUrl = "7.png",
                     IsHome = true
                 },
                 new Product
                 {
-                    Id = 1,
-                    Name = "10gr Külçe",
-                    Price = 24000,
-                    Properties = "24 Ayar saflıkta, 10 gr Külçe altın.",
-                    Url = "10gr-külce",
-                    ImageUrl = "1.png",
+                    Id = 8,
+                    Name = "100gr Külçe",
+                    Price = 45000,
+                    Properties = "999 saflıkta, 100 gr Külçe altın.",
+                    Url = "100gr-külce-gümüs",
+                    ImageUrl = "8.png",
+                    IsHome = true
+                },
+                new Product
+                {
+                    Id = 9,
+                    Name = "250gr Külçe",
+                    Price = 112500,
+                    Properties = "999 saflıkta, 250 gr Külçe altın.",
+                    Url = "250gr-külce-gümüs",
+                    ImageUrl = "9.png",
+                    IsHome = true
+                },
+                new Product
+                {
+                    Id = 10,
+                    Name = "500gr Külçe",
+                    Price = 225000,
+                    Properties = "999 saflıkta, 500 gr Külçe altın.",
+                    Url = "500gr-külce-gümüs",
+                    ImageUrl = "10.png",
                     IsHome = true
                 }
 

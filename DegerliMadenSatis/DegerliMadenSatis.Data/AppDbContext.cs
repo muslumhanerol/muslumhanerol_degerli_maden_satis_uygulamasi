@@ -19,18 +19,14 @@ namespace DegerliMadenSatis.Data
         public DbSet<CategoryProduct> CategoryProducts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlite(@"Data Source=DegerliMadenSatis.sqlite");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)//Kategoriler ile ürünlere primary key atama işlemi
         {
             modelBuilder.ApplyConfiguration(new CategoryConfig());
-
-           
-                      
-
-
-
+            modelBuilder.ApplyConfiguration(new ProduckConfig());
+            modelBuilder.ApplyConfiguration(new CategoryProduckConfig()); 
             base.OnModelCreating(modelBuilder);
         }
     }
