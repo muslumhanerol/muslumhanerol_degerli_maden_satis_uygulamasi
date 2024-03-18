@@ -26,7 +26,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 1,
                     Name = "20gr Külçe",
                     Price = 48000,
-                    Properties = "24 Ayar saflıkta, 20 gr Külçe altın.",
+                    Properties = "24 Ayar Saflıkta, 20 gr Külçe Altın.",
                     Url = "20gr-külce-altin",
                     ImageUrl = "1.png",
                     IsHome = false
@@ -36,7 +36,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 2,
                     Name = "50gr Külçe",
                     Price = 120000,
-                    Properties = "24 Ayar saflıkta, 50 gr Külçe altın.",
+                    Properties = "24 Ayar Saflıkta, 50 gr Külçe Altın.",
                     Url = "50gr-külce-altin",
                     ImageUrl = "2.png",
                     IsHome = true
@@ -46,7 +46,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 3,
                     Name = "100gr Külçe",
                     Price = 240000,
-                    Properties = "24 Ayar saflıkta, 100 gr Külçe altın.",
+                    Properties = "24 Ayar Saflıkta, 100 gr Külçe Altın.",
                     Url = "100gr-külce-altin",
                     ImageUrl = "3.png",
                     IsHome = true
@@ -56,7 +56,7 @@ namespace DegerliMadenSatis.Data.Config
                      Id = 4,
                      Name = "250gr Külçe",
                      Price = 620000,
-                     Properties = "24 Ayar saflıkta, 250 gr Külçe altın.",
+                     Properties = "24 Ayar Saflıkta, 250 gr Külçe Altın.",
                      Url = "250gr-külce-altin",
                      ImageUrl = "4.png",
                      IsHome = true
@@ -66,7 +66,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 5,
                     Name = "Çeyrek Altın",
                     Price = 4500,
-                    Properties = "24 Ayar saflıkta, çeyrek altın.",
+                    Properties = "24 Ayar Saflıkta, Çeyrek Altın.",
                     Url = "ceyrek-altin",
                     ImageUrl = "5.png",
                     IsHome = true
@@ -76,7 +76,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 6,
                     Name = "Yarim Altın",
                     Price = 90000,
-                    Properties = "24 Ayar saflıkta, yarım altın.",
+                    Properties = "24 Ayar Saflıkta, Yarım Altın.",
                     Url = "yarim-altin",
                     ImageUrl = "6.png",
                     IsHome = false
@@ -86,7 +86,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 7,
                     Name = "Tam Altın",
                     Price = 180000,
-                    Properties = "24 Ayar saflıkta, tam altın.",
+                    Properties = "24 Ayar Saflıkta, Tam Altın.",
                     Url = "tam-altin",
                     ImageUrl = "7.png",
                     IsHome = true
@@ -96,7 +96,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 8,
                     Name = "100gr Külçe",
                     Price = 45000,
-                    Properties = "999 saflıkta, 100 gr Külçe altın.",
+                    Properties = "925 Saflıkta, 100 gr Külçe Gümüş.",
                     Url = "100gr-külce-gümüs",
                     ImageUrl = "8.png",
                     IsHome = true
@@ -106,7 +106,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 9,
                     Name = "250gr Külçe",
                     Price = 112500,
-                    Properties = "999 saflıkta, 250 gr Külçe altın.",
+                    Properties = "925 Saflıkta, 250 gr Külçe Gümüş.",
                     Url = "250gr-külce-gümüs",
                     ImageUrl = "9.png",
                     IsHome = true
@@ -116,7 +116,7 @@ namespace DegerliMadenSatis.Data.Config
                     Id = 10,
                     Name = "500gr Külçe",
                     Price = 225000,
-                    Properties = "999 saflıkta, 500 gr Külçe altın.",
+                    Properties = "925 Saflıkta, 500 gr Külçe Gümüş.",
                     Url = "500gr-külce-gümüs",
                     ImageUrl = "10.png",
                     IsHome = true

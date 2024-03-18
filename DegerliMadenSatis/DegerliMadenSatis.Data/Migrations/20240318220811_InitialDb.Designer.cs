@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DegerliMadenSatis.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240318215138_InitialDb")]
+    [Migration("20240318220811_InitialDb")]
     partial class InitialDb
     {
         /// <inheritdoc />
@@ -59,55 +59,55 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4804),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(846),
                             Description = "Altın Kategorisi",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4818),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(860),
                             Name = "Nesne Altın",
                             Url = "nesne-altin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4824),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(863),
                             Description = "Altın Kategorisi",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4825),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(863),
                             Name = "Dijital Altın",
                             Url = "dijital-altin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4827),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(865),
                             Description = "Sarrafiye Kategorisi",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4828),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(865),
                             Name = "Sarrafiye",
                             Url = "sarrafiye-altin"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4830),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(870),
                             Description = "Gümüş Kategorisi",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4831),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(870),
                             Name = "Nesne Gümüş",
                             Url = "nesne-gümüs"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4833),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(872),
                             Description = "Gümüş Kategorisi",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(4835),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(872),
                             Name = "Dijital Gümüş",
                             Url = "dijital-gümüs"
                         });
@@ -264,141 +264,141 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8598),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3073),
                             ImageUrl = "1.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8606),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3082),
                             Name = "20gr Külçe",
                             Price = 48000m,
-                            Properties = "24 Ayar saflıkta, 20 gr Külçe altın.",
+                            Properties = "24 Ayar Saflıkta, 20 gr Külçe Altın.",
                             Url = "20gr-külce-altin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8615),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3088),
                             ImageUrl = "2.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8616),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3088),
                             Name = "50gr Külçe",
                             Price = 120000m,
-                            Properties = "24 Ayar saflıkta, 50 gr Külçe altın.",
+                            Properties = "24 Ayar Saflıkta, 50 gr Külçe Altın.",
                             Url = "50gr-külce-altin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8620),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3091),
                             ImageUrl = "3.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8621),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3092),
                             Name = "100gr Külçe",
                             Price = 240000m,
-                            Properties = "24 Ayar saflıkta, 100 gr Külçe altın.",
+                            Properties = "24 Ayar Saflıkta, 100 gr Külçe Altın.",
                             Url = "100gr-külce-altin"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8624),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3094),
                             ImageUrl = "4.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8625),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3094),
                             Name = "250gr Külçe",
                             Price = 620000m,
-                            Properties = "24 Ayar saflıkta, 250 gr Külçe altın.",
+                            Properties = "24 Ayar Saflıkta, 250 gr Külçe Altın.",
                             Url = "250gr-külce-altin"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8628),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3096),
                             ImageUrl = "5.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8629),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3097),
                             Name = "Çeyrek Altın",
                             Price = 4500m,
-                            Properties = "24 Ayar saflıkta, çeyrek altın.",
+                            Properties = "24 Ayar Saflıkta, Çeyrek Altın.",
                             Url = "ceyrek-altin"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8632),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3099),
                             ImageUrl = "6.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8633),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3099),
                             Name = "Yarim Altın",
                             Price = 90000m,
-                            Properties = "24 Ayar saflıkta, yarım altın.",
+                            Properties = "24 Ayar Saflıkta, Yarım Altın.",
                             Url = "yarim-altin"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8636),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3102),
                             ImageUrl = "7.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8637),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3102),
                             Name = "Tam Altın",
                             Price = 180000m,
-                            Properties = "24 Ayar saflıkta, tam altın.",
+                            Properties = "24 Ayar Saflıkta, Tam Altın.",
                             Url = "tam-altin"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8640),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3104),
                             ImageUrl = "8.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8641),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3105),
                             Name = "100gr Külçe",
                             Price = 45000m,
-                            Properties = "999 saflıkta, 100 gr Külçe altın.",
+                            Properties = "925 Saflıkta, 100 gr Külçe Gümüş.",
                             Url = "100gr-külce-gümüs"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8644),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3107),
                             ImageUrl = "9.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8645),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3107),
                             Name = "250gr Külçe",
                             Price = 112500m,
-                            Properties = "999 saflıkta, 250 gr Külçe altın.",
+                            Properties = "925 Saflıkta, 250 gr Külçe Gümüş.",
                             Url = "250gr-külce-gümüs"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDdate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8648),
+                            CreatedDdate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3109),
                             ImageUrl = "10.png",
                             IsActive = true,
                             IsDelete = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 3, 19, 0, 51, 38, 542, DateTimeKind.Local).AddTicks(8649),
+                            ModifiedDate = new DateTime(2024, 3, 19, 1, 8, 11, 89, DateTimeKind.Local).AddTicks(3110),
                             Name = "500gr Külçe",
                             Price = 225000m,
-                            Properties = "999 saflıkta, 500 gr Külçe altın.",
+                            Properties = "925 Saflıkta, 500 gr Külçe Gümüş.",
                             Url = "500gr-külce-gümüs"
                         });
                 });
