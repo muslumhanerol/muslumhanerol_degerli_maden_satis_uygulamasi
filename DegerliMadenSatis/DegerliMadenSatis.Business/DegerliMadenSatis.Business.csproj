@@ -11,8 +11,4 @@
     <ProjectReference Include="..\DegerliMadenSatis.Data\DegerliMadenSatis.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-
 </Project>

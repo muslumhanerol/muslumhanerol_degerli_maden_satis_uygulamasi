@@ -1,4 +1,5 @@
-﻿using DegerliMadenSatis.Entity;
+﻿using DegerliMadenSatis.Core.ViewModels;
+using DegerliMadenSatis.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace DegerliMadenSatis.Business.Abstract
     {
         //Interface özeliği gereği sadece metot imzaları alır, gövdesi yer almaz. Burda miras alınan class ta yazılır.
         //Produck CRUD işlemlerinin metotları burada yazılır.
-        List<Product> GetAll(bool? isHome, bool? isActive, bool? isDelete); //? nullable yapıyor.
+        void Create(ProduckViewModel model);
+        List<ProduckViewModel> GetAll(bool? isHome, bool? isActive, bool? isDelete); //? nullable yapıyor.
+        ProduckViewModel GetById(int id);        
+        void Update(ProduckViewModel model);
+        void HardDelete(int id);
+        void SoftDelete(int id);
     }
 }
