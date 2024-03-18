@@ -13,3 +13,5 @@ C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\Degerli
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Data\obj\Debug\net7.0\refint\DegerliMadenSatis.Data.dll
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Data\obj\Debug\net7.0\DegerliMadenSatis.Data.pdb
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Data\obj\Debug\net7.0\ref\DegerliMadenSatis.Data.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Data\bin\Debug\net7.0\DegerliMadenSatis.Data.runtimeconfig.json
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatis\DegerliMadenSatis.Data\obj\Debug\net7.0\DegerliMadenSatis.Data.genruntimeconfig.cache
