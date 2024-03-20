@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Data.Abstract
 {
-    public interface IGenericRepository<TEntity> //Veri tabanı işlemlerini bu kısımda barındırılır. (CRUD)
+    public interface IGenericRepository<TEntity> //Genel (CRUD) işlemlerinin metot imzalarını yazdığımız yer.
     {
         List<TEntity> GetAll();//Dışarıdan category produck gelecek, burada crud işlemleri gerçekleşecek.
         TEntity GetById(int id);

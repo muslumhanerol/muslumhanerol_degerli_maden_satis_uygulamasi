@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Data.Concrete
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> //Igeneric a ait özellikleri implament ederek alta yazdırdık.
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> //IGenericRepository nin içinin doldurulduğu yer. Ait özellikleri implament ederek alta yazdırdık.
         where TEntity : class
     {
         private readonly DbContext _dbContext; //_dbContext AppDbContext ten oluşturulmuş nesnedir.
