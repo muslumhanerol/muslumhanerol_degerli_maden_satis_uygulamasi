@@ -24,7 +24,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             throw new NotImplementedException();
         }
 
-        public List<ProduckViewModel> GetAll(bool? isHome, bool? isActive, bool? isDelete) //isHome u true olanları göstermek.
+        public List<ProduckViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //isHome u true olanları göstermek.
         {
             var products = _productRepository.GetAll();
             List<ProduckViewModel> produckViewModels = new List<ProduckViewModel>();
@@ -40,7 +40,9 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     Properties = product.Properties,
                     Url = product.Url
                 };
+                produckViewModels.Add(produckViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
             }
+            return produckViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
 
         public ProduckViewModel GetById(int id)
