@@ -1,5 +1,6 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Core.ViewModels;
+using DegerliMadenSatis.Data.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,13 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 {
     public class ProductManager : IProductService
     {
+        private IProductRepository _productRepository;
+
+        public ProductManager(IProductRepository productRepository)
+        {
+            _productRepository = productRepository;
+        }
+
         public void Create(ProduckViewModel model)
         {
             throw new NotImplementedException();
@@ -17,7 +25,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 
         public List<ProduckViewModel> GetAll(bool? isHome, bool? isActive, bool? isDelete) //isHome u true olanları göstermek.
         {
-            throw new NotImplementedException();
+
         }
 
         public ProduckViewModel GetById(int id)
