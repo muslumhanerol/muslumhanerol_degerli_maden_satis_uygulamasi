@@ -11,7 +11,7 @@ namespace DegerliMadenSatis.Data.Concrete
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> //IGenericRepository nin içinin doldurulduğu yer. Ait özellikleri implament ederek alta yazdırdık.
         where TEntity : class
     {
-        private readonly DbContext _dbContext; //_dbContext AppDbContext ten oluşturulmuş nesnedir.
+        protected readonly DbContext _dbContext; //_dbContext AppDbContext ten oluşturulmuş nesnedir.
         public GenericRepository(DbContext dbContext) //Dışarıdan buraya DbContext tipinde bilgi geldi. Dışarıdan gelen dbContexti _dbContextin içine koyuyoruz.
         {
             _dbContext = dbContext;

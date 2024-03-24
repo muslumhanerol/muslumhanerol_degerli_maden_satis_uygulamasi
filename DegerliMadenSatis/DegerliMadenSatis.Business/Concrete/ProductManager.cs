@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den miras alan class oluşturduk.
 {
-    internal class ProductManager : IProductService
+    public class ProductManager : IProductService
     {
         public void Create(ProduckViewModel model)
         {
