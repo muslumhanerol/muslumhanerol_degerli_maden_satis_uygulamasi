@@ -31,16 +31,21 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             ProductViewModel productViewModel;            
             foreach (var product in products)
             {
-                productViewModel = new ProductViewModel
+                if(product.IsHome == isHome)
                 {
-                    Id = product.Id,
-                    Name = product.Name,
-                    Price = product.Price,
-                    ImageUrl = product.ImageUrl,
-                    Properties = product.Properties,
-                    Url = product.Url
-                };                
-                productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
+                    productViewModel = new ProductViewModel
+                    {
+                        Id = product.Id,
+                        Name = product.Name,
+                        Price = product.Price,
+                        ImageUrl = product.ImageUrl,
+                        Properties = product.Properties,
+                        Url = product.Url
+                    };
+                    productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
+
+                }
+                
             }
             return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
