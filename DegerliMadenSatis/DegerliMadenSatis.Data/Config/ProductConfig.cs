@@ -121,7 +121,6 @@ namespace DegerliMadenSatis.Data.Config
                     ImageUrl = "10.png",
                     IsHome = true
                 }
-
                 );
         }
     }

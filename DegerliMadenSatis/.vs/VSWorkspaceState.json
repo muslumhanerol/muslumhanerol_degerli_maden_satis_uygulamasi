@@ -6,8 +6,9 @@
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Controllers",
     "\\DegerliMadenSatis.Mvc\\Views",
-    "\\DegerliMadenSatis.Mvc\\Views\\Home"
+    "\\DegerliMadenSatis.Mvc\\Views\\Home",
+    "\\DegerliMadenSatis.Mvc\\wwwroot"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Data\\Config\\ProductConfig.cs",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

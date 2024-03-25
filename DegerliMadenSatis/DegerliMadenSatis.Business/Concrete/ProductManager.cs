@@ -26,7 +26,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 
         public List<ProductViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //isHome u true olanları göstermek.
         {
-            var products = _productRepository.GetAll();
+            var products = _productRepository.GetAll(); //GetAll un içini GenericRepository de doldurduk.
             List<ProductViewModel> productViewModels = new List<ProductViewModel>();
             ProductViewModel productViewModel;            
             foreach (var product in products)
@@ -44,8 +44,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     };
                     productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
 
-                }
-                
+                }                
             }
             return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
