@@ -7,7 +7,19 @@
     <div class="row">
         @foreach (var p in Model)
         {
-            
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="~/images/@p.ImageUrl" class="card-img-top" alt="..."> @*Resimleri,başlıkları, özellikleri tektek yazmamak adına ProductConfig de hazırladığımız kodları içeri attık.*@
+                    <div class="card-body">
+                        <h5 class="card-title">@p.Name</h5>
+                        <p class="card-text">@p.Properties</p>
+                        <p class="card-text">@p.Price</p>
+                        <a href="#" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+
+            </div>
+
         }
     </div>
 
