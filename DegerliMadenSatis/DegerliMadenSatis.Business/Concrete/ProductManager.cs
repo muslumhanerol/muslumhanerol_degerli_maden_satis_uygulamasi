@@ -19,19 +19,19 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             _productRepository = productRepository;
         }
 
-        public void Create(ProduckViewModel model)
+        public void Create(ProductViewModel model)
         {
             throw new NotImplementedException();
         }
 
-        public List<ProduckViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //isHome u true olanları göstermek.
+        public List<ProductViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //isHome u true olanları göstermek.
         {
             var products = _productRepository.GetAll();
-            List<ProduckViewModel> produckViewModels = new List<ProduckViewModel>();
-            ProduckViewModel produckViewModel;            
+            List<ProductViewModel> productViewModels = new List<ProductViewModel>();
+            ProductViewModel productViewModel;            
             foreach (var product in products)
             {
-                produckViewModel = new ProduckViewModel
+                productViewModel = new ProductViewModel
                 {
                     Id = product.Id,
                     Name = product.Name,
@@ -39,13 +39,13 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     ImageUrl = product.ImageUrl,
                     Properties = product.Properties,
                     Url = product.Url
-                };
-                produckViewModels.Add(produckViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
+                };                
+                productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
             }
-            return produckViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
+            return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
 
-        public ProduckViewModel GetById(int id)
+        public ProductViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
@@ -60,7 +60,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             throw new NotImplementedException();
         }
 
-        public void Update(ProduckViewModel model)
+        public void Update(ProductViewModel model)
         {
             throw new NotImplementedException();
         }

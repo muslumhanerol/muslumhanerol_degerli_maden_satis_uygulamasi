@@ -26,8 +26,8 @@ namespace DegerliMadenSatis.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)//Kategoriler ile ürünlere primary key atama işlemi
         {
             modelBuilder.ApplyConfiguration(new CategoryConfig());
-            modelBuilder.ApplyConfiguration(new ProduckConfig());
-            modelBuilder.ApplyConfiguration(new CategoryProduckConfig()); 
+            modelBuilder.ApplyConfiguration(new ProductConfig());
+            modelBuilder.ApplyConfiguration(new CategoryProductConfig()); 
             base.OnModelCreating(modelBuilder);
         }
     }
