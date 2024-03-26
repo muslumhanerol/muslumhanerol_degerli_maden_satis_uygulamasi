@@ -29,7 +29,9 @@ namespace DegerliMadenSatis.Data.Concrete
 
         public TEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            TEntity entity = _dbContext.Set<TEntity>().Find(id); //Birtane sonuç döndüreceği için ToList yerine Find(id) kullanıldı.
+            return entity; //Business katmanına entity döndü, Business katmanından çağıracağız.Burada veritabanında ürün çekme işi halledildi.
+                           //Mvc datadan bunu çağıramıyor Business den çağırıyor.
         }
 
         public void HardDelete(TEntity entity)

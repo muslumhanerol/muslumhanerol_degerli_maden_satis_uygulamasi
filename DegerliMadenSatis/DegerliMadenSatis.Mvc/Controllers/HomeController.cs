@@ -1,4 +1,5 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
+using DegerliMadenSatis.Core.ViewModels;
 using DegerliMadenSatis.Mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -16,8 +17,13 @@ namespace DegerliMadenSatis.Mvc.Controllers
 
         public IActionResult Index()
         {
-            var products = _productManager.GetAll(true); //1.adım _productManager daki Getall a true yollanıyor.(ProductManager a git.)
-            return View(products);
+            var products = _productManager.GetAll(true); //1.adım _productManager daki GetAll a true yollanıyor.(ProductManager a git.)
+            return View(products); //Çektiğimiz veriyi view e gönderdik.
+        }
+        public IActionResult GetById(int id) 
+        {
+            ProductViewModel product= _productManager.GetById(id);
+            return View();
         }
     }
 }

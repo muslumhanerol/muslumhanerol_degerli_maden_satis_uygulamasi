@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DegerliMadenSatis.Business",
+    "\\DegerliMadenSatis.Business\\Concrete",
     "\\DegerliMadenSatis.Data",
     "\\DegerliMadenSatis.Data\\Config",
     "\\DegerliMadenSatis.Mvc",
@@ -9,6 +11,6 @@
     "\\DegerliMadenSatis.Mvc\\Views\\Home",
     "\\DegerliMadenSatis.Mvc\\wwwroot"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\DegerliMadenSatis.Business\\Concrete\\ProductManager.cs",
   "PreviewInSolutionExplorer": false
 }

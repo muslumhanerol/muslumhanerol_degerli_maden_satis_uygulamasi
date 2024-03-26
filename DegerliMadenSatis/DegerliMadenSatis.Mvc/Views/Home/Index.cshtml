@@ -3,11 +3,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-@section Scripts{
-    <script>
-        alert("Burası Index!!!")
-    </script>
-}
 
 <div class="container">
     <div class="row">
@@ -20,7 +15,14 @@
                         <h5 class="card-title">@p.Name</h5>
                         <p class="card-text">@p.Properties</p>
                         <p class="card-text">@p.Price</p>
-                        <a href="#" class="btn btn-primary">Detay</a>
+                        <a 
+                            asp-area=""
+                            asp-controller="Home"
+                            asp-action="GetById"
+                            asp-route-id="@p.Id"
+                            class="btn btn-primary">Detay</a>
+                            @*asp-action="GetById" HomeController daki  GetById*@
+                            @*asp-route-id="@p.Id" = Site adreslemesinde Id kullandık istersek Name de verilebilinir.*@
                     </div>
                 </div>
             </div>
@@ -29,3 +31,4 @@
 </div>
 
 
+   

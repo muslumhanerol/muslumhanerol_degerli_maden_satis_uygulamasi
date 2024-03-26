@@ -44,12 +44,23 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     ImageUrl=p.ImageUrl,
                     Properties=p.Properties
                 }).ToList();
-            return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
+            return productViewModels; //Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
 
-        public ProductViewModel GetById(int id)
+        public ProductViewModel GetById(int id) //GenericRepository den buraya geldik. Bunu da Mvc içindeki Actiondan çağıracağız.
         {
-            throw new NotImplementedException();
+            Product product = _productRepository.GetById(id);
+            ProductViewModel productViewModel = new ProductViewModel //Elimizdeki product ı productViewModel nesnesine çevirdik.
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Price = product.Price,
+                Url = product.Url,
+                ImageUrl = product.ImageUrl,
+                Properties = product.Properties
+            };
+            return productViewModel; //Bunu Mvc deki Controller Action da çağırabiliriz.
+
         }
 
         public void HardDelete(int id)
