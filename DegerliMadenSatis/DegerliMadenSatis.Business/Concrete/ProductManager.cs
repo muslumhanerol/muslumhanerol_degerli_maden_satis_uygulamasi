@@ -44,7 +44,6 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     ImageUrl=p.ImageUrl,
                     Properties=p.Properties
                 }).ToList();
-
             return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
 
@@ -73,7 +72,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 
 
 //LİNQ sorgusu olmadan önce yazılan kod.
-
+//Aşağıdaki kodların yerine LİNQ sorgusu kullanılarak 38 46 kodları yazıldı.
 //List<ProductViewModel> productViewModels = new List<ProductViewModel>();
 //ProductViewModel productViewModel;            
 //foreach (var product in products)            {
