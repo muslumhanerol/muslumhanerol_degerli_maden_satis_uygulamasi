@@ -22,12 +22,13 @@ namespace DegerliMadenSatis.Data.Concrete
             } 
         }
 
-        public List<Product> GetHomePageProducts()
+        public List<Product> GetHomePageProducts(bool? IsHome) //3.adım Buraya true geldiği için product ların isHome true olanlar gösterildi.
         {
-            var product = AppContext //Linq sorgu tekniği.
+            var products = AppContext //Linq sorgu tekniği.
                 .Products //products = p
-                .Where(p=>p.IsHome && p.IsActive && !p.IsDelete) //p=> Her bir p yi tektek eline al demek.
-                .ToList();                
+                .Where(p=>p.IsHome==IsHome && p.IsActive && !p.IsDelete) //p=> Her bir p yi tektek eline al demek.
+                .ToList();
+            return products;
         }
 
         public List<Product> GetProductsByCategoryId(int categoryId)

@@ -16,7 +16,7 @@ namespace DegerliMadenSatis.Mvc.Controllers
 
         public IActionResult Index()
         {
-            var products = _productManager.GetAll(true); //IProductService deki isHome a denk geliyor.
+            var products = _productManager.GetAll(true); //1.adım _productManager daki Getall a true yollanıyor.(ProductManager a git.)
             return View(products);
         }
     }

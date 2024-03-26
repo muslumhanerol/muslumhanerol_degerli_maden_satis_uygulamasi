@@ -24,28 +24,27 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             throw new NotImplementedException();
         }
 
-        public List<ProductViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //isHome u true olanları göstermek.
+        public List<ProductViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //HomeControllerdan isHome true geldi.
         {
-            var products = _productRepository.GetAll(); //GetAll un içini GenericRepository de doldurduk.
-            List<ProductViewModel> productViewModels = new List<ProductViewModel>();
-            ProductViewModel productViewModel;            
-            foreach (var product in products)
+            List<Product> products;
+            if(isHome == null) 
+            { 
+                products = _productRepository.GetAll();
+            }else 
             {
-                if(product.IsHome == isHome)
-                {
-                    productViewModel = new ProductViewModel
-                    {
-                        Id = product.Id,
-                        Name = product.Name,
-                        Price = product.Price,
-                        ImageUrl = product.ImageUrl,
-                        Properties = product.Properties,
-                        Url = product.Url
-                    };
-                    productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
-
-                }                
+                products= _productRepository.GetHomePageProducts(isHome); //2.adım GetHomePageProducts a true gidiyor.(ProductRepository ye git.)
             }
+            List<ProductViewModel> productViewModels = products
+                .Select(p=>new ProductViewModel
+                {
+                    Id=p.Id,
+                    Name=p.Name,
+                    Price=p.Price,
+                    Url=p.Url,
+                    ImageUrl=p.ImageUrl,
+                    Properties=p.Properties
+                }).ToList();
+
             return productViewModels;//Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
 
@@ -70,3 +69,24 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
         }
     }
 }
+
+
+
+//LİNQ sorgusu olmadan önce yazılan kod.
+
+//List<ProductViewModel> productViewModels = new List<ProductViewModel>();
+//ProductViewModel productViewModel;            
+//foreach (var product in products)            {
+
+//        productViewModel = new ProductViewModel
+//        {
+//            Id = product.Id,
+//            Name = product.Name,
+//            Price = product.Price,
+//            ImageUrl = product.ImageUrl,
+//            Properties = product.Properties,
+//            Url = product.Url
+//        };
+//        productViewModels.Add(productViewModel); //1. Product produckViewModel e dönüştürülüp listeye eklendi. Döngü bitince aynı şeyleri 2,3 ... producklar için yapılacak.
+
+//}

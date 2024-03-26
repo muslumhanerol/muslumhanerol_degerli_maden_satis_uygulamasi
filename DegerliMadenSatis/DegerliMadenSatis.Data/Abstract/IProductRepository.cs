@@ -11,6 +11,6 @@ namespace DegerliMadenSatis.Data.Abstract
     {
         //Product'a özgü metot imzaları buraya yazacağız.
         List<Product> GetProductsByCategoryId(int categoryId);
-        List<Product> GetHomePageProducts();
+        List<Product> GetHomePageProducts(bool? isHome);
     }
 }
