@@ -34,7 +34,7 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             {
                 products= _productRepository.GetHomePageProducts(isHome); //2.adım GetHomePageProducts a true gidiyor.(ProductRepository ye git.)
             }
-            List<ProductViewModel> productViewModels = products
+            List<ProductViewModel> productViewModels = products //productViewModels i oluştururken products ların içinde Select ile dön dolaş.
                 .Select(p=>new ProductViewModel
                 {
                     Id=p.Id,

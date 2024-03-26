@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html> @*_Layout.cshtml= Bütün sayfalar bu formatta oluşacak, sitenin genel tasarımı buradan yapılır.*@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -41,9 +41,14 @@
             &copy; 2024 - DegerliMadenSatis.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script> @*Buradaki scriptler sitedeki bütün view lerde oluşacak*@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Scripts", required: false) @*Farklı bir sayfada ör:index te script kodu yazmak istediğimizde bir section oluşturmamız gerekir*@
+    @*ÖR: @section Scripts{
+          <script>
+          alert("Burası Index!!!")
+          </script>
+          }*@
 </body>
 </html>
