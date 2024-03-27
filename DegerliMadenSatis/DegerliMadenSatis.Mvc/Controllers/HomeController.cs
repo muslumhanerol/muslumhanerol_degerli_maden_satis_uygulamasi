@@ -22,8 +22,8 @@ namespace DegerliMadenSatis.Mvc.Controllers
         }
         public IActionResult GetById(int id) 
         {
-            ProductViewModel product= _productManager.GetById(id);
-            return View(); //Bu fonksiyonun içinde sağ tık add View diyerek fonksiyonun isminde view oluşturduk.
+            ProductViewModel product = _productManager.GetById(id);
+            return View(product); //Bu fonksiyonun içinde sağ tık add View diyerek fonksiyonun isminde view oluşturduk.
         }
     }
 }
