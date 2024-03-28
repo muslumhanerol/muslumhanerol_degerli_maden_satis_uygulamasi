@@ -29,6 +29,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapAreaControllerRoute(
+    name:"Admin",
+    areaName:"Admin",
+    pattern: "admin/{controller=Home}/{action=Index}/{id?}" //Ýki asreste ayný, bu çatýþmayý önlemek için Areas içindeki HomeController [Area("Admin")] dedik.
+    );
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
