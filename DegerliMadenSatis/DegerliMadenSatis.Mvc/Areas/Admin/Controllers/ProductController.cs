@@ -38,5 +38,11 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
             ProductViewModel editedProduct = _productManager.GetById(id); //Edit sayfasında formlar dolu gelsin dedik.
             return View(editedProduct);
         }
+        [HttpPost]
+        public IActionResult Edit (ProductViewModel editedProduct)
+        {
+            _productManager.Update(editedProduct);
+            return RedirectToAction("index");
+        }
     }
 }

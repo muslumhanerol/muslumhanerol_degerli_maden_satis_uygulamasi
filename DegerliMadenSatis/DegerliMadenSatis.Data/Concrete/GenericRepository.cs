@@ -37,7 +37,8 @@ namespace DegerliMadenSatis.Data.Concrete
 
         public void HardDelete(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Remove(entity);
+            _dbContext.SaveChanges(); //Context üzerinde yapılan değişiklik veri tabanın yansıtma.
         }
 
         public void SoftDelete(TEntity entity)
