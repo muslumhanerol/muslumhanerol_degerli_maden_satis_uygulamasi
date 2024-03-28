@@ -1,4 +1,12 @@
 ﻿@model List<ProductViewModel>
+
+@section Styles{ @*_Layout.cshtml deki sıralama yapmak için section yapıldı, burada uygulanıyor.*@
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+}
+
+
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -8,7 +16,7 @@
             <button class="btn btn-success float-end">Ürün Ekle</button>
         </div>
     </div>
-    <table class="table">
+    <table id=entityTable class="table">
         <tr>
             <th>Resim</th>
             <th>Id</th>
@@ -19,7 +27,7 @@
         @foreach (var p in Model)
         {
             <tr>
-                <td>
+                <td >
                     <img src="~/images/@p.ImageUrl" width="140" height="140" />
                 </td>
                 <td>
@@ -31,8 +39,18 @@
                 <td>
                     @p.Price
                 </td>
-                <td>
-                   <a  class="btn btn-warning btn-sm">Düzenle</a>
+                <td width="121">
+                   <a asp-area="Admin" 
+                   asp-controller="Product" 
+                   asp-action="Edit"
+                   asp-route-id="@p.Id"
+                   class="btn btn-warning btn-sm">Düzenle</a>
+                    
+                   <a asp-area="Admin"
+                   asp-controller="Product"
+                   asp-action="Delete"
+                   asp-route-id="@p.Id"
+                   class="btn btn-danger btn-sm">Sil</a>
                 </td>
             </tr>
         }
