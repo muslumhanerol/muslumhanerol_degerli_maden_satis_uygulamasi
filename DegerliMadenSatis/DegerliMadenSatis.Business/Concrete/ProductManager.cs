@@ -87,7 +87,14 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 
         public void Update(ProductViewModel model)
         {
-            throw new NotImplementedException();
+            Product editedProduct = _productRepository.GetById(model.Id);
+            editedProduct.Name = model.Name;                         
+            editedProduct.Price = model.Price;
+            editedProduct.Url = model.Url;
+            editedProduct.ImageUrl = model.ImageUrl;
+            editedProduct.Properties = model.Properties;
+            editedProduct.IsHome = model.IsHome;
+            _productRepository.Update(editedProduct);
         }
     }
 }
