@@ -9,8 +9,9 @@
     "\\DegerliMadenSatis.Mvc\\Controllers",
     "\\DegerliMadenSatis.Mvc\\Views",
     "\\DegerliMadenSatis.Mvc\\Views\\Home",
+    "\\DegerliMadenSatis.Mvc\\Views\\Shared",
     "\\DegerliMadenSatis.Mvc\\wwwroot"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Shared\\_MenuPartial.cshtml",
   "PreviewInSolutionExplorer": false
 }

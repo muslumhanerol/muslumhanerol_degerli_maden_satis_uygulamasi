@@ -8,5 +8,34 @@
             <button class="btn btn-success float-end">Ürün Ekle</button>
         </div>
     </div>
+    <table class="table">
+        <tr>
+            <th>Resim</th>
+            <th>Id</th>
+            <th>Ürün</th>
+            <th>Fiyat</th>
+            <th>#</th>
+        </tr>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>
+                    <img src="~/images/@p.ImageUrl" width="140" height="140" />
+                </td>
+                <td>
+                    @p.Id
+                </td>
+                <td>
+                    @p.Name
+                </td>
+                <td>
+                    @p.Price
+                </td>
+                <td>
+                   <a  class="btn btn-warning btn-sm">Düzenle</a>
+                </td>
+            </tr>
+        }
+    </table>
 
 </div>
