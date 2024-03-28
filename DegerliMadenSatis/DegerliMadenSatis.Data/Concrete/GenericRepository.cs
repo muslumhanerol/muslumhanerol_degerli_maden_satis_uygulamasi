@@ -18,7 +18,8 @@ namespace DegerliMadenSatis.Data.Concrete
         }
         public void Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Add(entity);
+            _dbContext.SaveChanges(); //_dbContext deki tüm değişiklikleri kaydet.
         }
 
         public List<TEntity> GetAll()

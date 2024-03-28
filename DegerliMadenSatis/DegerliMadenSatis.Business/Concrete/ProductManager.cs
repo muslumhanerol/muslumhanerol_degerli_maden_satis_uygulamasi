@@ -19,9 +19,21 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             _productRepository = productRepository;
         }
 
-        public void Create(ProductViewModel model)
+        public void Create(ProductViewModel model) 
         {
-            throw new NotImplementedException();
+            var product = new Product //Veri tabanında Id otomatik oluştuğu için Id yi almadık.
+            {
+                Name = model.Name,
+                Price = model.Price,
+                Properties = model.Properties,
+                Url = model.Url,
+                ImageUrl = model.ImageUrl,
+                CreatedDdate = DateTime.Now,
+                ModifiedDate = DateTime.Now,
+                IsActive = true,
+                IsHome = model.IsHome
+            };
+            _productRepository.Create(product); //_productRepository deki Create metoduna yollayabiliriz.
         }
 
         public List<ProductViewModel> GetAll(bool? isHome = null, bool? isActive = null, bool? isDelete = null) //HomeControllerdan isHome true geldi.

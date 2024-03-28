@@ -19,5 +19,10 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
             var product = _productManager.GetAll();
             return View(product);
         }
+        
+        public IActionResult Create() //Ekrana yeni ürün eklenecek formu açacak. ProductManager dan gelen Create.
+        {
+            return View();
+        }
     }
 }
