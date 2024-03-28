@@ -1,15 +1,10 @@
 ﻿@model List<ProductViewModel>
 
-@section Styles{ @* Site içi Sıralama, arama yapabilmek için datatables js kullanıldı alttaki iki section bunun için gerekli ilk adımları _Layout ta.*@
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+@section Styles
+    @await Html.PartialAsync("_DataTablesCssPartial") @*Okunabilirliği artırmak için partial yaptık, ilgili kodlar _DataTablesPartial larda.*@
 }
 @section Scripts{
-    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
-    <script>
-        $(document).ready( function () {
-          $('#entityTable').DataTable();
-        });
-    </script>
+    @await Html.PartialAsync("_DataTablesJsPartial") 
 }
 
 <div class="container">
