@@ -35,10 +35,10 @@ namespace DegerliMadenSatis.Data.Concrete
                            //Mvc datadan bunu çağıramıyor Business den çağırıyor.
         }
 
-        public void HardDelete(TEntity entity)
+        public void HardDelete(TEntity entity) //1.Adım burası. 2.Adım Business > Concrete > HardDelete
         {
             _dbContext.Set<TEntity>().Remove(entity);
-            _dbContext.SaveChanges(); //Context üzerinde yapılan değişiklik veri tabanın yansıtma.
+            _dbContext.SaveChanges();
         }
 
         public void SoftDelete(TEntity entity)

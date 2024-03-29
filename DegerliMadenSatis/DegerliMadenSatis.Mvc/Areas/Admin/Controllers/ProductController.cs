@@ -44,5 +44,20 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
             _productManager.Update(editedProduct);
             return RedirectToAction("index");
         }
+
+        
+        
+        [HttpGet]
+        public IActionResult Delete(int id) //Buraya gelen id yi kullanarak
+        {
+            ProductViewModel deletedProduct = _productManager.GetById(id); //İlgili ürünü bulduk getirdik
+            return View(deletedProduct); //O ürünü de view e yolluyoruz.
+        }
+
+
+
+
+
+        
     }
 }

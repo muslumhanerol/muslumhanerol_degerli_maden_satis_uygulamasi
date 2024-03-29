@@ -75,9 +75,10 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
 
         }
 
-        public void HardDelete(int id)
+        public void HardDelete(int id) //2.Adım 3.Adım Mvc>Admin>HomeController
         {
-            throw new NotImplementedException();
+            Product deletedProduct = _productRepository.GetById(id);
+            _productRepository.HardDelete(deletedProduct);
         }
 
         public void SoftDelete(int id)
