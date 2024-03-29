@@ -1,4 +1,5 @@
-﻿@model ProductViewModel
+﻿@*4.Adım burası. 5. Adım ProductController>HardDelete*@
+@model ProductViewModel 
 <div class="card mb-3">
     <div class="row g-0">
         <div class="col-md-4">
@@ -15,7 +16,9 @@
                 </p>
             </div>
             <div class="me-3 float-end">
-                <a asp-area="Admin" asp-controller="Product" asp-action="HardDelete" asp-route-id="@Model.Id" class="float-end btn btn-danger">Sil</a>
+                <a asp-area="Admin" asp-controller="Product" asp-action="SoftDelete" asp-route-id="@Model.Id" class="float-end btn btn-warning">Çöpe Gönder</a>
+
+                <a asp-area="Admin" asp-controller="Product" asp-action="HardDelete" asp-route-id="@Model.Id" class="float-end btn btn-danger">Kalıtı Olarak Sil</a>
             </div>
         </div>         
     </div>

@@ -22,6 +22,15 @@ namespace DegerliMadenSatis.Data.Concrete
             } 
         }
 
+        public List<Product> GetDeletedProducts(bool? isDeleted) //isDeleted true gelirse silinmişleri göster, false olursa silinmemişleri göster.
+        {
+            var products = AppContext
+                .Products
+                .Where(p=>p.IsDelete == isDeleted)
+                .ToList();
+                return products;
+        }
+
         public List<Product> GetHomePageProducts(bool? IsHome) //3.adım Buraya true geldiği için product ların isHome true olanlar gösterildi.
         {
             var products = AppContext //Linq sorgu tekniği.

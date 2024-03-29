@@ -41,9 +41,9 @@ namespace DegerliMadenSatis.Data.Concrete
             _dbContext.SaveChanges();
         }
 
-        public void SoftDelete(TEntity entity)
+        public void SoftDelete(TEntity entity) //SoftDelete İçin 3.Adım Buraı.
         {
-            throw new NotImplementedException();
+            Update(entity); //Alttaki Update metodunu direkt çağırdık, istersek içindekini kopyalayıp yapıştıradabilirdik.
         }
 
         public void Update(TEntity entity)

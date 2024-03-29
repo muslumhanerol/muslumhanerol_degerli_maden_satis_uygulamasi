@@ -18,7 +18,7 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
 
         public IActionResult Index() //Ürünleri çekmek istiyoruz. Business katmanın erişmem lazım, Manager daki GetAll.
         {
-            var product = _productManager.GetAll();
+            var product = _productManager.GetAll(null,null,false); //isDeleted i false olanları getir dedik.
             return View(product);
         }
         
@@ -46,15 +46,21 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
         }  
         
         [HttpGet]
-        public IActionResult Delete(int id) //Buraya gelen id yi kullanarak
+        public IActionResult Delete(int id) //Buraya gelen id yi kullanarak //3.Adım burası. 4.Adım>View>add view>Delete
         {
             ProductViewModel deletedProduct = _productManager.GetById(id); //İlgili ürünü bulduk getirdik
             return View(deletedProduct); //O ürünü de view e yolluyoruz.
         }
         
-        public IActionResult HardDelete (int id)
+        public IActionResult HardDelete (int id) //5.Adım
         {
             _productManager.HardDelete(id);
+            return RedirectToAction("index");
+        }
+
+        public IActionResult SoftDelete(int id) //SoftDelete için 1.Adım, bu metot için buradan başladım. 2.Adım Business>Concrete>SoftDelete içini doldur.
+        {
+            _productManager.SoftDelete(id);
             return RedirectToAction("index");
         }
     }

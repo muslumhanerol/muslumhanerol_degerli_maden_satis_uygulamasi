@@ -41,7 +41,15 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             List<Product> products;
             if(isHome == null) 
             { 
-                products = _productRepository.GetAll();
+                if(isDelete== null)
+                {
+                    products = _productRepository.GetAll();
+                }
+                else
+                {
+                    products = _productRepository.GetDeletedProducts(isDelete);
+                }
+                
             }else 
             {
                 products= _productRepository.GetHomePageProducts(isHome); //2.adım GetHomePageProducts a true gidiyor.(ProductRepository ye git.)
@@ -81,9 +89,11 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
             _productRepository.HardDelete(deletedProduct);
         }
 
-        public void SoftDelete(int id)
+        public void SoftDelete(int id) //SoftDdelete için 2.Adım. 3.Adım Data>Concrete>GenericRepository
         {
-            throw new NotImplementedException();
+            Product deletedProduct = _productRepository.GetById(id);
+            deletedProduct.IsDelete = !deletedProduct.IsDelete; //İçinde true yazıyorsa false yaz, false yazıyorsa true yaz.
+            _productRepository.SoftDelete(deletedProduct); //Buradaki deletedProduct isDeleted i değiştirilmiş product.
         }
 
         public void Update(ProductViewModel model)
