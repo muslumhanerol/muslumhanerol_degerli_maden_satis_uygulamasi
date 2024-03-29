@@ -62,7 +62,8 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                     Price=p.Price,
                     Url=p.Url,
                     ImageUrl=p.ImageUrl,
-                    Properties=p.Properties
+                    Properties=p.Properties,
+                    IsHome=p.IsHome
                 }).ToList();
             return productViewModels; //Döngü bittiğinde içinde productViewModel tipinde değer taşıyan produckViewModels listesi olacak.
         }
@@ -77,7 +78,8 @@ namespace DegerliMadenSatis.Business.Concrete //bu bölümde IProductService den
                 Price = product.Price,
                 Url = product.Url,
                 ImageUrl = product.ImageUrl,
-                Properties = product.Properties
+                Properties = product.Properties,
+                IsHome = product.IsHome                
             };
             return productViewModel; //Bunu Mvc deki Controller Action da çağırabiliriz.
 
