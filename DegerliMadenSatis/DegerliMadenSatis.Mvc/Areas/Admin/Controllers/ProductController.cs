@@ -51,11 +51,11 @@ namespace DegerliMadenSatis.Mvc.Areas.Admin.Controllers
             ProductViewModel deletedProduct = _productManager.GetById(id); //İlgili ürünü bulduk getirdik
             return View(deletedProduct); //O ürünü de view e yolluyoruz.
         }
-        public IActionResult HardDelete(int id)
+        
+        public IActionResult HardDelete (int id)
         {
             _productManager.HardDelete(id);
             return RedirectToAction("index");
-
         }
     }
 }
