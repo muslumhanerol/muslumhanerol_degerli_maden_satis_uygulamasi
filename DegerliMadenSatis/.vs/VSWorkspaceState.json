@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DegerliMadenSatis.Core",
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Areas",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
