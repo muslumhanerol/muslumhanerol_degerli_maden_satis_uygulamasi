@@ -90,3 +90,11 @@ C:\Users\Lenovo\Desktop\X\YeniMaden\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj
 C:\Users\Lenovo\Desktop\X\YeniMaden\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\X\YeniMaden\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.RazorAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\X\YeniMaden\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.RazorAssemblyInfo.cs
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.csproj.AssemblyReference.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.AssemblyInfoInputs.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.AssemblyInfo.cs
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.csproj.CoreCompileInputs.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.RazorAssemblyInfo.cache
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.RazorAssemblyInfo.cs

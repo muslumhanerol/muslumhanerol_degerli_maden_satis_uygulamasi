@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "snb1DV+4yIJfpuMo1aRU0xm4GLQJt/rI3+livJ8cFK+v1HCw0+Mlkn7t8PeKRo/hAbcL02JuvBCK1tBUVOG4RA==",
+  "dgSpecHash": "8BeqYXRWLv7TNF2NMElwLyPKpL0OCooulVE4ovpdL7AaEkDm3zasS9qJRR7m5/LBlpTHYJOrTgLHPRGZx2Gu5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
+  "projectFilePath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.17\\microsoft.aspnetcore.cryptography.internal.7.0.17.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.17\\microsoft.aspnetcore.cryptography.keyderivation.7.0.17.nupkg.sha512",

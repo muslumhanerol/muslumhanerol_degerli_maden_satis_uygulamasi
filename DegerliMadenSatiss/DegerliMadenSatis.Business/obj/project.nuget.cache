@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "husCeLbv7sMhOGK/c14ErTC+XpbYF7hEqFdOW4PlSvGWPLs3O/xMJOyRkLR3RAwoMPk0gTZ0DFkQqRWpobEuYQ==",
+  "dgSpecHash": "pcLS9ZBLxsTC/uPNnoRpCJwNXaJfhQKPgRM+v6Tc4Fn4fp9OYpnoV6q7uBntB/D90puz3Y6W79fIseHffRF0qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
+  "projectFilePath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

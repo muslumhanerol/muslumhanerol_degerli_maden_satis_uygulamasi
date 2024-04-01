@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t++z3yxoBYMeZMUh7EHKM9WY6xHR3057WQ8GQUFTc7BVyq6ZwFYEPV1tzuSjDDIyHz0tPM0yX6lmTXkcOvngEA==",
+  "dgSpecHash": "S/YPdtuxA6i059PKRl2u9ImeItO7RMlyUGMqEvZ5caU7eHBMi7hR3dmH9WUfOFHfbg6sG1B2v7QyjknbiJGwmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
+  "projectFilePath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.17\\microsoft.aspnetcore.cryptography.internal.7.0.17.nupkg.sha512",

@@ -25,8 +25,6 @@ namespace DegerliMadenSatis.Data.Concrete.Contexts
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> ShoppingCartItem { get; set; }
 
-
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {            
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly); 

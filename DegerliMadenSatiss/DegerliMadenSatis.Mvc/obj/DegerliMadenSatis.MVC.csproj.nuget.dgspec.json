@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj": {}
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj": {
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
+        "projectUniqueName": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
         "projectName": "DegerliMadenSatis.Business",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
+        "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\obj\\",
+        "outputPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj": {
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
+        "projectUniqueName": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
         "projectName": "DegerliMadenSatis.Data",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
+        "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\DegerliMadenSatis.Data.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\obj\\",
+        "outputPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -104,11 +104,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj": {
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
+        "projectUniqueName": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
         "projectName": "DegerliMadenSatis.Entity",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
+        "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\DegerliMadenSatis.Entity.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\obj\\",
+        "outputPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -182,8 +182,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
               }
             }
           }
@@ -223,14 +223,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj": {
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
+        "projectUniqueName": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
         "projectName": "DegerliMadenSatis.MVC",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
+        "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\obj\\",
+        "outputPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -251,11 +251,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Business\\DegerliMadenSatis.Business.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
+              "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
+                "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj"
               }
             }
           }
@@ -304,14 +304,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
+    "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj",
+        "projectUniqueName": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj",
         "projectName": "DegerliMadenSatis.Shared",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj",
+        "projectPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\DegerliMadenSatis.Shared.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\obj\\",
+        "outputPath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

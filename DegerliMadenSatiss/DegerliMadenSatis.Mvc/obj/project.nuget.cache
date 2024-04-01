@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hus2RnRJ9cFtprd20Aj/Jfx6JpiE5wIvV1b1GCVgz3noBesno2N2QvfellfYr0BBbhtAB7+SD6wlxHJOHK8sWA==",
+  "dgSpecHash": "9TgjWcoqKzvVZuk5D/2qLGtvf+d+HU5v2MWKQ9hELkDEV+8P7hH8F0zDu5R+rS6/q/O6i4BqmqyayTqA8qMz7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\X\\YeniMaden\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
+  "projectFilePath": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\DegerliMadenSatis.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
