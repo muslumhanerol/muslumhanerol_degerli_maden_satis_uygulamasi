@@ -10,17 +10,13 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="~/ui/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/~/ui/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="~/ui/css/vendor.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- script
-    ================================================== -->
-    <script src="~/ui/js/modernizr.js"></script>
+    
+    @await Html.PartialAsync("_StylesPartial")    
+    
+    @*Sitillerin dışanda yenı bir stil kullanmak istediğimizde Style isimli sectiona girip yazabiliriz.*@
+    @*false=her sayfada olmak zorunde değilsin, istediğim sayfada kullanılacak demek.*@
+    @await RenderSectionAsync("Styles", false) 
+    
   </head>
   <body>
     @*mvc>views>shared>PagePreloaderPartial*@
@@ -30,12 +26,14 @@
     @await Html.PartialAsync("_HeaderPartial")
     
     @*mvc>views>home>index*@
-    @RenderBody()     
+    @RenderBody()
 
+    @*mvc>views>shared>FooterPartial*@
     @await Html.PartialAsync("_FooterPartial")
+    
+    @await Html.PartialAsync("_ScriptsPartial")
 
-    <script src="~/ui/js/jquery-1.11.0.min.js"></script>
-    <script src="~/ui/js/plugins.js"></script>
-    <script src="~/ui/js/script.js"></script>
+    @*JavaScriptlerin dışanda yenı bir javascript kullanmak istediğimizde Scripts isimli sectiona girip yazabiliriz.*@
+    @await RenderSectionAsync("Scripts", false)
   </body>
 </html>
