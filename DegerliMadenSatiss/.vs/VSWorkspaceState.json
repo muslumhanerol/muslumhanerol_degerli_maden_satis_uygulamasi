@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DegerliMadenSatis.Business",
-    "\\DegerliMadenSatis.Business\\Concrete",
     "\\DegerliMadenSatis.Data",
     "\\DegerliMadenSatis.Data\\Extensions",
     "\\DegerliMadenSatis.Mvc",
@@ -10,8 +8,10 @@
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Controllers",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views",
-    "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views\\Product"
+    "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views\\Product",
+    "\\DegerliMadenSatis.Mvc\\Views",
+    "\\DegerliMadenSatis.Mvc\\Views\\Shared"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Data\\Extensions\\ModelBuilderExtensions.cs",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
