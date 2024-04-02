@@ -3,6 +3,8 @@
     "",
     "\\DegerliMadenSatis.Business",
     "\\DegerliMadenSatis.Business\\Concrete",
+    "\\DegerliMadenSatis.Data",
+    "\\DegerliMadenSatis.Data\\Extensions",
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Areas",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
@@ -10,6 +12,6 @@
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views\\Product"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.sln",
+  "SelectedNode": "\\DegerliMadenSatis.Data\\Extensions\\ModelBuilderExtensions.cs",
   "PreviewInSolutionExplorer": false
 }
