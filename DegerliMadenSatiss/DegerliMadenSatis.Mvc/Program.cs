@@ -3,8 +3,10 @@ using DegerliMadenSatis.Business.Concrete;
 using DegerliMadenSatis.Data.Abstract;
 using DegerliMadenSatis.Data.Concrete.Contexts;
 using DegerliMadenSatis.Data.Concrete.Repositories;
+using DegerliMadenSatis.Entity.Concrete.identity;
 using DegerliMadenSatis.Shared.Helpers.Abstract;
 using DegerliMadenSatis.Shared.Helpers.Concrete;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DegerliMadenSatisDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection"))
 );
+
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<DegerliMadenSatisDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

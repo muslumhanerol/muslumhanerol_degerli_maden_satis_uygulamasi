@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using DegerliMadenSatis.Entity.Concrete.identity;
+using DegerliMadenSatis.Data.Extensions;
 
 namespace DegerliMadenSatis.Data.Concrete.Contexts
 {
@@ -26,7 +27,9 @@ namespace DegerliMadenSatis.Data.Concrete.Contexts
         public DbSet<OrderItem> ShoppingCartItem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {            
+        {
+            //Rol işlemlerini istesek buraya yazabilirdik, kalabalık tutmamak adına Data>Extensions>ModelBuilderExtensions içine yazdık.
+            modelBuilder.SeedData();
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly); 
             base.OnModelCreating(modelBuilder);
         }
