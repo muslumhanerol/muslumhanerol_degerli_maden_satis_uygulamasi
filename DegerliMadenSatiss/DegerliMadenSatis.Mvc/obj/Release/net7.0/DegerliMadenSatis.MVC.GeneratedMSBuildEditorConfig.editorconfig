@@ -104,6 +104,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GitHub/muslumhanerol_degerli_maden_satis_uygulamasi/DegerliMadenSatiss/DegerliMadenSatis.Mvc/Views/Shared/Components/MessageNotificationViewComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZU5vdGlmaWNhdGlvblZpZXdDb21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/muslumhanerol_degerli_maden_satis_uygulamasi/DegerliMadenSatiss/DegerliMadenSatis.Mvc/Views/Shared/Components/ShoppingCartNotificationViewComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2hvcHBpbmdDYXJ0Tm90aWZpY2F0aW9uVmlld0NvbXBvbmVudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub/muslumhanerol_degerli_maden_satis_uygulamasi/DegerliMadenSatiss/DegerliMadenSatis.Mvc/Views/Shared/_FooterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

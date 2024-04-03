@@ -53,16 +53,12 @@
                                     <i class="icon icon-user"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="cart.html">
-                                    <i class="icon icon-shopping-cart"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="wishlist.html">
-                                    <i class="icon icon-heart"></i>
-                                </a>
-                            </li>
+                            
+                            @await Component.InvokeAsync("ShoppingCartNotification")
+
+                            @*mvc>views>shared>components>MessageNotificationViewComponent>default içerisinde kodlar.*@
+
+                            @await Component.InvokeAsync("MessageNotification") 
                             <li class="user-items search-item pe-3">
                                 <a href="#" class="search-button">
                                     <i class="icon icon-search"></i>

@@ -6,6 +6,7 @@ namespace DegerliMadenSatis.MVC.ViewComponents
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
+
             return View();
         }
     }
