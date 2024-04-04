@@ -768,7 +768,7 @@
     return false;
   })();
 
-  // https://github.com/twbs/bootstrap/blob/master/~/ui/js/src/modal.js
+  // https://github.com/twbs/bootstrap/blob/master/~/ui/~/ui/js/src/modal.js
 
   const measureScrollbar = () => {
     const scrollDiv = document.createElement('div');

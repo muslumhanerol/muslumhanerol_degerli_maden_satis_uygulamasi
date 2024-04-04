@@ -1,39 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Değerli Maden Satış</title>
+
+    @*Tüm partiallar MVC>Views>Shared alt başlıkları içerisinde*@
     
-    @await Html.PartialAsync("_StylesPartial")    
+    @await Html.PartialAsync("_StylesPartial")
+
     
-    @*Sitillerin dışanda yenı bir stil kullanmak istediğimizde Style isimli sectiona girip yazabiliriz.*@
-    @*false=her sayfada olmak zorunde değilsin, istediğim sayfada kullanılacak demek.*@
+    @* Sitillerin dışanda yenı bir stil kullanmak istediğimizde Style isimli sectiona girip yazabiliriz.
+    false=her sayfada olmak zorunde değilsin, istediğim sayfada kullanılacak demek.*@
     @await RenderSectionAsync("Styles", false) 
-    
-  </head>
-  <body>
-    @*mvc>views>shared>PagePreloaderPartial*@
+
+</head>
+
+<body>
     @await Html.PartialAsync("_PagePreloaderPartial")
 
-    @*mvc>views>shared>HeaderPartial*@    
     @await Html.PartialAsync("_MenuPartial")
-    
+
+    @await Html.PartialAsync("_HeaderSectionPartial")
+
     @*mvc>views>home>index*@
     @RenderBody()
 
-    @*mvc>views>shared>FooterPartial*@
-    @await Html.PartialAsync("_FooterPartial")
-    
+    @await Html.PartialAsync("_FooterSectionPartial")
+
+    @await Html.PartialAsync("_SearchPartial")
+
     @await Html.PartialAsync("_ScriptsPartial")
+
 
     @*JavaScriptlerin dışanda yenı bir javascript kullanmak istediğimizde Scripts isimli sectiona girip yazabiliriz.*@
     @await RenderSectionAsync("Scripts", false)
-  </body>
+</body>
+
 </html>
+
+

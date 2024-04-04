@@ -1138,7 +1138,7 @@ function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
  *
  * The tale of pixel-perfect positioning. It's still not 100% perfect, but as
  * good as it can be within reason.
- * Discussion here: https://github.com/FezVrasta/popper.~/ui/js/pull/715
+ * Discussion here: https://github.com/FezVrasta/popper.~/ui/~/ui/js/pull/715
  *
  * Low DPI screens cause a popper to be blurry if not using full pixels (Safari
  * as well on High DPI screens).
@@ -1963,7 +1963,7 @@ var modifiers = {
    * ```
    * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
    * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-   * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.~/ui/js/issues/373).
+   * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.~/ui/~/ui/js/issues/373).
    *
    * @memberof modifiers
    * @inner

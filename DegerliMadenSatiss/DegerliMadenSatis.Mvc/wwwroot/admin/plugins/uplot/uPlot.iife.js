@@ -2304,7 +2304,7 @@ var uPlot = (function () {
 	}
 
 	// Monotone Cubic Spline interpolation, adapted from the Chartist.js implementation:
-	// https://github.com/gionkunz/chartist-~/ui/js/blob/e7e78201bffe9609915e5e53cfafa29a5d6c49f9/src/scripts/interpolation.js#L240-L369
+	// https://github.com/gionkunz/chartist-~/ui/~/ui/js/blob/e7e78201bffe9609915e5e53cfafa29a5d6c49f9/src/scripts/interpolation.js#L240-L369
 	function _monotoneCubic(xs, ys, moveTo, lineTo, bezierCurveTo, pxRound) {
 		const n = xs.length;
 

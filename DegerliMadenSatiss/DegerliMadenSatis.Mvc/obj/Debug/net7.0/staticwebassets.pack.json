@@ -1,400 +1,436 @@
 {
   "Files": [
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\ajax-loader.gif",
-      "PackagePath": "staticwebassets\\UI\\css\\ajax-loader.gif"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\UI\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\normalize.css",
-      "PackagePath": "staticwebassets\\UI\\css\\normalize.css"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\UI\\css\\elegant-icons.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\vendor.css",
-      "PackagePath": "staticwebassets\\UI\\css\\vendor.css"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\UI\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\Read Me.txt",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\Read Me.txt"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\UI\\css\\jquery-ui.min.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\fonts\\icomoon.eot",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\fonts\\icomoon.eot"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\UI\\css\\magnific-popup.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\fonts\\icomoon.svg",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\fonts\\icomoon.svg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\UI\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\fonts\\icomoon.ttf",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\fonts\\icomoon.ttf"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\UI\\css\\slicknav.min.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\fonts\\icomoon.woff",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\fonts\\icomoon.woff"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\css\\style.css",
+      "PackagePath": "staticwebassets\\UI\\css\\style.css"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\icomoon.css",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\icomoon.css"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\UI\\fonts\\ElegantIcons.eot"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\icomoon\\selection.json",
-      "PackagePath": "staticwebassets\\UI\\icomoon\\selection.json"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\UI\\fonts\\ElegantIcons.svg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\american-express.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\american-express.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\UI\\fonts\\ElegantIcons.ttf"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\app-store.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\app-store.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\UI\\fonts\\ElegantIcons.woff"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\banner-image3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\banner-image3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\UI\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\banner-image4.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\banner-image4.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\UI\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\banner1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\banner1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\UI\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\banner2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\banner2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\UI\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\brand1.png",
-      "PackagePath": "staticwebassets\\UI\\images\\brand1.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\UI\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\brand2.png",
-      "PackagePath": "staticwebassets\\UI\\images\\brand2.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\UI\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\brand3.png",
-      "PackagePath": "staticwebassets\\UI\\images\\brand3.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\banner\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\banner\\banner-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\brand4.png",
-      "PackagePath": "staticwebassets\\UI\\images\\brand4.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\banner\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\banner\\banner-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\brand5.png",
-      "PackagePath": "staticwebassets\\UI\\images\\brand5.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\banner\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\banner\\banner-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\cat-item1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\cat-item1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\cat-item2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\cat-item2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-10.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-10.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\cat-item3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\cat-item3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\collection-item.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\collection-item.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\collection-item1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\collection-item1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\collection-item2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\collection-item2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-5.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\collection-item3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\collection-item3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-6.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\curly-divider.svg",
-      "PackagePath": "staticwebassets\\UI\\images\\curly-divider.svg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-7.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\error-image.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\error-image.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-8.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\google-play.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\google-play.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\blog-9.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\hero-image.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\hero-image.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\details\\blog-details.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\details\\blog-details.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\hero-image1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\hero-image1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\details\\comment-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\details\\comment-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\details\\comment-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\details\\comment-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\details\\comment-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\details\\comment-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\sidebar\\fp-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\sidebar\\fp-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image4.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image4.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\sidebar\\fp-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\sidebar\\fp-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image5.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image5.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\blog\\sidebar\\fp-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\blog\\sidebar\\fp-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\insta-image6.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\insta-image6.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\categories\\category-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\categories\\category-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\leaf.png",
-      "PackagePath": "staticwebassets\\UI\\images\\leaf.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\categories\\category-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\categories\\category-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\main-banner.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\main-banner.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\categories\\category-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\categories\\category-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\main-logo.png",
-      "PackagePath": "staticwebassets\\UI\\images\\main-logo.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\categories\\category-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\categories\\category-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\mastercard.png",
-      "PackagePath": "staticwebassets\\UI\\images\\mastercard.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\categories\\category-5.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\categories\\category-5.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\model.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\model.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\discount.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\discount.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\ns-arrow-right.svg",
-      "PackagePath": "staticwebassets\\UI\\images\\ns-arrow-right.svg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img4.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img4.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-5.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-5.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img5.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img5.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\instagram\\insta-6.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\instagram\\insta-6.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img6.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img6.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\logo.png",
+      "PackagePath": "staticwebassets\\UI\\img\\logo.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img7.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img7.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-1.png",
+      "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-1.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img8.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img8.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-2.png",
+      "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-2.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-img9.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-img9.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-3.png",
+      "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-3.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-small-image1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-small-image1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-4.png",
+      "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-4.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-small-image2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-small-image2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-5.png",
+      "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-5.png"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\post-small-image3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\post-small-image3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\product-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\product-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-image.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-image.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\product-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\product-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-item1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-item1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\product-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\product-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-item2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-item2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\product-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\product-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-item3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-item3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\thumb-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-item4.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-item4.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\thumb-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-large-1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-large-1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\thumb-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-large-2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-large-2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\details\\thumb-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\details\\thumb-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-large-3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-large-3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-thumbnail-1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-thumbnail-1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-thumbnail-2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-thumbnail-2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\product-thumbnail-3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\product-thumbnail-3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\review-image1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\review-image1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-5.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\review-image2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\review-image2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-6.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-7.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-7.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products10.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products10.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\product-8.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products11.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products11.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\related\\rp-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\related\\rp-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products12.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products12.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\related\\rp-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\related\\rp-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products13.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products13.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\related\\rp-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\related\\rp-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products14.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products14.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\product\\related\\rp-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\product\\related\\rp-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products15.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products15.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop-cart\\cp-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop-cart\\cp-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products16.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products16.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop-cart\\cp-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop-cart\\cp-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products17.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products17.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop-cart\\cp-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop-cart\\cp-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products18.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products18.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop-cart\\cp-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop-cart\\cp-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products19.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products19.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products20.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products20.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products3.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products3.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-4.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-4.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products4.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products4.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-5.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-5.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products5.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products5.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-6.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-6.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products6.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products6.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-7.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-7.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products7.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products7.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-8.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-8.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products8.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products8.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\shop\\shop-9.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\shop\\shop-9.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\selling-products9.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\selling-products9.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\bs-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\bs-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\single-image1.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\single-image1.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\bs-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\bs-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\single-image2.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\single-image2.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\bs-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\bs-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\text-pattern.png",
-      "PackagePath": "staticwebassets\\UI\\images\\text-pattern.png"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\f-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\f-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\video-image.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\video-image.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\f-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\f-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\images\\visa-icon.jpg",
-      "PackagePath": "staticwebassets\\UI\\images\\visa-icon.jpg"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\f-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\f-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery-1.11.0.min.js",
-      "PackagePath": "staticwebassets\\UI\\js\\jquery-1.11.0.min.js"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\ht-1.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\ht-1.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\modernizr.js",
-      "PackagePath": "staticwebassets\\UI\\js\\modernizr.js"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\ht-2.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\ht-2.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\plugins.js",
-      "PackagePath": "staticwebassets\\UI\\js\\plugins.js"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\trend\\ht-3.jpg",
+      "PackagePath": "staticwebassets\\UI\\img\\trend\\ht-3.jpg"
     },
     {
-      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\script.js",
-      "PackagePath": "staticwebassets\\UI\\js\\script.js"
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\UI\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\main.js",
+      "PackagePath": "staticwebassets\\UI\\js\\main.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\UI\\js\\owl.carousel.min.js"
     },
     {
       "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\admin\\dist\\css\\adminlte.css",

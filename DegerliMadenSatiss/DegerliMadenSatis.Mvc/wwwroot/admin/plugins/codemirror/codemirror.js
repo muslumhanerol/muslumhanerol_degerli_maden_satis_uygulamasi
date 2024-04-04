@@ -30,7 +30,7 @@
   var presto = /Opera\//.test(userAgent);
   var safari = /Apple Computer/.test(navigator.vendor);
   var mac_geMountainLion = /Mac OS X 1\d\D([8-9]|\d\d)\D/.test(userAgent);
-  var phantom = /Phantom~/ui/js/.test(userAgent);
+  var phantom = /Phantom~/ui/~/ui/js/.test(userAgent);
 
   var ios = safari && (/Mobile\/\w+/.test(userAgent) || navigator.maxTouchPoints > 2);
   var android = /Android/.test(userAgent);

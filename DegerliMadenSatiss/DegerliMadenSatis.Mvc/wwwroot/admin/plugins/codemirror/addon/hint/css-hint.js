@@ -3,9 +3,9 @@
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
-    mod(require("../../lib/codemirror"), require("../../mode/~/ui/css/css"));
+    mod(require("../../lib/codemirror"), require("../../mode/~/ui/~/ui/css/css"));
   else if (typeof define == "function" && define.amd) // AMD
-    define(["../../lib/codemirror", "../../mode/~/ui/css/css"], mod);
+    define(["../../lib/codemirror", "../../mode/~/ui/~/ui/css/css"], mod);
   else // Plain browser env
     mod(CodeMirror);
 })(function(CodeMirror) {

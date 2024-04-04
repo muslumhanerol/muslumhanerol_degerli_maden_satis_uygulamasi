@@ -818,7 +818,7 @@ var SPECIES = wellKnownSymbol('species');
 module.exports = function (METHOD_NAME) {
   // We can't use this feature detection in V8 since it causes
   // deoptimization and serious performance degradation
-  // https://github.com/zloirock/core-~/ui/js/issues/677
+  // https://github.com/zloirock/core-~/ui/~/ui/js/issues/677
   return V8_VERSION >= 51 || !fails(function () {
     var array = [];
     var constructor = array.constructor = {};
@@ -1514,7 +1514,7 @@ module.exports = function (KEY, length, exec, sham) {
     if (KEY === 'split') {
       // We can't use real regex here since it causes deoptimization
       // and serious performance degradation in V8
-      // https://github.com/zloirock/core-~/ui/js/issues/306
+      // https://github.com/zloirock/core-~/ui/~/ui/js/issues/306
       re = {};
       // RegExp[@@split] doesn't call the regex's exec method, but first creates
       // a new one. We need to return the patched regex when creating the new one.
@@ -1713,7 +1713,7 @@ var check = function (it) {
   return it && it.Math == Math && it;
 };
 
-// https://github.com/zloirock/core-~/ui/js/issues/86#issuecomment-115759028
+// https://github.com/zloirock/core-~/ui/~/ui/js/issues/86#issuecomment-115759028
 module.exports =
   /* global globalThis -- safe */
   check(typeof globalThis == 'object' && globalThis) ||
@@ -2338,7 +2338,7 @@ var NullProtoObjectViaIFrame = function () {
   var iframeDocument;
   iframe.style.display = 'none';
   html.appendChild(iframe);
-  // https://github.com/zloirock/core-~/ui/js/issues/475
+  // https://github.com/zloirock/core-~/ui/~/ui/js/issues/475
   iframe.src = String(JS);
   iframeDocument = iframe.contentWindow.document;
   iframeDocument.open();
@@ -3065,7 +3065,7 @@ module.exports = {
 
 "use strict";
 
-// based on https://github.com/bestie~/ui/js/punycode.~/ui/js/blob/master/punycode.js
+// based on https://github.com/bestie~/ui/~/ui/js/punycode.~/ui/~/ui/js/blob/master/punycode.js
 var maxInt = 2147483647; // aka. 0x7FFFFFFF or 2^31-1
 var base = 36;
 var tMin = 1;
@@ -3883,7 +3883,7 @@ var MAXIMUM_ALLOWED_INDEX_EXCEEDED = 'Maximum allowed index exceeded';
 
 // We can't use this feature detection in V8 since it causes
 // deoptimization and serious performance degradation
-// https://github.com/zloirock/core-~/ui/js/issues/679
+// https://github.com/zloirock/core-~/ui/~/ui/js/issues/679
 var IS_CONCAT_SPREADABLE_SUPPORT = V8_VERSION >= 51 || !fails(function () {
   var array = [];
   array[IS_CONCAT_SPREADABLE] = false;
@@ -5636,7 +5636,7 @@ $({ global: true, forced: !USE_NATIVE_URL }, {
 });
 
 // Wrap `fetch` for correct work with polyfilled `URLSearchParams`
-// https://github.com/zloirock/core-~/ui/js/issues/674
+// https://github.com/zloirock/core-~/ui/~/ui/js/issues/674
 if (!USE_NATIVE_URL && typeof $fetch == 'function' && typeof Headers == 'function') {
   $({ global: true, enumerable: true, forced: true }, {
     fetch: function fetch(input /* , init */) {
@@ -6764,95 +6764,95 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ dropzone_dist; }
 });
 
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.concat.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__(2222);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.filter.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__(7327);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.index-of.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__(2772);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.iterator.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.iterator.js
 var es_array_iterator = __webpack_require__(6992);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.map.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.map.js
 var es_array_map = __webpack_require__(1249);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.slice.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.slice.js
 var es_array_slice = __webpack_require__(7042);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array.splice.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array.splice.js
 var es_array_splice = __webpack_require__(561);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.array-buffer.constructor.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.array-buffer.constructor.js
 var es_array_buffer_constructor = __webpack_require__(8264);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.function.name.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.function.name.js
 var es_function_name = __webpack_require__(8309);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.object.get-prototype-of.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.object.get-prototype-of.js
 var es_object_get_prototype_of = __webpack_require__(489);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.object.to-string.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.object.to-string.js
 var es_object_to_string = __webpack_require__(1539);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.regexp.exec.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.regexp.exec.js
 var es_regexp_exec = __webpack_require__(4916);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.regexp.to-string.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.regexp.to-string.js
 var es_regexp_to_string = __webpack_require__(9714);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.string.iterator.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.string.iterator.js
 var es_string_iterator = __webpack_require__(8783);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.string.match.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.string.match.js
 var es_string_match = __webpack_require__(4723);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.string.replace.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.string.replace.js
 var es_string_replace = __webpack_require__(5306);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.string.split.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.string.split.js
 var es_string_split = __webpack_require__(3123);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.string.trim.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.string.trim.js
 var es_string_trim = __webpack_require__(3210);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.uint8-array.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.uint8-array.js
 var es_typed_array_uint8_array = __webpack_require__(2472);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.copy-within.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.copy-within.js
 var es_typed_array_copy_within = __webpack_require__(2990);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.every.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.every.js
 var es_typed_array_every = __webpack_require__(8927);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.fill.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.fill.js
 var es_typed_array_fill = __webpack_require__(3105);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.filter.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.filter.js
 var es_typed_array_filter = __webpack_require__(5035);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.find.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.find.js
 var es_typed_array_find = __webpack_require__(4345);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.find-index.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.find-index.js
 var es_typed_array_find_index = __webpack_require__(7174);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.for-each.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.for-each.js
 var es_typed_array_for_each = __webpack_require__(2846);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.includes.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.includes.js
 var es_typed_array_includes = __webpack_require__(4731);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.index-of.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.index-of.js
 var es_typed_array_index_of = __webpack_require__(7209);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.iterator.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.iterator.js
 var es_typed_array_iterator = __webpack_require__(6319);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.join.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.join.js
 var es_typed_array_join = __webpack_require__(8867);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.last-index-of.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.last-index-of.js
 var es_typed_array_last_index_of = __webpack_require__(7789);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.map.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.map.js
 var es_typed_array_map = __webpack_require__(3739);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.reduce.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.reduce.js
 var es_typed_array_reduce = __webpack_require__(9368);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.reduce-right.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.reduce-right.js
 var es_typed_array_reduce_right = __webpack_require__(4483);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.reverse.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.reverse.js
 var es_typed_array_reverse = __webpack_require__(2056);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.set.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.set.js
 var es_typed_array_set = __webpack_require__(3462);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.slice.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.slice.js
 var es_typed_array_slice = __webpack_require__(678);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.some.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.some.js
 var es_typed_array_some = __webpack_require__(7462);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.sort.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.sort.js
 var es_typed_array_sort = __webpack_require__(3824);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.subarray.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.subarray.js
 var es_typed_array_subarray = __webpack_require__(5021);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.to-locale-string.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.to-locale-string.js
 var es_typed_array_to_locale_string = __webpack_require__(2974);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/es.typed-array.to-string.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/es.typed-array.to-string.js
 var es_typed_array_to_string = __webpack_require__(5016);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/web.dom-collections.for-each.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/web.dom-collections.for-each.js
 var web_dom_collections_for_each = __webpack_require__(4747);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/web.dom-collections.iterator.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/web.dom-collections.iterator.js
 var web_dom_collections_iterator = __webpack_require__(3948);
-// EXTERNAL MODULE: ./node_modules/core-~/ui/js/modules/web.url.js
+// EXTERNAL MODULE: ./node_modules/core-~/ui/~/ui/js/modules/web.url.js
 var web_url = __webpack_require__(285);
 ;// CONCATENATED MODULE: ./src/emitter.js
 

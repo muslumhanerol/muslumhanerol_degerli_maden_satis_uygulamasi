@@ -144,4 +144,4 @@ $(function () {
   })
 })
 
-// lgtm [~/ui/js/unused-local-variable]
+// lgtm [~/ui/~/ui/js/unused-local-variable]

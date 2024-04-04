@@ -2,7 +2,7 @@
 
 namespace DegerliMadenSatis.MVC.ViewComponents
 {
-    public class ShoppingNotificationViewComponent:ViewComponent
+    public class ShoppingCartNotificationViewComponent:ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {

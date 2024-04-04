@@ -1341,7 +1341,7 @@ var CompressedObject = require('./compressedObject');
 var ZipObject = require('./zipObject');
 var generate = require("./generate");
 var nodejsUtils = require("./nodejsUtils");
-var NodejsStreamInputAdapter = require("./node~/ui/js/NodejsStreamInputAdapter");
+var NodejsStreamInputAdapter = require("./node~/ui/~/ui/js/NodejsStreamInputAdapter");
 
 
 /**
@@ -1721,7 +1721,7 @@ var out = {
 };
 module.exports = out;
 
-},{"./compressedObject":2,"./defaults":5,"./generate":9,"./node~/ui/js/NodejsStreamInputAdapter":12,"./nodejsUtils":14,"./stream/GenericWorker":28,"./stream/StreamHelper":29,"./utf8":31,"./utils":32,"./zipObject":35}],16:[function(require,module,exports){
+},{"./compressedObject":2,"./defaults":5,"./generate":9,"./node~/ui/~/ui/js/NodejsStreamInputAdapter":12,"./nodejsUtils":14,"./stream/GenericWorker":28,"./stream/StreamHelper":29,"./utf8":31,"./utils":32,"./zipObject":35}],16:[function(require,module,exports){
 /*
  * This file is used by module bundlers (browserify/webpack/etc) when
  * including a stream implementation. We use "readable-stream" to get a
@@ -2514,7 +2514,7 @@ var external = require("../external");
 var NodejsStreamOutputAdapter = null;
 if (support.nodestream) {
     try {
-        NodejsStreamOutputAdapter = require('../node~/ui/js/NodejsStreamOutputAdapter');
+        NodejsStreamOutputAdapter = require('../node~/ui/~/ui/js/NodejsStreamOutputAdapter');
     } catch(e) {}
 }
 
@@ -2715,7 +2715,7 @@ StreamHelper.prototype = {
 
 module.exports = StreamHelper;
 
-},{"../base64":1,"../external":6,"../node~/ui/js/NodejsStreamOutputAdapter":13,"../support":30,"../utils":32,"./ConvertWorker":24,"./GenericWorker":28}],30:[function(require,module,exports){
+},{"../base64":1,"../external":6,"../node~/ui/~/ui/js/NodejsStreamOutputAdapter":13,"../support":30,"../utils":32,"./ConvertWorker":24,"./GenericWorker":28}],30:[function(require,module,exports){
 'use strict';
 
 exports.base64 = true;

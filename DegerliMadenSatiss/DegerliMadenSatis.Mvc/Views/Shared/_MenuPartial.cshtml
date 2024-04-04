@@ -1,112 +1,19 @@
-﻿@*<div class="search-popup">
-    <div class="search-popup-container">
-        <form role="search" method="get" class="search-form" action="">
-            <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-            <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
-        </form>
-
-        <h5 class="cat-list-title">Browse Categories</h5>
-
-        <ul class="cat-list">
-            <li class="cat-list-item">
-                <a href="shop.html" title="Men Jackets">Men Jackets</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Fashion">Fashion</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Casual Wears">Casual Wears</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Women">Women</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Trending">Trending</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Hoodie">Hoodie</a>
-            </li>
-            <li class="cat-list-item">
-                <a href="shop.html" title="Kids">Kids</a>
-            </li>
-        </ul>
+﻿ <!-- Offcanvas Menu Begin -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__close">+</div>
+    <ul class="offcanvas__widget">
+        <li><span class="icon_search search-switch"></span></li>
+        @await Component.InvokeAsync("MessageNotification")
+        @await Component.InvokeAsync("ShoppingCartNotification")
+    </ul>
+    <div class="offcanvas__logo">
+        <a href="./index.html"><img src="/ui/img/logo.png" alt=""></a>
     </div>
-</div>*@
-<header id="header">
-    <div id="header-wrap">
-        <nav class="secondary-nav border-bottom">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-4 header-contact">
-                        <p>
-                            Yatırım Yapmayı Erteleme, Şimdi Başla <strong>+90 555 44 3333</strong>
-                        </p>
-                    </div>
-                    <div class="col-md-4 shipping-purchase text-center">
-                        <p>Tüm Ürünlerde Ücretsiz ve Sigortalı Kargo Fırsatı</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 user-items">
-                        <ul class="d-flex justify-content-end list-unstyled">
-                            <li>
-                                <a href="login.html">
-                                    <i class="icon icon-user"></i>
-                                </a>
-                            </li>
-                            
-                            @await Component.InvokeAsync("ShoppingCartNotification")
-
-                            @*mvc>views>shared>components>MessageNotificationViewComponent>default içerisinde kodlar.*@
-
-                            @await Component.InvokeAsync("MessageNotification") 
-                            <li class="user-items search-item pe-3">
-                                <a href="#" class="search-button">
-                                    <i class="icon icon-search"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <nav class="primary-nav padding-small">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-2 col-md-2">
-                        <div class="main-logo">
-                            <a href="index.html">
-                                <img src="images/main-logo.png" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-md-10">
-                        <div class="navbar">
-
-                            <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                                <ul class="menu-list">
-
-                                    <li class="menu-item has-sub">
-                                        <a asp-area="" asp-controller="Home" asp-action="Index" class="item-anchor active d-flex align-item-center" data-effect="Home">Ana Sayfa<i class="icon icon-chevron-down"></i></a>                                       
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="item-anchor" data-effect="About">Külçe Altın</a>
-                                    </li>
-
-                                    <li class="menu-item has-sub">
-                                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Shop">Külçe Gümüş<i class="icon icon-chevron-down"></i></a>                                       
-                                    </li>                                   
-
-                                    <li class="menu-item has-sub">
-                                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Blog">Ziynet Altın<i class="icon icon-chevron-down"></i></a>                                       
-                                    </li>
-                                    
-                                    <li><a href="#" class="item-anchor" data-effect="Contact">İletişim</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__auth">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
     </div>
-</header>
+</div>
+<!-- Offcanvas Menu End -->
