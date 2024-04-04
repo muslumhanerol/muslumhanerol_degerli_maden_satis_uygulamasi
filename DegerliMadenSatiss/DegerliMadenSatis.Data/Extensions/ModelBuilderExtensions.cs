@@ -19,19 +19,20 @@ namespace DegerliMadenSatis.Data.Extensions
 
             List<Role> roles = new List<Role>
             {
-                new Role{Name="SuperAdmin", Description="Süper yönetiki haklarını taşıyan rol", NormalizedName="SUPERADMIN"},
-                new Role{Name="Admin", Description="Yönetiki haklarını taşıyan rol", NormalizedName="ADMIN"},
-                new Role { Name = "Customer", Description = "Müşteri haklarını taşıyan rol", NormalizedName = "CUSTOMER" }
+                new Role{Name ="SuperAdmin", Description="Süper yönetiki haklarını taşıyan rol", NormalizedName="SUPERADMIN"},
+                new Role{Name ="Admin", Description="Yönetiki haklarını taşıyan rol", NormalizedName="ADMIN"},
+                new Role{Name ="Customer", Description = "Müşteri haklarını taşıyan rol", NormalizedName = "CUSTOMER" }
             };
             modelBuilder.Entity<Role>().HasData(roles); //Entity içerisinden role geç hasdata yı kullanarak listedeki tanımlı rolleri ver.
 
             #endregion
 
             #region Kullanıcı Bilgileri
+
             List<User> users = new List<User>
             {
                 new User //Örnek datamız.
-                {
+                {                    
                     FirstName="Müslüm Han",
                     LastName="Erol",
                     UserName="muslumhanerol",
@@ -45,8 +46,9 @@ namespace DegerliMadenSatis.Data.Extensions
                     PhoneNumber="5554443322",
                     EmailConfirmed=true
                 },
-                 new User 
+                new User
                 {
+                    
                     FirstName="Engin",
                     LastName="Niyazi",
                     UserName="enginniyazi",
@@ -60,8 +62,8 @@ namespace DegerliMadenSatis.Data.Extensions
                     PhoneNumber="5556667788",
                     EmailConfirmed=true
                 },
-                   new User
-                {
+                new User
+                { 
                     FirstName="Kemal",
                     LastName="Durukan",
                     UserName="kemaldurukan",
@@ -75,7 +77,7 @@ namespace DegerliMadenSatis.Data.Extensions
                     PhoneNumber="5556667788",
                     EmailConfirmed=true
                 },
-                     new User
+                new User
                 {
                     FirstName="Ayşen Umay",
                     LastName="Ergül",
@@ -91,6 +93,7 @@ namespace DegerliMadenSatis.Data.Extensions
                     EmailConfirmed=true
                 }
             };
+
             modelBuilder.Entity<User>().HasData(users);
             #endregion
 
@@ -119,7 +122,7 @@ namespace DegerliMadenSatis.Data.Extensions
                 {
                   UserId=users[1].Id,
                   RoleId=roles[1].Id //1. yöntem
-                },                
+                },
                 new IdentityUserRole<string>
                 {
                   UserId=users[2].Id,

@@ -15,6 +15,5 @@ namespace DegerliMadenSatis.Entity.Concrete.identity
         public string City { get; set; }
         public string Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
-
     }
 }

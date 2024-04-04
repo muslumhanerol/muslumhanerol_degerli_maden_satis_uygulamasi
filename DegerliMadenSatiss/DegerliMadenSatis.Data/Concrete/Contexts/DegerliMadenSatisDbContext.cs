@@ -1,13 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using DegerliMadenSatis.Data.Concrete.Configs;
 using DegerliMadenSatis.Entity.Concrete;
+using DegerliMadenSatis.Entity.Concrete.identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using DegerliMadenSatis.Entity.Concrete.identity;
 using DegerliMadenSatis.Data.Extensions;
 
 namespace DegerliMadenSatis.Data.Concrete.Contexts
@@ -28,9 +28,8 @@ namespace DegerliMadenSatis.Data.Concrete.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Rol işlemlerini istesek buraya yazabilirdik, kalabalık tutmamak adına Data>Extensions>ModelBuilderExtensions içine yazdık.
-            modelBuilder.SeedData();
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly); 
+
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly);
             base.OnModelCreating(modelBuilder);
         }
     }
