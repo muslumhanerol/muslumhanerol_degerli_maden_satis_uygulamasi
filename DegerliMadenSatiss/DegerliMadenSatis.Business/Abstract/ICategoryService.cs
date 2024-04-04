@@ -26,7 +26,7 @@ namespace DegerliMadenSatis.Business.Abstract
         #endregion
 
         #region Category
-
+        Task<Response<List<CategoryViewModel>>> GetTopCategories(int n);
         #endregion
     }
 }

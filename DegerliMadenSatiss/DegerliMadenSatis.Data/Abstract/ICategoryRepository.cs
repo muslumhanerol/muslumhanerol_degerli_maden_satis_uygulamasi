@@ -9,6 +9,6 @@ namespace DegerliMadenSatis.Data.Abstract
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {
-
+        Task<List<Category>> GetTopCategories(int n);
     }
 }

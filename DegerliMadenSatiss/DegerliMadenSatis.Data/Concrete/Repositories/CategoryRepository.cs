@@ -21,5 +21,15 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
         {
             get { return _dbContext as DegerliMadenSatisDbContext; }
         }
+
+        public async Task<List<Category>> GetTopCategories(int n)
+        {
+            List<Category> categories = await DegerliMadenSatisDbContext //Conttex e idiyor
+                .Categories //Kateforilere ulaşıyor
+                .Where(c=>c.IsActive && !c.IsDeleted) //Aktif ve silinmemiş olanları getir.
+                .Take(n) //Ulaştıklarından 5 tanesini alıyor
+                .ToListAsync(); //Onları listeye dönüştürüyor.
+            return categories;
+        }
     }
 }
