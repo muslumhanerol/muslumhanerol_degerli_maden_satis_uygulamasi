@@ -14,7 +14,7 @@ namespace DegerliMadenSatis.MVC.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync() 
         {
-
+            var categories = await _categoryManager.GetTopCategories(5);
             return View();
         }
     }
