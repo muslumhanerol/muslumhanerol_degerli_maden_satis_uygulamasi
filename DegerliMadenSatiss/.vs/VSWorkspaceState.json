@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DegerliMadenSatis.Data",
-    "\\DegerliMadenSatis.Data\\Extensions",
+    "\\DegerliMadenSatis.Business",
+    "\\DegerliMadenSatis.Business\\Concrete",
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Areas",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
-    "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Controllers",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views\\Product",
     "\\DegerliMadenSatis.Mvc\\Views",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Shared\\_MenuPartial.cshtml",
+  "SelectedNode": "\\DegerliMadenSatis.Business\\Concrete\\CategoryManager.cs",
   "PreviewInSolutionExplorer": false
 }
