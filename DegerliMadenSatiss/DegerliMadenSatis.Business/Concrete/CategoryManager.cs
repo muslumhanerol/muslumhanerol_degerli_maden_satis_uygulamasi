@@ -141,7 +141,7 @@ namespace DegerliMadenSatis.Business.Concrete
 
         public async Task<Response<List<CategoryViewModel>>> GetTopCategories(int n)
         {
-            var categoryList = await _repository.GetTopCategories(n);
+            var categoryList = await _repository.GetTopCategories(n); 
             if (categoryList.Count == 0)
             {
                 return Response<List<CategoryViewModel>>.Fail($"Hiç kategori bulunamadı");

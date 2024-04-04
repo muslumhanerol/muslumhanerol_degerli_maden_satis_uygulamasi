@@ -16,4 +16,5 @@ namespace DegerliMadenSatis.Shared.ViewModels
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
     }
+    
 }
