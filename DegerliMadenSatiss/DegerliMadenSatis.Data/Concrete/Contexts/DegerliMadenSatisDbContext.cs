@@ -28,7 +28,7 @@ namespace DegerliMadenSatis.Data.Concrete.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.SeedData();
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly);
             base.OnModelCreating(modelBuilder);
         }
