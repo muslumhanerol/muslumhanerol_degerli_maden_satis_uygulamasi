@@ -7,13 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Shared.ViewModels.IdentityModels
-{
+{//Login işlemi 1. adım burası. İkinci adım MVC>Controller>AccountController
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage ="Kullanıcı adı alanı boş bırakılamaz.")]
         [DisplayName("Kullanıcı Adı")]
         public string UserName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Şifre alanı boş bırakılamaz.")]
         [DisplayName("Parola")]
         [DataType(DataType.Password)]
         public string Password { get; set; }

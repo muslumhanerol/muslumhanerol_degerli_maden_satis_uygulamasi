@@ -8,12 +8,15 @@ namespace DegerliMadenSatis.MVC.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager; //İçinde login, logout gibi işlemleri yaptıran metotları barındıracak.
 
-        public AccountController(UserManager<User> userManager)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
+        [HttpGet]
         public IActionResult Register()
         {
             return View();
@@ -37,6 +40,25 @@ namespace DegerliMadenSatis.MVC.Controllers
                     /*return RedirectToAction("Index","Home");*/ //HomeControllerın indexine git.
                     return Redirect("~/"); //İkinci yöntem
                 }
+            }
+            return View();
+        }
+        
+
+
+        [HttpGet] //Login işlemi 2. adım burası. 3.adım sağ IActionResult Login için view oluştur ismi Login olsun.
+        public IActionResult Login()  //MVC>Views>Account içerisine oluşacak.
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Login(LoginViewModel loginViewModel) //5.Adım burası. Login işlemini yaptıracak komutlar
+        {
+            if (!ModelState.IsValid) //Kurallara uygun giriş yapılmamışsa.
+            {
+                return View(loginViewModel); //tekrar onu gönder.
+
             }
             return View();
         }
