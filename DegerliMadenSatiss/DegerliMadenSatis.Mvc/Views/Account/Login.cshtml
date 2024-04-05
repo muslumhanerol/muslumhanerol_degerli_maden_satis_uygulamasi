@@ -5,6 +5,7 @@
     <hr />
     <form asp-area="" asp-controller="Account" asp-action="Login" method="post">
         <div class="row">
+            <div asp-validation-summary="All" class="col-md-12 text-danger"></div> @*Formda boş bırakılan yerler için uyarı verilecek.*@
             <div class="col-md-12">
                 <div class="form-group mb-2">
                     <label asp-for="UserName"></label>

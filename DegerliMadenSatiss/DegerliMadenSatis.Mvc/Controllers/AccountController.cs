@@ -41,7 +41,7 @@ namespace DegerliMadenSatis.MVC.Controllers
                     return Redirect("~/"); //İkinci yöntem
                 }
             }
-            return View();
+            return View(registerViewModel);
         }
         
 
@@ -53,13 +53,31 @@ namespace DegerliMadenSatis.MVC.Controllers
         }
         
         [HttpPost]
-        public IActionResult Login(LoginViewModel loginViewModel) //5.Adım burası. Login işlemini yaptıracak komutlar
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel) //5.Adım burası. Login işlemini yaptıracak komutlar
         {
             if (!ModelState.IsValid) //Kurallara uygun giriş yapılmamışsa.
             {
-                return View(loginViewModel); //tekrar onu gönder.
+                return View(loginViewModel); //tekrar aynı viewi döndür.
             }
-            return View();
+            User user = await _userManager.FindByNameAsync(loginViewModel.UserName); //Giriş yapan kullanıcı var mı kontrolu yapar.
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Kulanıcı Bulunamadı");
+                return View(loginViewModel);
+            }
+            var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Şifre Hatalı");
+                return View(loginViewModel);
+            }
+            return RedirectToAction("Index", "Home");          
+        }
+
+        public async Task<IActionResult> Logout() //Çıkış yap metodu.
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect("~/");
         }
     }
 }

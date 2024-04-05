@@ -29,8 +29,17 @@
             <div class="col-lg-3">
                 <div class="header__right">
                     <div class="header__right__auth">
-                        <a asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
-                        <a asp-area="" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
+                        @if(!User.Identity.IsAuthenticated) @*LoginViewModel olmamışsa aşağıdakileri göster.*@
+                        {
+                            <a asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
+                            <a asp-area="" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
+                        }
+                        else
+                        {
+                            <a asp-area="" asp-controller="Account" asp-action="Profile">Hesabım</a>
+                            <a asp-area="" asp-controller="Account" asp-action="Logout">Çıkış Yap</a>
+                        }
+
                     </div>
                     <ul class="header__right__widget">
                         <li><span class="icon_search search-switch"></span></li>
