@@ -21,6 +21,22 @@ builder.Services.AddIdentity<User, Role>()
     .AddEntityFrameworkStores<DegerliMadenSatisDbContext>()
     .AddDefaultTokenProviders();
 
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    #region Parola Ayarlarý
+    options.Password.RequiredLength = 8; //Parola6 karakter olmalý.
+    options.Password.RequireDigit = true; //Parola  sayýsal deðer içermeli.
+    options.Password.RequireNonAlphanumeric = true; //Parola özel karakter içermeli.
+    options.Password.RequireUppercase = true; //Parola büyük harf içermeli.
+    options.Password.RequireLowercase = true; //Parola küçük harf içermeli.
+                                              //options.Password.RequiredUniqueChars Tekrar etmemesi istenen karakterler.
+    #endregion
+    #region Hesap Kilitleme Ayarlarý
+
+    #endregion
+});
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
