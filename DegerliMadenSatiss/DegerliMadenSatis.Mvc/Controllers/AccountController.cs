@@ -58,7 +58,6 @@ namespace DegerliMadenSatis.MVC.Controllers
             if (!ModelState.IsValid) //Kurallara uygun giriş yapılmamışsa.
             {
                 return View(loginViewModel); //tekrar onu gönder.
-
             }
             return View();
         }

@@ -13,6 +13,8 @@ namespace DegerliMadenSatis.Shared.ViewModels.IdentityModels
         [Required(ErrorMessage ="Kullanıcı adı alanı boş bırakılamaz.")]
         [DisplayName("Kullanıcı Adı")]
         public string UserName { get; set; }
+        
+        
         [Required(ErrorMessage = "Şifre alanı boş bırakılamaz.")]
         [DisplayName("Parola")]
         [DataType(DataType.Password)]
