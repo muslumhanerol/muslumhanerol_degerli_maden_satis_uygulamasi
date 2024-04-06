@@ -43,7 +43,17 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
-
+    options.LoginPath = "/Account/Login"; //Giriþ yapýlacaðýnda gideceði adres.
+    options.LogoutPath = "/"; //Çýkýþ yapýlacaðýnda gideceði adres.
+    options.AccessDeniedPath = "Account/AccessDenied"; //Kimliklendirme herkes keryere eriþemez.
+    options.ExpireTimeSpan = TimeSpan.FromSeconds(45); // kullanýcý iþlem yapmazsa 45 sn içinde logout olacak.
+    options.SlidingExpiration = true; //False olurse istek yapýlsa dahi logout olunur.
+    options.Cookie = new CookieBuilder
+    {
+        Name = "DegerliMadenSatis.Security.Cookie",
+        HttpOnly = true, //Site güvenlik önlemi.
+        SameSite = SameSiteMode.Strict //Site güvenlik önlemi.
+    };
 }); 
     
 
