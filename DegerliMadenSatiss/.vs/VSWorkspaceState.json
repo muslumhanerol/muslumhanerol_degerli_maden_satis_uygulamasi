@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DegerliMadenSatis.Data",
+    "\\DegerliMadenSatis.Data\\Concrete",
+    "\\DegerliMadenSatis.Data\\Concrete\\Contexts",
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Areas",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
@@ -11,6 +14,6 @@
     "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components\\Categories"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+  "SelectedNode": "\\DegerliMadenSatis.Data\\Concrete\\Contexts\\DegerliMadenSatisDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

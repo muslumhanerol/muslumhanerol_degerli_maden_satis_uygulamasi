@@ -33,9 +33,19 @@ builder.Services.Configure<IdentityOptions>(options =>
                                               //options.Password.RequiredUniqueChars Tekrar etmemesi istenen karakterler.
     #endregion
     #region Hesap Kilitleme Ayarlarý
-
+    options.Lockout.MaxFailedAccessAttempts = 3; //Hattalý giriþ deneme sýnýrý max 5 dedik.
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(15); //Kilitli hesabýn yeni giriþ yapmak için bekleme süresi.
+    /*options.Lockout.AllowedForNewUsers = true;*/ //Ayný kullanýcý adýyla yeni hesap oluþturabilme.
     #endregion
-});
+    options.User.RequireUniqueEmail = true; //Her email sadece bir kez kayýt olabilir.
+    options.SignIn.RequireConfirmedEmail = false; //Sisteme kayýt olabilecek ancak giriþ yapamaz.
+}); //User hesap ayarlarý.
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+
+}); 
+    
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
