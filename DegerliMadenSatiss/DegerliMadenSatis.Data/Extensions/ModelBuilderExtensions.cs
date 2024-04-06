@@ -121,18 +121,18 @@ namespace DegerliMadenSatis.Data.Extensions
                 new IdentityUserRole<string>
                 {
                   UserId=users[1].Id,
-                  RoleId=roles[1].Id //1. yöntem
+                  RoleId=roles[1].Id 
                 },
                 new IdentityUserRole<string>
                 {
                   UserId=users[2].Id,
-                  RoleId=roles[1].Id //1. yöntem
+                  RoleId=roles[1].Id 
                 }
                  ,
                 new IdentityUserRole<string>
                 {
                   UserId=users[3].Id,
-                  RoleId=roles[2].Id //1. yöntem
+                  RoleId=roles[2].Id 
                 }
             };
             modelBuilder.Entity<IdentityUser<string>>().HasData(userRoles);

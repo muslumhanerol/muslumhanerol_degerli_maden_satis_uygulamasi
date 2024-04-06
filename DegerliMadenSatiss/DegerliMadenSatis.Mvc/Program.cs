@@ -25,7 +25,7 @@ builder.Services.AddIdentity<User, Role>()
 builder.Services.Configure<IdentityOptions>(options =>
 {
     #region Parola Ayarlarý
-    options.Password.RequiredLength = 8; //Parola6 karakter olmalý.
+    options.Password.RequiredLength = 6; //Parola 6 karakter olmalý.
     options.Password.RequireDigit = true; //Parola  sayýsal deðer içermeli.
     options.Password.RequireNonAlphanumeric = true; //Parola özel karakter içermeli.
     options.Password.RequireUppercase = true; //Parola büyük harf içermeli.
@@ -45,7 +45,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login"; //Giriþ yapýlacaðýnda gideceði adres.
     options.LogoutPath = "/"; //Çýkýþ yapýlacaðýnda gideceði adres.
-    options.AccessDeniedPath = "Account/AccessDenied"; //Kimliklendirme herkes keryere eriþemez.
+    options.AccessDeniedPath = "/Account/AccessDenied"; //Kimliklendirme herkes keryere eriþemez.
     options.ExpireTimeSpan = TimeSpan.FromSeconds(45); // kullanýcý iþlem yapmazsa 45 sn içinde logout olacak.
     options.SlidingExpiration = true; //False olurse istek yapýlsa dahi logout olunur.
     options.Cookie = new CookieBuilder
@@ -76,6 +76,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
