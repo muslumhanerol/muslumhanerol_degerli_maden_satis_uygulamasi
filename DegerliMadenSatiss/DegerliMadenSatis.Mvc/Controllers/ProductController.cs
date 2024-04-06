@@ -1,4 +1,5 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DegerliMadenSatis.MVC.Controllers
@@ -22,6 +23,13 @@ namespace DegerliMadenSatis.MVC.Controllers
             var category = id != null ? await _categoryManager.GetByIdAsync(Convert.ToInt32(id)) : null;
             ViewBag.CategoryName = category.Data != null ? category.Data.Name : null; 
             return View(products.Data);
+        }
+
+        /*[Authorize]*///Sadece login olanlar detay sayfasını görecek.
+        public async Task<IActionResult> Details(int id)
+        {
+            var product = await _productManager.GetByIdAsync(id);
+            return View(product.Data);
         }
     }
 }

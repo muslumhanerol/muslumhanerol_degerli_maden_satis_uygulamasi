@@ -17,16 +17,16 @@
             {
                 <div class="col-lg-3 col-md-4 col-sm-6 mix women">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="/ui/img/product/product-1.jpg">
-                        <div class="label new">New</div>
+                    <div class="product__item__pic set-bg" data-setbg="/images/products/@p.ImageUrl">
+                        <a asp-area="" asp-controller="Product" asp-action="Details" asp-route-id="@p.Id" class="label new">Detay</a>
                         <ul class="product__hover">
-                            <li><a href="/ui/img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/images/products/@p.ImageUrl" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Buttons tweed blazer</a></h6>
+                        <h6><a href="#">@p.Name</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -34,7 +34,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">@p.Price TL</div>
                     </div>
                 </div>
             </div>                            

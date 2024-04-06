@@ -46,9 +46,13 @@ namespace DegerliMadenSatis.MVC.Controllers
         
 
 
-        [HttpGet] //Login işlemi 2. adım burası. 3.adım sağ IActionResult Login için view oluştur ismi Login olsun.
-        public IActionResult Login()  //MVC>Views>Account içerisine oluşacak.
+        [HttpGet] //Login işlemi 2. adım burası. 3.adım sağ IActionResult Login için view oluştur ismi Login olsun.//MVC>Views>Account içerisine oluşacak.
+        public IActionResult Login(string returnUrl)  
         {
+            if (returnUrl != null)
+            {
+                TempData["ReturnUrl"] = returnUrl;
+            }
             return View();
         }
         
