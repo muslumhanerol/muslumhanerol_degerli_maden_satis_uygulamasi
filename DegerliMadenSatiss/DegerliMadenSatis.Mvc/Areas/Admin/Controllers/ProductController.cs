@@ -9,9 +9,10 @@ using System.Text;
 using System.Text.Json;
 using static System.Net.Mime.MediaTypeNames;
 using DegerliMadenSatis.Shared.Helpers.Abstract;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
-{
+{   /*[Authorize(Roles ="SuperAdmin")]*/
     [Area("Admin")]
     public class ProductController : Controller
     {
@@ -26,6 +27,7 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
             _imageHelper = imageHelper;
         }
 
+        [AllowAnonymous] //Giriş yapmış herkes buraya ulaşabilecek demek.
         public async Task<IActionResult> Index(bool id = false) //eğer false gelirse silinmemişler gözükecek, true gelirse silinmişler gözükecek.
         {
             Response<List<ProductViewModel>> result = await _productManager.GetAllNonDeletedAsync(id);  
@@ -42,6 +44,7 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
             var result = await _productManager.UpdateIsActiveAsync(id);
             return RedirectToAction("Index");
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Create() //Yeni ürün eklemek için açılan sayfayı barındıran action.
