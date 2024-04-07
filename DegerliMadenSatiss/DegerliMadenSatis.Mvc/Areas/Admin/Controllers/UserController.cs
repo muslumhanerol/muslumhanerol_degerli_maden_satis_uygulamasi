@@ -1,4 +1,5 @@
 ﻿using DegerliMadenSatis.Entity.Concrete.identity;
+using DegerliMadenSatis.Shared.ViewModels.IdentityModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -30,8 +31,24 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> AssignRoles(string ıd) //Rol atama metodu
         {
-            var user = await _userManager.FindByIdAsync(ıd); //Rol ataması yapmak için user ı bulur.
+            var user = await _userManager.FindByIdAsync(ıd); //Rol ataması yapmak için user ı bulur.Admın ve SuperAdmın listesi var
+            
             var userRoles = await _userManager.GetRolesAsync(user); //Var olan user ın var olan rolünü alıyoruz.
+
+            var roles = await _roleManager.Roles.Select(r => new AssignRoleViewModel //Rol listesi yarakma.
+            {
+                RoleId=r.Id,
+                RoleName=r.Name, 
+                IsAssiigned=userRoles.Any(x=>x==r.Name) //SuperAdmin sıradaki rolün adına eşitse IsAssiigned true olacak, değilse false olur.
+
+            }).ToListAsync();
+
+            var userRolesViewModel = new UserRolesViewModel //View in ihtiyacı olan user id ve rol listesi medeli oluşturuldu.
+            {
+                Id = user.Id,
+                Roles = roles
+            };
+            return View(userRolesViewModel);
         }
     }
 }
