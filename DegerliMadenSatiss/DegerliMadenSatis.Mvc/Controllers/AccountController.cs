@@ -75,13 +75,24 @@ namespace DegerliMadenSatis.MVC.Controllers
                 ModelState.AddModelError("", "Şifre Hatalı");
                 return View(loginViewModel);
             }
-            return RedirectToAction("Index", "Home");          
+            
+            var returnUrl = TempData["ReturnUrl"].ToString();            
+            if (!String.IsNullOrEmpty(returnUrl))
+            {
+                return Redirect(returnUrl); //Herhangi bir yere girildiğinde bunu yapmak için login olman gerke derse bu çalışır.
+            }
+            return RedirectToAction("Index", "Home"); //Kendisi giriş yap a tıklayarak login olmuşsa bu çalışacak.          
         }
 
         public async Task<IActionResult> Logout() //Çıkış yap metodu.
         {
             await _signInManager.SignOutAsync();
             return Redirect("~/");
+        }
+
+        public async Task<IActionResult> AccessDenied() //Kullanıcı erişmemesi gereken bir yere tıkladığında ona uyaracak.mvc>views>account>accessdenied
+        {
+            return View();
         }
     }
 }

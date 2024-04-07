@@ -58,55 +58,55 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3369),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6850),
                             Description = "Altın Kategorisi",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3389),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6871),
                             Name = "Fiziki Altın",
                             Url = "fiziki-altin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3395),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6878),
                             Description = "Altın Kategorisi",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3396),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6879),
                             Name = "Dijital Altın",
                             Url = "dijital-altin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3399),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6882),
                             Description = "Ziynet Kategorisi",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3403),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6883),
                             Name = "Ziynet Altın",
                             Url = "ziynet-altin"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3406),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6886),
                             Description = "Gümüş Kategorisi",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3407),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6887),
                             Name = "Fiziki Gümüş",
                             Url = "fiziki-gümüs"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3410),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6890),
                             Description = "Gümüş Kategorisi",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 834, DateTimeKind.Local).AddTicks(3411),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 22, DateTimeKind.Local).AddTicks(6891),
                             Name = "Dijital Gümüş",
                             Url = "dijital-gümüs"
                         });
@@ -239,12 +239,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7386),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1240),
                             ImageUrl = "1.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7406),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1265),
                             Name = "5 Gr Külçe Altın",
                             Price = 13500m,
                             Properties = "24 Ayar 995.0 Saflıkta, 5 Gr Külçe Altın.",
@@ -253,12 +253,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7417),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1281),
                             ImageUrl = "1.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7419),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1282),
                             Name = "10 Gr Külçe Altın",
                             Price = 27000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 10 Gr Külçe Altın.",
@@ -267,12 +267,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7424),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1287),
                             ImageUrl = "2.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7425),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1288),
                             Name = "20 Gr Külçe Altın",
                             Price = 54000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 20 Gr Külçe Altın.",
@@ -281,12 +281,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7429),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1292),
                             ImageUrl = "3.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7430),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1294),
                             Name = "50 Gr Külçe Altın",
                             Price = 135000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 50 Gr Külçe Altın.",
@@ -295,12 +295,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7433),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1299),
                             ImageUrl = "4.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7434),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1300),
                             Name = "100 Gr Külçe Altın",
                             Price = 270000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 100 Gr Külçe Altın.",
@@ -309,12 +309,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7439),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1304),
                             ImageUrl = "5.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7440),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1305),
                             Name = "250 Gr Külçe Altın",
                             Price = 680000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 250 Gr Külçe Altın.",
@@ -323,12 +323,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7444),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1310),
                             ImageUrl = "6.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7445),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1311),
                             Name = "500 Gr Külçe Altın",
                             Price = 1350000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 500 Gr Külçe Altın.",
@@ -337,12 +337,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7448),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1315),
                             ImageUrl = "7.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7449),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1338),
                             Name = "1000 Gr Külçe Altın",
                             Price = 270000m,
                             Properties = "24 Ayar 995.0 Saflıkta, 500 Gr Külçe Altın.",
@@ -351,12 +351,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7452),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1372),
                             ImageUrl = "8.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7453),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1375),
                             Name = "Çeyrek Altın",
                             Price = 4700m,
                             Properties = "22 Ayar 916.0 Saflıkta, 1.75 Gr Çeyrek Altın.",
@@ -365,12 +365,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7457),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1379),
                             ImageUrl = "9.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7458),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1380),
                             Name = "Yarım",
                             Price = 1250m,
                             Properties = "22 Ayar 916.0 Saflıkta, 3.50 Gr Yarım Altın.",
@@ -379,12 +379,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7461),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1384),
                             ImageUrl = "10.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7463),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1386),
                             Name = "Tam Altın",
                             Price = 2100m,
                             Properties = "22 Ayar 916.0 Saflıkta, 7 Gr Tam Altın.",
@@ -393,12 +393,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7467),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1390),
                             ImageUrl = "12.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7468),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1393),
                             Name = "100gr Külçe Gümüş",
                             Price = 3500m,
                             Properties = "999.0 Saflıkta, 100 Gr Külçe Gümüş.",
@@ -407,12 +407,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7472),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1399),
                             ImageUrl = "13.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7473),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1400),
                             Name = "250gr Külçe Gümüş",
                             Price = 8000m,
                             Properties = "999.0 Saflıkta, 250 Gr Külçe Gümüş.",
@@ -421,12 +421,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7477),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1404),
                             ImageUrl = "14.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7478),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1405),
                             Name = "500gr Külçe Gümüş",
                             Price = 16000m,
                             Properties = "999.0 Saflıkta, 500 Gr Külçe Gümüş.",
@@ -435,12 +435,12 @@ namespace DegerliMadenSatis.Data.Migrations
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7482),
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1410),
                             ImageUrl = "15.png",
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2024, 4, 4, 23, 24, 36, 837, DateTimeKind.Local).AddTicks(7483),
+                            ModifiedDate = new DateTime(2024, 4, 7, 17, 7, 36, 26, DateTimeKind.Local).AddTicks(1411),
                             Name = "1000gr Külçe Gümüş",
                             Price = 32000m,
                             Properties = "999.0 Saflıkta, 1000 Gr Külçe Gümüş.",
@@ -615,6 +615,32 @@ namespace DegerliMadenSatis.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ShoppingCarts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 20, DateTimeKind.Local).AddTicks(5516),
+                            UserId = "9aecffd8-a93e-4c40-9a5f-d76bd3987a29"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 20, DateTimeKind.Local).AddTicks(5551),
+                            UserId = "f968a9aa-d010-467a-a096-5f5ccc6f335c"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 20, DateTimeKind.Local).AddTicks(5554),
+                            UserId = "29eee199-1608-4618-a182-886a17a826f2"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedDate = new DateTime(2024, 4, 7, 17, 7, 36, 20, DateTimeKind.Local).AddTicks(5557),
+                            UserId = "e197c489-9720-4b66-845d-8b3e6fac3945"
+                        });
                 });
 
             modelBuilder.Entity("DegerliMadenSatis.Entity.Concrete.ShoppingCartItem", b =>
@@ -671,6 +697,29 @@ namespace DegerliMadenSatis.Data.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "906ecd91-be44-4027-8ac0-c8ef1d1925e0",
+                            Description = "Süper yönetiki haklarını taşıyan rol",
+                            Name = "SuperAdmin",
+                            NormalizedName = "SUPERADMIN"
+                        },
+                        new
+                        {
+                            Id = "6c539cef-1b42-4a39-9324-601ec734a71a",
+                            Description = "Yönetiki haklarını taşıyan rol",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "638ec27a-6707-4b63-8cb8-7f11b259b6fd",
+                            Description = "Müşteri haklarını taşıyan rol",
+                            Name = "Customer",
+                            NormalizedName = "CUSTOMER"
+                        });
                 });
 
             modelBuilder.Entity("DegerliMadenSatis.Entity.Concrete.identity.User", b =>
@@ -753,6 +802,100 @@ namespace DegerliMadenSatis.Data.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "9aecffd8-a93e-4c40-9a5f-d76bd3987a29",
+                            AccessFailedCount = 0,
+                            Address = "Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
+                            City = "Gaziantep",
+                            ConcurrencyStamp = "faa1680b-e849-416b-8c2b-e90bad872cc9",
+                            DateOfBirth = new DateTime(1945, 1, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "mslmhanerol@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Müslüm Han",
+                            Gender = "Erkek",
+                            LastName = "Erol",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "MSLMHANEROL@GMAIL.COM",
+                            NormalizedUserName = "MUSLUMHANEROL",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB9DMssAJVIf+f0eaL/cNPcZorF9JJDlSzABcOV2U6F+OR9k2QdNJf5lR43dU5Jl7A==",
+                            PhoneNumber = "5554443322",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2ca80b44-3b42-4cba-b6fd-d0e1ff76a1a7",
+                            TwoFactorEnabled = false,
+                            UserName = "muslumhanerol"
+                        },
+                        new
+                        {
+                            Id = "f968a9aa-d010-467a-a096-5f5ccc6f335c",
+                            AccessFailedCount = 0,
+                            Address = "Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
+                            City = "Gaziantep",
+                            ConcurrencyStamp = "8a70818b-a6a5-415d-9b86-0cc2f0a51283",
+                            DateOfBirth = new DateTime(1965, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "enginniyazi@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Engin",
+                            Gender = "Erkek",
+                            LastName = "Niyazi",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ENGINNIYAZI@GMAIL.COM",
+                            NormalizedUserName = "ENGINNIYAZI",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOrE7UpX4WZeUKR8E2OPxFkiLEDdW+cjsD5s24FBsPAfK1PKteHGfmrAOCJ6RTyrhw==",
+                            PhoneNumber = "5556667788",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "ab71bf80-4fb0-415e-aeea-8b19327088c2",
+                            TwoFactorEnabled = false,
+                            UserName = "enginniyazi"
+                        },
+                        new
+                        {
+                            Id = "29eee199-1608-4618-a182-886a17a826f2",
+                            AccessFailedCount = 0,
+                            Address = "Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
+                            City = "Gaziantep",
+                            ConcurrencyStamp = "6ae3cf8e-3081-48d5-96d2-3b77bceea1e5",
+                            DateOfBirth = new DateTime(1965, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "kemaldurukan@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Kemal",
+                            Gender = "Erkek",
+                            LastName = "Durukan",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "KEMALDURUKAN@GMAIL.COM",
+                            NormalizedUserName = "KEMALDURUKAN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFxLN8i/D15Fvs4ydblu+n1AHoMEp0wQ79WeByuP6xUae8FgYCfhxz3c7NXw2DENyw==",
+                            PhoneNumber = "5556667788",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "320c317f-347f-4cfc-a098-feb61d0d9d8c",
+                            TwoFactorEnabled = false,
+                            UserName = "kemaldurukan"
+                        },
+                        new
+                        {
+                            Id = "e197c489-9720-4b66-845d-8b3e6fac3945",
+                            AccessFailedCount = 0,
+                            Address = "Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
+                            City = "Gaziantep",
+                            ConcurrencyStamp = "cb4004c6-ff41-4fba-a1fb-161fe1d1eff2",
+                            DateOfBirth = new DateTime(1965, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "aysenumay@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Ayşen Umay",
+                            Gender = "Kadın",
+                            LastName = "Ergül",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "AYSENUMAY@GMAIL.COM",
+                            NormalizedUserName = "AYSENUMAY",
+                            PasswordHash = "AQAAAAIAAYagAAAAELxRbkG/Gw7eFZgvl9VdXrcM8PyoQ3NPLETmTLVKVvmvf7/zRAHaRXDx2CIfeKWQUg==",
+                            PhoneNumber = "5556667788",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "18a99bb6-f376-4e5a-9eda-de698b754f85",
+                            TwoFactorEnabled = false,
+                            UserName = "aysenumay"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -836,6 +979,28 @@ namespace DegerliMadenSatis.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "9aecffd8-a93e-4c40-9a5f-d76bd3987a29",
+                            RoleId = "906ecd91-be44-4027-8ac0-c8ef1d1925e0"
+                        },
+                        new
+                        {
+                            UserId = "f968a9aa-d010-467a-a096-5f5ccc6f335c",
+                            RoleId = "6c539cef-1b42-4a39-9324-601ec734a71a"
+                        },
+                        new
+                        {
+                            UserId = "29eee199-1608-4618-a182-886a17a826f2",
+                            RoleId = "6c539cef-1b42-4a39-9324-601ec734a71a"
+                        },
+                        new
+                        {
+                            UserId = "e197c489-9720-4b66-845d-8b3e6fac3945",
+                            RoleId = "638ec27a-6707-4b63-8cb8-7f11b259b6fd"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

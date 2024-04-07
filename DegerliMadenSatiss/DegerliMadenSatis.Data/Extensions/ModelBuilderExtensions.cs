@@ -135,7 +135,7 @@ namespace DegerliMadenSatis.Data.Extensions
                   RoleId=roles[2].Id 
                 }
             };
-            modelBuilder.Entity<IdentityUser<string>>().HasData(userRoles);
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);
 
             #endregion
 
