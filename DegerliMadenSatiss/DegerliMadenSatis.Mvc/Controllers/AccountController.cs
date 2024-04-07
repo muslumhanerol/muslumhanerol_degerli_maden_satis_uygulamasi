@@ -47,7 +47,7 @@ namespace DegerliMadenSatis.MVC.Controllers
 
 
         [HttpGet] //Login işlemi 2. adım burası. 3.adım sağ IActionResult Login için view oluştur ismi Login olsun.//MVC>Views>Account içerisine oluşacak.
-        public IActionResult Login(string returnUrl)  
+        public IActionResult Login(string returnUrl=null)  
         {
             if (returnUrl != null)
             {
@@ -76,10 +76,10 @@ namespace DegerliMadenSatis.MVC.Controllers
                 return View(loginViewModel);
             }
             
-            var returnUrl = TempData["ReturnUrl"].ToString();            
+            var returnUrl = TempData["ReturnUrl"] ?.ToString(); //Null stringe çevirebilir buda hataya sebeb verir. ?.ToString diyerek null değilse çalışsın dedik.            
             if (!String.IsNullOrEmpty(returnUrl))
             {
-                return Redirect(returnUrl); //Herhangi bir yere girildiğinde bunu yapmak için login olman gerke derse bu çalışır.
+                return Redirect(returnUrl); //Herhangi bir yere girildiğinde bunu yapmak için login olman gerke derse bu çalışır. Ör:Bu kod detay a tıklandığında giriş yap sayfasına yönlendirecek.
             }
             return RedirectToAction("Index", "Home"); //Kendisi giriş yap a tıklayarak login olmuşsa bu çalışacak.          
         }
@@ -87,6 +87,7 @@ namespace DegerliMadenSatis.MVC.Controllers
         public async Task<IActionResult> Logout() //Çıkış yap metodu.
         {
             await _signInManager.SignOutAsync();
+            TempData["ReturnUrl"] = null;
             return Redirect("~/");
         }
 
