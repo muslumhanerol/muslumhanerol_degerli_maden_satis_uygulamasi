@@ -12,7 +12,8 @@ using DegerliMadenSatis.Shared.Helpers.Abstract;
 using Microsoft.AspNetCore.Authorization;
 
 namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
-{   /*[Authorize(Roles ="SuperAdmin")]*/
+{
+    [Authorize(Roles = "SuperAdmin")]
     [Area("Admin")]
     public class ProductController : Controller
     {
