@@ -26,5 +26,12 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
         //    return View(users);
         //}
         public async Task<IActionResult> Index() => View(await _userManager.Users.ToListAsync()); //2. Yöntem kullanıcı listeleme.
+
+
+        public async Task<IActionResult> AssignRoles(string ıd) //Rol atama metodu
+        {
+            var user = await _userManager.FindByIdAsync(ıd); //Rol ataması yapmak için user ı bulur.
+            var userRoles = await _userManager.GetRolesAsync(user); //Var olan user ın var olan rolünü alıyoruz.
+        }
     }
 }
