@@ -17,11 +17,11 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
             _roleManager = roleManager;
         }
 
-        //public async Task<IActionResult> Index() //1.Yöntem 
+        //public async Task<IActionResult> Index() //1.Yöntem kullanıcı listeleme.
         //{
         //    var users = await _userManager.Users.ToListAsync();
         //    return View(users);
         //}
-        public async Task<IActionResult> Index() => View(await _userManager.Users.ToListAsync()); //2. Yöntem
+        public async Task<IActionResult> Index() => View(await _userManager.Users.ToListAsync()); //2. Yöntem kullanıcı listeleme.
     }
 }
