@@ -46,6 +46,8 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
             var userRolesViewModel = new UserRolesViewModel //View in ihtiyacı olan user id ve rol listesi medeli oluşturuldu.
             {
                 Id = user.Id,
+                Name = $"{user.FirstName} {user.LastName}",
+                UserName = user.UserName,
                 Roles = roles
             };
             return View(userRolesViewModel);

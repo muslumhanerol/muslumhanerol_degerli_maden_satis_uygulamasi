@@ -1,0 +1,36 @@
+﻿@model UserRolesViewModel
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between mb-2">
+                <div>
+                    <h1>Kullanıcı/Rol Atama</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                   <h1 class="display-6">@Model.Name</h1>
+                   <label>Kullanıcı Adı:</label>
+                   <span>@Model.UserName</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+@section Styles{
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/admin/plugins/summernote/summernote-bs4.min.css">
+}
+
+
