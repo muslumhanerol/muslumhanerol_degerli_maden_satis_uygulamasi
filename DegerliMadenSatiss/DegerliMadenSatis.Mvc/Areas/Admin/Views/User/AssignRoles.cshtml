@@ -16,26 +16,29 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                   <h1 class="display-6">@Model.Name</h1>
-                   <label>Kullanıcı Adı:</label>
-                   <span>@Model.UserName</span>
-                   <h4>Roller</h4>
-                    <form asp-area="Admin" asp-controller="User" asp-action="AssignRoles" method="post">
-                        <div class="text-danger" asp-validation-summary="All"></div>
-                       <input type="hidden" asp-for="Id" />
-                   @for (int i = 0; i < Model.Roles.Count; i++)
-                    {
-                       <div class="icheck-primary d-inline mr-3">
-                        <input asp-for="@Model.Roles[i].IsAssigned" />
-                        <label asp-for="@Model.Roles[i].IsAssigned">@Model.Roles[i].RoleName"</label>
-                        <input type="hidden" asp-for="@Model.Roles[i].RoleId"/>
-                        <input type="hidden" asp-for="@Model.Roles[i].RoleName" />
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="display-6">@Model.Name</h1>
+                            <label>Kullanıcı Adı:</label>
+                            <span>@Model.UserName</span>
+                            <h4>Roller</h4>
+                            <form asp-area="Admin" asp-controller="User" asp-action="AssignRoles" method="post">
+                                <div class="text-danger" asp-validation-summary="All"></div>
+                                <input type="hidden" asp-for="Id" />
+                                @for (int i = 0; i < Model.Roles.Count; i++)
+                                {
+                                    <div class="icheck-primary d-inline mr-3">
+                                        <input asp-for="@Model.Roles[i].IsAssigned" />
+                                        <label asp-for="@Model.Roles[i].IsAssigned">@Model.Roles[i].RoleName"</label>
+                                        <input type="hidden" asp-for="@Model.Roles[i].RoleId" />
+                                        <input type="hidden" asp-for="@Model.Roles[i].RoleName" />
 
-                      </div>
-                   }
-                   <button type="submit" class="btn btn-primary">Rol Değişikliğini Kaydet</button>
-                   </form>
-                    
+                                    </div>
+                                }
+                                <button type="submit" class="btn btn-primary">Rol Değişikliğini Kaydet</button>
+                            </form>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>

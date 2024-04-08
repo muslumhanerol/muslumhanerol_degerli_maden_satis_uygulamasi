@@ -55,7 +55,23 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> AssignRoles(UserRolesViewModel userRolesViewModel)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByIdAsync(userRolesViewModel.Id);
+                foreach (var role in userRolesViewModel.Roles)
+                {
+                    if (role.IsAssigned)
+                    {
+                        await _userManager.AddToRoleAsync(user, role.RoleName);
+                    }
+                    else
+                    {
+                        await _userManager.RemoveFromRoleAsync(user, role.RoleName);
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(userRolesViewModel);
         }
     }
 }
