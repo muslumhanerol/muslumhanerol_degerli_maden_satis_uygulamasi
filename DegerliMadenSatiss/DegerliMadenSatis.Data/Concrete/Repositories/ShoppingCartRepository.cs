@@ -1,6 +1,7 @@
 ﻿using DegerliMadenSatis.Data.Abstract;
 using DegerliMadenSatis.Data.Concrete.Contexts;
 using DegerliMadenSatis.Entity.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,12 +18,23 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
         }
         private DegerliMadenSatisDbContext DegerliMadenSatisDbContext
         {
-            get {return _dbContext as DegerliMadenSatisDbContext}
+            get { return _dbContext as DegerliMadenSatisDbContext; }
         }
        
-        public Task ClearShoppingCartAsync(int shoppingCartId)
-        {
-            throw new NotImplementedException();
+        public async Task ClearShoppingCartAsync(int shoppingCartId)
+        {   //1.Yöntem
+            //var query = @$"DELETE FROM ShoppingCcartItems WHERE ShoppingCartId={shoppingCartId}"; //Güvenlik açığına sebebiyet veriri. ShoppingCartId={shoppingCartId} yazarsak bunun içindeki verilere erişebilirler
+            //var query = @"DELETE FROM ShoppingCcartItems WHERE ShoppingCartId=@p0";
+            //await DegerliMadenSatisDbContext.Database.ExecuteSqlRawAsync(query, shoppingCartId); //query= hangi sorguyu çalıştırmak istiyorsun. shoppingCartId =Gönderilecek bilgi yani p0. Birden fazla parametre olsaydı virgül konulup yazılırdı.
+          
+            
+            //2.Yöntem
+            var deletedShoppingCartItems = await DegerliMadenSatisDbContext //Silinmek istenen cart itemları aldık.
+                .ShoppingCartItems
+                .Where(x=>x.ShoppingCartId==shoppingCartId)
+                .ToListAsync();
+            DegerliMadenSatisDbContext.ShoppingCartItems.RemoveRange(deletedShoppingCartItems);
+            await DegerliMadenSatisDbContext.SaveChangesAsync();
         }
 
         public Task DeleteFromShoppingCartAsync(int cartId, int productId)
