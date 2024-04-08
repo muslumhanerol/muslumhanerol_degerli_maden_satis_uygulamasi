@@ -1,13 +1,22 @@
 using System.Diagnostics;
+using DegerliMadenSatis.Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DegerliMadenSatis.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IProductService _productManager;
+
+        public HomeController(IProductService productManager)
         {
-            return View();
+            _productManager = productManager;
+        }
+
+        public async Task<IActionResult> Index() //Ürünleri listeleme sepete eklemek için.
+        {
+            var products = await _productManager.GetAllNonDeletedAsync(); //Silinmemiþ ve aktif kayýtlarý getir dedik.
+            return View(products.Data);
         }
     }
 }
