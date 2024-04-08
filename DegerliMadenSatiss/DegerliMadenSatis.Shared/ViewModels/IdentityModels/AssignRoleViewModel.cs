@@ -10,6 +10,6 @@ namespace DegerliMadenSatis.Shared.ViewModels.IdentityModels
     {
         public string RoleId { get; set; }
         public string RoleName { get; set; }
-        public bool IsAssiigned { get; set; }
+        public bool IsAssigned { get; set; }
     }
 }

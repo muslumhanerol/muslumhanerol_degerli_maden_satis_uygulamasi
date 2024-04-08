@@ -28,7 +28,7 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
         //}
         public async Task<IActionResult> Index() => View(await _userManager.Users.ToListAsync()); //2. Yöntem kullanıcı listeleme.
 
-
+        [HttpGet]
         public async Task<IActionResult> AssignRoles(string ıd) //Rol atama metodu
         {
             var user = await _userManager.FindByIdAsync(ıd); //Rol ataması yapmak için user ı bulur.Admın ve SuperAdmın listesi var
@@ -39,7 +39,7 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
             {
                 RoleId=r.Id,
                 RoleName=r.Name, 
-                IsAssiigned=userRoles.Any(x=>x==r.Name) //SuperAdmin sıradaki rolün adına eşitse IsAssiigned true olacak, değilse false olur.
+                IsAssigned=userRoles.Any(x=>x==r.Name) //SuperAdmin sıradaki rolün adına eşitse IsAssiigned true olacak, değilse false olur.
 
             }).ToListAsync();
 
@@ -51,6 +51,11 @@ namespace DegerliMadenSatis.MVC.Areas.Admin.Controllers
                 Roles = roles
             };
             return View(userRolesViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AssignRoles(UserRolesViewModel userRolesViewModel)
+        {
+            return View();
         }
     }
 }

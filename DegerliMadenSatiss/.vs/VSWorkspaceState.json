@@ -1,18 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DegerliMadenSatis.Data",
-    "\\DegerliMadenSatis.Data\\Extensions",
     "\\DegerliMadenSatis.Mvc",
     "\\DegerliMadenSatis.Mvc\\Areas",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views",
     "\\DegerliMadenSatis.Mvc\\Areas\\Admin\\Views\\Product",
+    "\\DegerliMadenSatis.Mvc\\Controllers",
     "\\DegerliMadenSatis.Mvc\\Views",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components\\Categories"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.Data\\Extensions\\ModelBuilderExtensions.cs",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }
