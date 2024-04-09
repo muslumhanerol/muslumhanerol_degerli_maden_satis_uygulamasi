@@ -1,4 +1,5 @@
 ﻿using DegerliMadenSatis.Shared.ResponseViewModels;
+using DegerliMadenSatis.Shared.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

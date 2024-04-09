@@ -10,5 +10,9 @@ namespace DegerliMadenSatis.Shared.ViewModels
     {
         public int ShoppingCcartId { get; set; }
         public List<ShoppingCartItemViewModel> Items { get; set; }
+        public decimal TotalPrice()
+        {
+            return Items.Sum(x=>x.ProductPrice * x.Quantity);
+        }
     }
 }
