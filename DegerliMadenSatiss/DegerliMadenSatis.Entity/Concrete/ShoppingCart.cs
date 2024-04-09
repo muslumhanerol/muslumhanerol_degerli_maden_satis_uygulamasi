@@ -13,7 +13,7 @@ namespace DegerliMadenSatis.Entity.Concrete
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string UserId { get; set; }
-        public List<ShoppingCartItem> ShoppingCartItem { get;}
+        public List<ShoppingCartItem> ShoppingCartItems { get;}
 
     }
 }

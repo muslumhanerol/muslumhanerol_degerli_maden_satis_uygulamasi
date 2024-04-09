@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,7 +22,7 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
             get { return _dbContext as DegerliMadenSatisDbContext; }
         }
        
-        public async Task ClearShoppingCartAsync(int shoppingCartId)
+        public async Task ClearShoppingCartAsync(int shoppingCartId) //Kullanıı alışverişi tamamladığında yada kendi isteğiyle sepetindeki ürünleri silme işlemi için.
         {   //1.Yöntem
             //var query = @$"DELETE FROM ShoppingCcartItems WHERE ShoppingCartId={shoppingCartId}"; //Güvenlik açığına sebebiyet veriri. ShoppingCartId={shoppingCartId} yazarsak bunun içindeki verilere erişebilirler
             //var query = @"DELETE FROM ShoppingCcartItems WHERE ShoppingCartId=@p0";
@@ -37,14 +38,30 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
             await DegerliMadenSatisDbContext.SaveChangesAsync();
         }
 
-        public Task DeleteFromShoppingCartAsync(int cartId, int productId)
+        public async Task DeleteFromShoppingCartAsync(int shoppingCartId, int productId) //Sepetteki bir tane ürünü silmek istediğimizde.
         {
-            throw new NotImplementedException();
+            //Farklı bir yazım tekniği.
+            //var query = @"DELETE FROM ShoppingCcartItems WHERE ShoppingCartId=@p0 AND ProductId=@p1";
+            //await DegerliMadenSatisDbContext.Database.ExecuteSqlRawAsync(query, shoppingCartId, productId);
+
+            var deletedShoppingCartItem = await DegerliMadenSatisDbContext
+                .ShoppingCartItems
+                .Where(x => x.ShoppingCartId == shoppingCartId && x.ProductId == productId)
+                .FirstOrDefaultAsync();
+            DegerliMadenSatisDbContext.ShoppingCartItems.Remove(deletedShoppingCartItem);
+            await DegerliMadenSatisDbContext.SaveChangesAsync();
         }
 
-        public Task<ShoppingCart> GetShoppingCartByUserIdAsync(string userId)
+        public async Task<ShoppingCart> GetShoppingCartByUserIdAsync(string userId)
         {
-            throw new NotImplementedException();
+            var shoppingCart = await DegerliMadenSatisDbContext
+                .ShoppingCarts
+                .Where(sc => sc.UserId == userId)
+                .Include(sc => sc.ShoppingCartItems)
+                .ThenInclude(sci => sci.Product)
+                .FirstOrDefaultAsync();
+            return shoppingCart;
+                
         }
     }
 }
