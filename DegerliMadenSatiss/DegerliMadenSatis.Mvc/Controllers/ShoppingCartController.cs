@@ -1,12 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DegerliMadenSatis.Entity.Concrete.identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DegerliMadenSatis.MVC.Controllers
 {
     public class ShoppingCartController : Controller
     {
+        private readonly UserManager<User> _userManager;
+        
+        //Kullanıcının sepeti.
         public IActionResult Index()
         {
             return View();
+        }
+        public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
+        {
+            var userId = _userManager.GetUserId(User);
+
         }
     }
 }
