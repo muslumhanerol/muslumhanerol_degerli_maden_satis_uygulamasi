@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Data.Abstract;
+using DegerliMadenSatis.Entity.Concrete;
 using DegerliMadenSatis.Shared.ResponseViewModels;
 using DegerliMadenSatis.Shared.ViewModels;
 using System;
@@ -24,11 +25,30 @@ namespace DegerliMadenSatis.Business.Concrete
 
         public async Task<Response<NoContent>> AddToCartAsync(string userId, int productId, int quantity)
         {
-            var shoppingCart = await GetShoppingCartByUserIdAsync(userId);
-            if (shoppingCart != null)
+            var shoppingResponse = await GetShoppingCartByUserIdAsync(userId);
+            var shoppingCartViewModel = shoppingResponse.Data;
+            if (shoppingCartViewModel != null)
             {
-                var index = shoppingCart.Data.ShoppingCartItems.FindIndex(x=>x.ProductId==productId)
+                //Ürün daha önce sepete eklenmişse sıra numarası bulunur ve ındex içine eklenir.
+                //Eğer ürün daha önce sepette yoksa  sıra numarası -1 döner, index -1 olur.
+                var index = shoppingCartViewModel.ShoppingCartItems.FindIndex(x => x.ProductId == productId);
+                if (index<0)
+                {
+                    shoppingCartViewModel.ShoppingCartItems.Add(new ShoppingCartItemViewModel
+                    {
+                        ProductId = productId, //Sepete eklenen ürün.
+                        Quantity = quantity,   //Adet
+                        ShoppingCartId = shoppingCartViewModel.Id //Hangi sepete eklendiği.
+                    });
+                }else
+                {
+                    shoppingCartViewModel.ShoppingCartItems[index].Quantity += quantity;
+                }
+                var shoppingCart = _mapper.Map<ShoppingCart>(shoppingCartViewModel);
+                await _shoppingCartRepository.UpdateAsync(shoppingCart);
+                return Response<NoContent>.Success();
             }
+            return Response<NoContent>.Fail("Bir hata oluştu");
         }
 
         public Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId)
@@ -48,7 +68,7 @@ namespace DegerliMadenSatis.Business.Concrete
             {
                 return Response<ShoppingCartViewModel>.Fail("İlgili kullanıcının sepetinde sorun var, yöneticiyle görüşünüz");
             }
-            var result = _mapper.Map<ShoppingCartItemViewModel>(shoppingCart);
+            var result = _mapper.Map<ShoppingCartViewModel>(shoppingCart);
             return Response<ShoppingCartViewModel>.Success(result);
             
         }

@@ -16,10 +16,6 @@ namespace DegerliMadenSatis.MVC.Controllers
             _shoppingCartManager = shoppingCartManager;
         }
 
-
-
-
-
         //Kullanıcının sepeti.
         public IActionResult Index()
         {
@@ -28,8 +24,8 @@ namespace DegerliMadenSatis.MVC.Controllers
         public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
         {
             var userId = _userManager.GetUserId(User);
-            //await -_shoppingCartManager.AddToCartAsync();
-            return View();
+            await _shoppingCartManager.AddToCartAsync(userId,productId,quantity);
+            return Redirect("~/");
 
         }
     }
