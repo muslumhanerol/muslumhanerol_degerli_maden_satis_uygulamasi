@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Data.Abstract
 {
-    internal interface IShoppingCartRepository:IGenericRepository<ShoppingCart>
+    public interface IShoppingCartRepository:IGenericRepository<ShoppingCart>
     {
         Task<ShoppingCart> GetShoppingCartByUserIdAsync(string userId);
         Task DeleteFromShoppingCartAsync(int cartId, int productId); //Hangi carttan silecek, o carttan hangi productı silecek.
