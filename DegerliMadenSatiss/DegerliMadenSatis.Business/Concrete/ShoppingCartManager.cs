@@ -25,13 +25,13 @@ namespace DegerliMadenSatis.Business.Concrete
 
         public async Task<Response<NoContent>> AddToCartAsync(string userId, int productId, int quantity)
         {
-            var shoppingResponse = await GetShoppingCartByUserIdAsync(userId);
-            var shoppingCartViewModel = shoppingResponse.Data;
-            if (shoppingCartViewModel != null)
+            var shoppingCart = await GetShoppingCartByUserIdAsync(userId);
+            
+            if (shoppingCart != null)
             {
                 //Ürün daha önce sepete eklenmişse sıra numarası bulunur ve ındex içine eklenir.
                 //Eğer ürün daha önce sepette yoksa  sıra numarası -1 döner, index -1 olur.
-                var index = shoppingCartViewModel.ShoppingCartItems.FindIndex(x => x.ProductId == productId);
+                var index = shoppingCart.ShoppingCartItems.FindIndex(x => x.ProductId == productId);
                 if (index<0)
                 {
                     shoppingCartViewModel.ShoppingCartItems.Add(new ShoppingCartItemViewModel
