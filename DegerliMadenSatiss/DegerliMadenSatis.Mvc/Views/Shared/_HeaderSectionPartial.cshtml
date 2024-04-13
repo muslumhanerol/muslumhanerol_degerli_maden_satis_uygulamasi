@@ -11,7 +11,7 @@
                 <nav class="header__menu">
                     <ul>
                         <li class="active">
-                            <a asp-area="" asp-controller="Home" asp-action="Index" >Ana Sayfa</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                         </li>
                         <li>
                             <a href="#">Külçe Altın</a>
@@ -21,7 +21,7 @@
                         </li>
                         <li>
                             <a href="#">Külçe Gümüş</a>
-                        </li>                        
+                        </li>
                         <li><a href="#">İletişim</a></li>
                     </ul>
                 </nav>
@@ -29,15 +29,15 @@
             <div class="col-lg-3">
                 <div class="header__right">
                     <div class="header__right__auth">
-                        @if(!User.Identity.IsAuthenticated) @*Login olunmuşsa olmamışsa aşağıdakileri göster.*@
+                        @if (!User.Identity.IsAuthenticated) @*Login olunmuşsa olmamışsa aşağıdakileri göster.*@
                         {
-                            
+
                             <a asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
                             <a asp-area="" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
                         }
                         else
                         {
-                            if(User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+                            if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
                             {
                                 <a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
                             }
@@ -46,21 +46,19 @@
                         }
 
                     </div>
-                    
+
                     <ul class="header__right__widget">
                         <li><span class="icon_search search-switch"></span></li>
-                        <li>
-                            <a href="#">
-                                <span class="icon_heart_alt"></span>
-                                <div class="tip">2</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a asp-area="" asp-controller="ShoppingCart" asp-action="Index">
-                                <span class="icon_bag_alt"></span>
-                                <div class="tip">2</div>
-                            </a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt"></span>
+                                    <div class="tip">2</div>
+                                </a>
+                            </li>
+                            @await Component.InvokeAsync("ShoppingCartNotification",User.Identity.Name ?? null)
+                        }
                     </ul>
                 </div>
             </div>

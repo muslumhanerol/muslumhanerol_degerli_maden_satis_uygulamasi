@@ -57,7 +57,11 @@
                                         var total = item.ProductPrice * item.Quantity;
                                     }
                                     <td class="cart__total">@($"{total:C0}")</td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                    <td class="cart__close">
+                                        <a asp-area="" asp-controller="ShoppingCart" asp-action="DeleteItem" asp-route-ıd="@item.Id">
+                                            <span class="icon_close"></span>
+                                        </a>
+                                    </td>
                                 </tr>
                             }                            
                            

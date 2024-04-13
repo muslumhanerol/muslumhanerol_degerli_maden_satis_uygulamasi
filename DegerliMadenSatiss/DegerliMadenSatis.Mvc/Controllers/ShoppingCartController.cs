@@ -43,5 +43,10 @@ namespace DegerliMadenSatis.MVC.Controllers
             }
             return View(shoppingCartItemViewModel);
         }
+        public async Task<IActionResult> DeleteItem(int id)
+        {
+
+            return RedirectToAction("Index");
+        }
     }
 }

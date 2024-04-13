@@ -25,5 +25,21 @@ namespace DegerliMadenSatis.Business.Concrete
             await _shoppingCartItemRepository.ChangeQuantityAsync(shoppingCartItem, quantity);
             return Response<NoContent>.Success();
         }
+
+        public Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> CountAsync(int shoppingCartId)
+        {
+            return await _shoppingCartItemRepository.GetCount(x=>x.ShoppingCartId==shoppingCartId);
+        }
+
+        public async Task<Response<NoContent>> DeleteFromShoppingCartAsync(int shoppingCartItemId)
+        {
+            var deletedCart = await _shoppingCartItemRepository.GetByIdAsync(x => x.Id == shoppingCartItemId);
+            await _shoppingCartItemRepository.HardDeleteAsync(deletedCart);
+        }
     }
 }
