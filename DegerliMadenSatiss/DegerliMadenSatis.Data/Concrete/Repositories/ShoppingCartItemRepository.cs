@@ -21,11 +21,11 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
         }
         
     
-        public Task ChangeQuantityAsync(ShoppingCartItem shoppingCartItem, int quantity)
+        public async Task ChangeQuantityAsync(ShoppingCartItem shoppingCartItem, int quantity)
         {
             shoppingCartItem.Quantity = quantity;
             DegerliMadenSatisDbContext.Update(shoppingCartItem);
-            DegerliMadenSatisDbContext.SaveChangesAsync();
+            await DegerliMadenSatisDbContext.SaveChangesAsync();
         }
     }
 }

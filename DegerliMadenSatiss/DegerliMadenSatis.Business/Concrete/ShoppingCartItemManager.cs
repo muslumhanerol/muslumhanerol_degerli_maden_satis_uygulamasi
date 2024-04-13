@@ -1,4 +1,6 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
+using DegerliMadenSatis.Data.Abstract;
+using DegerliMadenSatis.Entity.Concrete;
 using DegerliMadenSatis.Shared.ResponseViewModels;
 using System;
 using System.Collections.Generic;
@@ -17,9 +19,11 @@ namespace DegerliMadenSatis.Business.Concrete
             _shoppingCartItemRepository = shoppingCartItemRepository;
         }
 
-        public Task<Response<NoContent>> ChangeQuantityAsync(int shoppingCartItemId, int quantity)
+        public async Task<Response<NoContent>> ChangeQuantityAsync(int shoppingCartItemId, int quantity)
         {
-            throw new NotImplementedException();
+            ShoppingCartItem shoppingCartItem = await _shoppingCartItemRepository.GetByIdAsync(x => x.Id == shoppingCartItemId);
+            await _shoppingCartItemRepository.ChangeQuantityAsync(shoppingCartItem, quantity);
+            return Response<NoContent>.Success();
         }
     }
 }

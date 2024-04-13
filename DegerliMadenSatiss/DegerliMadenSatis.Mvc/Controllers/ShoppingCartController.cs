@@ -10,11 +10,14 @@ namespace DegerliMadenSatis.MVC.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly IShoppingCartService _shoppingCartManager;
+        private readonly IShoppingCartItemService _shoppingCartItemManager;
 
-        public ShoppingCartController(UserManager<User> userManager, IShoppingCartService shoppingCartManager)
+
+        public ShoppingCartController(UserManager<User> userManager, IShoppingCartService shoppingCartManager, IShoppingCartItemService shoppingCartItemManager)
         {
             _userManager = userManager;
             _shoppingCartManager = shoppingCartManager;
+            _shoppingCartItemManager = shoppingCartItemManager;
         }
 
         //Kullanıcının sepeti.
@@ -35,8 +38,10 @@ namespace DegerliMadenSatis.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                //
+                await _shoppingCartItemManager.ChangeQuantityAsync(shoppingCartItemViewModel.Id, shoppingCartItemViewModel.Quantity);
+                return RedirectToAction("Index");
             }
+            return View(shoppingCartItemViewModel);
         }
     }
 }
