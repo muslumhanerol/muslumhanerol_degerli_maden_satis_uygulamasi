@@ -56,6 +56,7 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
         {
             var shoppingCart = await DegerliMadenSatisDbContext
                 .ShoppingCarts
+                //.AsNoTracking()
                 .Where(sc => sc.UserId == userId)
                 .Include(sc => sc.ShoppingCartItems)
                 .ThenInclude(sci => sci.Product)

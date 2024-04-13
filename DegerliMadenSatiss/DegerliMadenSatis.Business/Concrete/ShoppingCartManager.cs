@@ -25,7 +25,7 @@ namespace DegerliMadenSatis.Business.Concrete
 
         public async Task<Response<NoContent>> AddToCartAsync(string userId, int productId, int quantity)
         {
-            var shoppingCart = await GetShoppingCartByUserIdAsync(userId);
+            ShoppingCart shoppingCart = await _shoppingCartRepository.GetShoppingCartByUserIdAsync(userId);
             
             if (shoppingCart != null)
             {
@@ -34,17 +34,16 @@ namespace DegerliMadenSatis.Business.Concrete
                 var index = shoppingCart.ShoppingCartItems.FindIndex(x => x.ProductId == productId);
                 if (index<0)
                 {
-                    shoppingCartViewModel.ShoppingCartItems.Add(new ShoppingCartItemViewModel
+                    shoppingCart.ShoppingCartItems.Add(new ShoppingCartItem
                     {
                         ProductId = productId, //Sepete eklenen ürün.
                         Quantity = quantity,   //Adet
-                        ShoppingCartId = shoppingCartViewModel.Id //Hangi sepete eklendiği.
+                        ShoppingCartId = shoppingCart.Id //Hangi sepete eklendiği.
                     });
                 }else
                 {
-                    shoppingCartViewModel.ShoppingCartItems[index].Quantity += quantity;
+                    shoppingCart.ShoppingCartItems[index].Quantity += quantity;
                 }
-                var shoppingCart = _mapper.Map<ShoppingCart>(shoppingCartViewModel);
                 await _shoppingCartRepository.UpdateAsync(shoppingCart);
                 return Response<NoContent>.Success();
             }

@@ -1,8 +1,8 @@
-﻿@*MVC>Views>Shared>Components>Categories>Default içinde kodlar.*@
-@*Sepet için ürün listeleme büyük menu altı*@
-@model List<ProductViewModel>
+﻿@model List<ProductViewModel>
 @await Component.InvokeAsync("Categories")
 
+<!--MVC>Views>Shared>Components>Categories>Default içinde kodlar.-->
+<!--Sepet için ürün listeleme büyük menu altı-->
 <!-- Product Section Begin -->
 <section class="product spad">
     <div class="container">
@@ -32,9 +32,8 @@
                                 >
                                     <input type="hidden" name="productId" value="@p.Id" />
                                     <input type="hidden" name="quantity" value="1" />
-
+                                    
                                     <button type="submit"><span class="icon_bag_alt"></span></button>
-
                                 </form>
                             </li>
                         </ul>

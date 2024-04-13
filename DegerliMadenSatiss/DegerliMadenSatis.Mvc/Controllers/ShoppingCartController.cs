@@ -17,9 +17,12 @@ namespace DegerliMadenSatis.MVC.Controllers
         }
 
         //Kullanıcının sepeti.
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var userId = _userManager.GetUserId(User); //O an login olan kullanıcının bana Id sini ver.
+            var shoppingcart = await _shoppingCartManager.GetShoppingCartByUserIdAsync(userId); //shoppingCart ı getirdi.
+
+            return View(shoppingcart.Data);
         }
         public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
         {
