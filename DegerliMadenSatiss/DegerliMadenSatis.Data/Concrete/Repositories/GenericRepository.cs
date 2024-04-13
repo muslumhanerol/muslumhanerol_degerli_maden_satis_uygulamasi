@@ -78,7 +78,6 @@ namespace DegerliMadenSatis.Data.Concrete.Repositories
                 .Remove(entity);
             await _dbContext.SaveChangesAsync();
         }
-
         public async Task UpdateAsync(TEntity entity)
         {
             _dbContext

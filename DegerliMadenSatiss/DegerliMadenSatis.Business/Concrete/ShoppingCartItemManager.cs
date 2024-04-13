@@ -2,6 +2,7 @@
 using DegerliMadenSatis.Data.Abstract;
 using DegerliMadenSatis.Entity.Concrete;
 using DegerliMadenSatis.Shared.ResponseViewModels;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,12 @@ namespace DegerliMadenSatis.Business.Concrete
     public class ShoppingCartItemManager : IShoppingCartItemService
     {
         private readonly IShoppingCartItemRepository _shoppingCartItemRepository;
+        private readonly IShoppingCartRepository _shoppingCartRepository;
 
-        public ShoppingCartItemManager(IShoppingCartItemRepository shoppingCartItemRepository)
+        public ShoppingCartItemManager(IShoppingCartItemRepository shoppingCartItemRepository, IShoppingCartRepository shoppingCartRepository)
         {
             _shoppingCartItemRepository = shoppingCartItemRepository;
+            _shoppingCartRepository = shoppingCartRepository;
         }
 
         public async Task<Response<NoContent>> ChangeQuantityAsync(int shoppingCartItemId, int quantity)
@@ -26,9 +29,16 @@ namespace DegerliMadenSatis.Business.Concrete
             return Response<NoContent>.Success();
         }
 
-        public Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId)
+        public async Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId)
         {
-            throw new NotImplementedException();
+            //Data>Abstract da silme metotları var ancak bu yöntem daha performanslı.
+            var cart = await _shoppingCartRepository.GetByIdAsync(x=>x.Id== shoppingCartId,
+                source=>source
+                    .Include(x=>x.ShoppingCartItems)   
+                );
+            cart.ShoppingCartItems = new List<ShoppingCartItem>();
+            await _shoppingCartRepository.UpdateAsync(cart);
+            return Response<NoContent>.Success();
         }
 
         public async Task<int> CountAsync(int shoppingCartId)
@@ -36,10 +46,12 @@ namespace DegerliMadenSatis.Business.Concrete
             return await _shoppingCartItemRepository.GetCount(x=>x.ShoppingCartId==shoppingCartId);
         }
 
+        //Data>Abstract da silme metotları var ancak bu yöntem daha performanslı.
         public async Task<Response<NoContent>> DeleteFromShoppingCartAsync(int shoppingCartItemId)
         {
             var deletedCart = await _shoppingCartItemRepository.GetByIdAsync(x => x.Id == shoppingCartItemId);
             await _shoppingCartItemRepository.HardDeleteAsync(deletedCart);
+            return Response<NoContent>.Success();
         }
     }
 }

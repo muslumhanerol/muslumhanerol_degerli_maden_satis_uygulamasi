@@ -11,6 +11,7 @@ namespace DegerliMadenSatis.Data.Abstract
     {
         Task<ShoppingCart> GetShoppingCartByUserIdAsync(string userId);
         Task DeleteFromShoppingCartAsync(int cartId, int productId); //Hangi carttan silecek, o carttan hangi productı silecek.
+        //Task DeleteFromShoppingCartAsync(int shoppingCartId, int productId); bir bak dk 44 olmalı
         Task ClearShoppingCartAsync(int shoppingCartId); 
     }
 }

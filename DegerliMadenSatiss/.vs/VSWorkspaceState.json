@@ -10,8 +10,9 @@
     "\\DegerliMadenSatis.Mvc\\Views",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared",
     "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components",
-    "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components\\Categories"
+    "\\DegerliMadenSatis.Mvc\\Views\\Shared\\Components\\Categories",
+    "\\DegerliMadenSatis.Mvc\\Views\\ShoppingCart"
   ],
-  "SelectedNode": "\\DegerliMadenSatis.sln",
+  "SelectedNode": "\\DegerliMadenSatis.Mvc\\Views\\ShoppingCart\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
