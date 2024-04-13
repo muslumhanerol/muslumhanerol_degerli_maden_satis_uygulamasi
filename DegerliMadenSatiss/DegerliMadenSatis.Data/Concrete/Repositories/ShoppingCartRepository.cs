@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DegerliMadenSatis.Data.Concrete.Repositories
 {
-    public class ShoppingCartRepository : GenericRepository<ShoppingCart>, IShoppingCartRepository
+    public class ShoppingCartRepository : GenericRepository<ShoppingCartItem>, IShoppingCartRepository
     {
         public ShoppingCartRepository(DegerliMadenSatisDbContext _context):base(_context) //DegerliMadenSatisDbContext tipinde _context gelecek, bunu base ye yollayacaksın. 
         {
