@@ -1,5 +1,6 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Entity.Concrete.identity;
+using DegerliMadenSatis.Shared.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,8 +29,14 @@ namespace DegerliMadenSatis.MVC.Controllers
         {
             var userId = _userManager.GetUserId(User);
             await _shoppingCartManager.AddToCartAsync(userId,productId,quantity);
-            return Redirect("~/");
-
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> ChangeQuantity(ShoppingCartItemViewModel shoppingCartItemViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                //
+            }
         }
     }
 }
