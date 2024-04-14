@@ -29,10 +29,10 @@ namespace DegerliMadenSatis.Business.Concrete
             return Response<NoContent>.Success();
         }
 
+        //Data>Abstract da silme metotları var ancak bu yöntem daha performanslı.
         public async Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId)
         {
-            //Data>Abstract da silme metotları var ancak bu yöntem daha performanslı.
-            var cart = await _shoppingCartRepository.GetByIdAsync(x=>x.Id== shoppingCartId,
+            var cart = await _shoppingCartRepository.GetByIdAsync(x=>x.Id== shoppingCartId, //İlgili kartı bul, getir.
                 source=>source
                     .Include(x=>x.ShoppingCartItems)   
                 );

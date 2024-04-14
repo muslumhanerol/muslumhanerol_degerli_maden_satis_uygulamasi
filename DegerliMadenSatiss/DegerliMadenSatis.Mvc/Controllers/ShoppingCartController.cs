@@ -43,6 +43,7 @@ namespace DegerliMadenSatis.MVC.Controllers
             }
             return View(shoppingCartItemViewModel);
         }
+        
         public async Task<IActionResult> DeleteItem(int id)
         {
             await _shoppingCartItemManager.DeleteFromShoppingCartAsync(id);

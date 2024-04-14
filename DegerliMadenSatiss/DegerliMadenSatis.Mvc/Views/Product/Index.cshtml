@@ -22,7 +22,15 @@
                         <ul class="product__hover">
                                 <li><a href="/images/products/@p.ImageUrl" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                <li>
+                                    <form asp-area=""
+                                      asp-controller="ShoppingCart"
+                                      asp-action="AddToCart">
+                                        <input type="hidden" name="productId" value="@p.Id" />
+                                        <input type="hidden" name="quantity" value="1" />
+                                        <button type="submit" style="background-color:transparent; border:none"><a><span class="icon_bag_alt"></span></a></button>
+                                    </form>
+                                </li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -38,9 +46,7 @@
                     </div>
                 </div>
             </div>                            
-            }
-            
-           
+            }    
         </div>
     </div>
 </section>

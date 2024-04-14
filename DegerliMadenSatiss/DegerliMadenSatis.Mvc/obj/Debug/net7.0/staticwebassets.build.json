@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WKP9mMWFuYD88yLQwwR8IaFiE9u4Rmq7NxbZ+Je8xS8=",
+  "Hash": "MJf8riA4QECAW0FxtZZ1C184rhOO3tvCMPA2KZ8IIFg=",
   "Source": "DegerliMadenSatis.MVC",
   "BasePath": "_content/DegerliMadenSatis.MVC",
   "Mode": "Default",
@@ -36123,6 +36123,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UI\\img\\instagram\\insta-6.jpg"
+    },
+    {
+      "Identity": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\logo_200x200l.png",
+      "SourceId": "DegerliMadenSatis.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\",
+      "BasePath": "_content/DegerliMadenSatis.MVC",
+      "RelativePath": "UI/img/logo_200x200l.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UI\\img\\logo_200x200l.png"
     },
     {
       "Identity": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\logo.png",

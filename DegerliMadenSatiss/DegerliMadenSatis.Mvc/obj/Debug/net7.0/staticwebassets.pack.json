@@ -225,6 +225,10 @@
       "PackagePath": "staticwebassets\\UI\\img\\logo.png"
     },
     {
+      "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\logo_200x200l.png",
+      "PackagePath": "staticwebassets\\UI\\img\\logo_200x200l.png"
+    },
+    {
       "Id": "C:\\GitHub\\muslumhanerol_degerli_maden_satis_uygulamasi\\DegerliMadenSatiss\\DegerliMadenSatis.Mvc\\wwwroot\\UI\\img\\payment\\payment-1.png",
       "PackagePath": "staticwebassets\\UI\\img\\payment\\payment-1.png"
     },

@@ -4,7 +4,7 @@
     <a href="index3.html" class="brand-link text-center">
 @*         <img src="~/admin/dist//ui/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8"> *@
-        <span class="brand-text font-weight-light">DegerliMadenSatis Yönetim Paneli</span>
+        <span class="brand-text font-weight-light">Değerli Maden Yönetim Paneli</span>
     </a>
 
     <!-- Sidebar -->
@@ -14,20 +14,12 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-house-user"></i>
-                        <p>
-                            Ayarlar
-                        </p>
-                    </a>
-                </li>
+                                
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
-                            Ürünler
+                            ÜRÜNLER
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -52,35 +44,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
-                        <p>
-                            Kategoriler
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Kategori Listesi</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Yeni Kategori</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/inline.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Çöp Kutusu</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
@@ -101,31 +65,11 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Rol Listesi</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-area="Admin" asp-controller="User" asp-action="GetAdminUsers" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Yöneticiler</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-area="Admin" asp-controller="User" asp-action="GetCustomerUsers" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Müşteriler</p>
-                            </a>
-                        </li>
+                        </li>                        
                     </ul>
-                </li>
+                </li>                
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-house-user"></i>
-                        <p>
-                            Mesajlar
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link">
                         <i class="nav-icon fas fa-house-user"></i>
                         <p>
                             Çıkış Yap

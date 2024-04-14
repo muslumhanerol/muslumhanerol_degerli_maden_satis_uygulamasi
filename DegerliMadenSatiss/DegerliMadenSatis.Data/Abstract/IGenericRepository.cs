@@ -21,7 +21,6 @@ namespace DegerliMadenSatis.Data.Abstract
         Task HardDeleteAsync(TEntity entity);
         Task<int> GetCount(
             Expression<Func<TEntity, bool>> options = null, Func<IQueryable<TEntity>,
-            IIncludableQueryable<TEntity, object>> include = null
-        );
+            IIncludableQueryable<TEntity, object>> include = null );       
     }
 }
