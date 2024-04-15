@@ -49,7 +49,7 @@ namespace DegerliMadenSatis.MVC.Controllers
                 
             };
             //orderViewModel.ShoppingCart=shoppingCart.Data;
-            return View();
+            return View(orderViewModel);
         }
     }
 }

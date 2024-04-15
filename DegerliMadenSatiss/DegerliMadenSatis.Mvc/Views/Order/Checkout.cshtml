@@ -5,95 +5,96 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h6 class="coupon__link">
-                    <span class="icon_tag_alt"></span> <a href="#">Have a coupon?</a> Click
-                    here to enter your code.
-                </h6>
+                <h6 class="coupon__link"><span class="icon_tag_alt"></span> ÖDEME SAYFASI  </h6>
             </div>
         </div>
         <form action="#" class="checkout__form">
             <div class="row">
                 <div class="col-lg-8">
-                    <h5>Billing detail</h5>
+                    <h5>Fatura Bilgileri</h5>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>First Name <span>*</span></p>
-                                <input type="text">
+                                <p>Adınız: <span>*</span></p>
+                                <input asp-for="FirstName">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Last Name <span>*</span></p>
-                                <input type="text">
+                                <p>Soyadınız: <span>*</span></p>
+                                <input asp-for="LastName">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="checkout__form__input">
+                                <p>Adres: <span>*</span></p>
+                                <input asp-for="Address">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="checkout__form__input">
+                                <p>Şehir: <span>*</span></p>
+                                <input asp-for="City">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="checkout__form__input">
+                                <p>Email: <span>*</span></p>
+                                <input asp-for="Email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="checkout__form__input">
+                                <p>Telefon Numarası: <span>*</span></p>
+                                <input asp-for="PhoneNumber">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="checkout__form__input">
-                                <p>Country <span>*</span></p>
-                                <input type="text">
+                                <p>Not: <span>*</span></p>
+                                <input asp-for="Note">
                             </div>
+                        </div>                        
+                    </div>
+                    <h5>Ödeme Bilgileri</h5>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Address <span>*</span></p>
-                                <input type="text" placeholder="Street Address">
-                                <input type="text" placeholder="Apartment. suite, unite ect ( optinal )">
-                            </div>
-                            <div class="checkout__form__input">
-                                <p>Town/City <span>*</span></p>
-                                <input type="text">
-                            </div>
-                            <div class="checkout__form__input">
-                                <p>Country/State <span>*</span></p>
-                                <input type="text">
-                            </div>
-                            <div class="checkout__form__input">
-                                <p>Postcode/Zip <span>*</span></p>
-                                <input type="text">
+                                <p>Kart Üzerindeki Ad Soyad: <span>*</span></p>
+                                <input asp-for="CardName">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Phone <span>*</span></p>
-                                <input type="text">
+                                <p>Kart Numarası <span>*</span></p>
+                                <input asp-for="CardNumber">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Email <span>*</span></p>
-                                <input type="text">
+                                <p>Kart Geçerlilik Tarihi Ay <span>*</span></p>
+                                <input asp-for="ExpirationMonth">
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="checkout__form__checkbox">
-                                <label for="acc">
-                                    Create an acount?
-                                    <input type="checkbox" id="acc">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <p>
-                                    Create am acount by entering the information below. If you are a returing
-                                    customer login at the <br />top of the page
-                                </p>
-                            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Account Password <span>*</span></p>
-                                <input type="text">
+                                <p>Kart Geçerlilik Tarihi Yıl <span>*</span></p>
+                                <input asp-for="ExpirationYear">
                             </div>
-                            <div class="checkout__form__checkbox">
-                                <label for="note">
-                                    Note about your order, e.g, special noe for delivery
-                                    <input type="checkbox" id="note">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="checkout__form__input">
-                                <p>Oder notes <span>*</span></p>
-                                <input type="text"
-                                       placeholder="Note about your order, e.g, special noe for delivery">
+                                <p>Cvc <span>*</span></p>
+                                <input asp-for="Cvc">
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
+                
                 <div class="col-lg-4">
                     <div class="checkout__order">
                         <h5>Your order</h5>
