@@ -53,5 +53,7 @@ namespace DegerliMadenSatis.Business.Concrete
             await _shoppingCartItemRepository.HardDeleteAsync(deletedCart);
             return Response<NoContent>.Success();
         }
+
+       
     }
 }

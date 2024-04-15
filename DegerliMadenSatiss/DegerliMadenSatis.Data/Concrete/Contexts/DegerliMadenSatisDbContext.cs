@@ -24,8 +24,8 @@ namespace DegerliMadenSatis.Data.Concrete.Contexts
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderItem> ShoppingCartItem { get; set; }
-
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.SeedData();

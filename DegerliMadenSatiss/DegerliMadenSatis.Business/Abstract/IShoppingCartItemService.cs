@@ -13,5 +13,6 @@ namespace DegerliMadenSatis.Business.Abstract
         Task<int> CountAsync(int shoppingCartId);
         Task<Response<NoContent>> DeleteFromShoppingCartAsync(int shoppingCartItemId);
         Task<Response<NoContent>> ClearShoppingCartAsync(int shoppingCartId);
+        Task GetShoppingCartByUserIdAsync(string userId);
     }
 }

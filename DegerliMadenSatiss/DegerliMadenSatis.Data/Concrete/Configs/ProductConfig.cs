@@ -30,7 +30,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 1,
                     Name = "5 Gr Külçe Altın",
-                    Price = 13500,
+                    Price = 14000,
                     Properties = "24 Ayar 995.0 Saflıkta, 5 Gr Külçe Altın.",
                     Url = "5-gr-külce-altin",
                     ImageUrl = "1.png",
@@ -40,7 +40,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 2,
                     Name = "10 Gr Külçe Altın",
-                    Price = 27000,
+                    Price = 28000,
                     Properties = "24 Ayar 995.0 Saflıkta, 10 Gr Külçe Altın.",
                     Url = "10-gr-külce-altin",
                     ImageUrl = "1.png",
@@ -50,7 +50,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 3,
                     Name = "20 Gr Külçe Altın",
-                    Price = 54000,
+                    Price = 56000,
                     Properties = "24 Ayar 995.0 Saflıkta, 20 Gr Külçe Altın.",
                     Url = "20-gr-külce-altin",
                     ImageUrl = "2.png",
@@ -60,7 +60,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 4,
                     Name = "50 Gr Külçe Altın",
-                    Price = 135000,
+                    Price = 140000,
                     Properties = "24 Ayar 995.0 Saflıkta, 50 Gr Külçe Altın.",
                     Url = "50-gr-külce-altin",
                     ImageUrl = "3.png",
@@ -70,7 +70,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 5,
                     Name = "100 Gr Külçe Altın",
-                    Price = 270000,
+                    Price = 280000,
                     Properties = "24 Ayar 995.0 Saflıkta, 100 Gr Külçe Altın.",
                     Url = "100-gr-külce-altin",
                     ImageUrl = "4.png",
@@ -80,7 +80,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 6,
                     Name = "250 Gr Külçe Altın",
-                    Price = 680000,
+                    Price = 7000000,
                     Properties = "24 Ayar 995.0 Saflıkta, 250 Gr Külçe Altın.",
                     Url = "250-gr-külce-altin",
                     ImageUrl = "5.png",
@@ -90,7 +90,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 7,
                     Name = "500 Gr Külçe Altın",
-                    Price = 1350000,
+                    Price = 1400000,
                     Properties = "24 Ayar 995.0 Saflıkta, 500 Gr Külçe Altın.",
                     Url = "500-gr-külce-altin",
                     ImageUrl = "6.png",
@@ -100,7 +100,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 8,
                     Name = "1000 Gr Külçe Altın",
-                    Price = 270000,
+                    Price = 2800000,
                     Properties = "24 Ayar 995.0 Saflıkta, 500 Gr Külçe Altın.",
                     Url = "1000-gr-külce-altin",
                     ImageUrl = "7.png",
@@ -110,7 +110,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 9,
                     Name = "Çeyrek Altın",
-                    Price = 4700,
+                    Price = 4750,
                     Properties = "22 Ayar 916.0 Saflıkta, 1.75 Gr Çeyrek Altın.",
                     Url = "ceyrek-altin",
                     ImageUrl = "8.png",
@@ -120,7 +120,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 10,
                     Name = "Yarım",
-                    Price = 1250,
+                    Price = 9500,
                     Properties = "22 Ayar 916.0 Saflıkta, 3.50 Gr Yarım Altın.",
                     Url = "yarim-altin",
                     ImageUrl = "9.png",
@@ -130,7 +130,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 11,
                     Name = "Tam Altın",
-                    Price = 2100,
+                    Price = 19000,
                     Properties = "22 Ayar 916.0 Saflıkta, 7 Gr Tam Altın.",
                     Url = "tam-altin",
                     ImageUrl = "10.png",
@@ -140,7 +140,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 12,
                     Name = "100gr Külçe Gümüş",
-                    Price = 3500,
+                    Price = 3850,
                     Properties = "999.0 Saflıkta, 100 Gr Külçe Gümüş.",
                     Url = "100gr-külce-gümüs",
                     ImageUrl = "12.png",
@@ -150,7 +150,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 13,
                     Name = "250gr Külçe Gümüş",
-                    Price = 8000,
+                    Price = 8750,
                     Properties = "999.0 Saflıkta, 250 Gr Külçe Gümüş.",
                     Url = "250gr-külce-gümüs",
                     ImageUrl = "13.png",
@@ -160,7 +160,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 14,
                     Name = "500gr Külçe Gümüş",
-                    Price = 16000,
+                    Price = 17500,
                     Properties = "999.0 Saflıkta, 500 Gr Külçe Gümüş.",
                     Url = "500gr-külce-gümüs",
                     ImageUrl = "14.png",
@@ -170,7 +170,7 @@ namespace DegerliMadenSatis.Data.Concrete.Configs
                 {
                     Id = 15,
                     Name = "1000gr Külçe Gümüş",
-                    Price = 32000,
+                    Price = 34000,
                     Properties = "999.0 Saflıkta, 1000 Gr Külçe Gümüş.",
                     Url = "1000gr-külce-gümüs",
                     ImageUrl = "15.png",
