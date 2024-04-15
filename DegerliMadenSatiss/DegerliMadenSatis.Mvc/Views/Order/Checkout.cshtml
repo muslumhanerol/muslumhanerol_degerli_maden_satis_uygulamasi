@@ -57,7 +57,9 @@
                                 <input asp-for="Note">
                             </div>
                         </div>                        
-                    </div>
+                    </div>                    
+                    
+                    
                     <h5>Ödeme Bilgileri</h5>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -97,47 +99,38 @@
                 
                 <div class="col-lg-4">
                     <div class="checkout__order">
-                        <h5>Your order</h5>
+                        <h5>Sipariş Özeti</h5>
                         <div class="checkout__order__product">
                             <ul>
                                 <li>
-                                    <span class="top__text">Product</span>
-                                    <span class="top__text__right">Total</span>
+                                    <span class="top__text">Ürünler</span>
+                                    <span class="top__text__right">Toplam Tutar</span>
                                 </li>
-                                <li>01. Chain buck bag <span>$ 300.0</span></li>
-                                <li>02. Zip-pockets pebbled<br /> tote briefcase <span>$ 170.0</span></li>
-                                <li>03. Black jean <span>$ 170.0</span></li>
-                                <li>04. Cotton shirt <span>$ 110.0</span></li>
+                                @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+                                {
+                                    <li>@item.ProductName (@item.Quantity Adet) <span>@($"{(item.ProductPrice * item.Quantity):C0}")</span></li> 
+                                }
+                                                               
                             </ul>
                         </div>
                         <div class="checkout__order__total">
                             <ul>
-                                <li>Subtotal <span>$ 750.0</span></li>
-                                <li>Total <span>$ 750.0</span></li>
+                                <li>Toplam Tutar <span>@($"{Model.ShoppingCart.TotalPrice():C0}")</span></li>
                             </ul>
                         </div>
-                        <div class="checkout__order__widget">
-                            <label for="o-acc">
-                                Create an acount?
-                                <input type="checkbox" id="o-acc">
-                                <span class="checkmark"></span>
-                            </label>
-                            <p>
-                                Create am acount by entering the information below. If you are a returing customer
-                                login at the top of the page.
-                            </p>
+                        <div class="checkout__order__widget">                            
                             <label for="check-payment">
-                                Cheque payment
+                                3D Secure
                                 <input type="checkbox" id="check-payment">
                                 <span class="checkmark"></span>
                             </label>
                             <label for="paypal">
-                                PayPal
+                                SSL
                                 <input type="checkbox" id="paypal">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                        <button type="submit" class="site-btn">Place oder</button>
+                        <button type="submit" class="site-btn">ÖDEMEYİ TAMAMLA</button>
                     </div>
                 </div>
             </div>
