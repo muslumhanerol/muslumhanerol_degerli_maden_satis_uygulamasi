@@ -67,11 +67,12 @@
                                             var total = item.ProductPrice * item.Quantity;
                                         }
                                         <td class="cart__total">@($"{total:C0}")</td>
-                                        <td class="cart__close">
+
+                                       @* <td class="cart__close">
                                             <a asp-area="" asp-controller="ShoppingCart" asp-action="DeleteItem" asp-route-ıd="@item.Id">
                                                 <span class="icon_close"></span>
                                             </a>
-                                        </td>
+                                        </td>*@
                                     </tr>
                                 }
 
@@ -94,13 +95,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="discount__content">
+                    @*<div class="discount__content">
                         <h6>İndirim Kodu</h6>
                         <form action="#">
                             <input type="text" placeholder="Kodu Yazınız">
                             <button type="submit" class="site-btn">Uygula</button>
                         </form>
-                    </div>
+                    </div>*@
                 </div>
                 <div class="col-lg-4 offset-lg-2">
                     <div class="cart__total__procced">
