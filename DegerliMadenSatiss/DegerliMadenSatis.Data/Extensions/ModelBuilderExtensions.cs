@@ -57,38 +57,53 @@ namespace DegerliMadenSatis.Data.Extensions
                     NormalizedEmail="ENGINNIYAZI@GMAIL.COM",
                     Gender="Erkek",
                     DateOfBirth=new DateTime(1965,7,20),
-                    Address="Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
-                    City="Gaziantep",
+                    Address="Beşiktaş Caddesi Yıldız Sokak No:34 D:34 Türkiye",
+                    City="İstanbul",
                     PhoneNumber="5556667788",
                     EmailConfirmed=true
                 },
                 new User
                 { 
-                    FirstName="Kemal",
-                    LastName="Durukan",
-                    UserName="kemaldurukan",
-                    NormalizedUserName="KEMALDURUKAN",
-                    Email="kemaldurukan@gmail.com",
-                    NormalizedEmail="KEMALDURUKAN@GMAIL.COM",
+                    FirstName="Fatih",
+                    LastName="Sultan",
+                    UserName="fatihsultan",
+                    NormalizedUserName="FATIHSULTAN",
+                    Email="fatihsultan@gmail.com",
+                    NormalizedEmail="FATIHSULTAN@GMAIL.COM",
                     Gender="Erkek",
                     DateOfBirth=new DateTime(1965,7,20),
-                    Address="Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
-                    City="Gaziantep",
+                    Address="Beyoğlu Caddesi Fatih Sokak No:34 D:34 Türkiye",
+                    City="İstanbul",
                     PhoneNumber="5556667788",
                     EmailConfirmed=true
                 },
                 new User
                 {
-                    FirstName="Ayşen Umay",
-                    LastName="Ergül",
-                    UserName="aysenumay",
-                    NormalizedUserName="AYSENUMAY",
-                    Email="aysenumay@gmail.com",
-                    NormalizedEmail="AYSENUMAY@GMAIL.COM",
+                    FirstName="Hürrem",
+                    LastName="Sultan",
+                    UserName="hurremsultan",
+                    NormalizedUserName="HURREMSULTAN",
+                    Email="hurremsultan@gmail.com",
+                    NormalizedEmail="HURREMSULTAN@GMAIL.COM",
                     Gender="Kadın",
                     DateOfBirth=new DateTime(1965,7,20),
-                    Address="Gaziantep Caddesi Gaziantep Sokak No:27 D:27 Türkiye",
-                    City="Gaziantep",
+                    Address="Avrupa Caddesi Saray Sokak No:34 D:34 Türkiye",
+                    City="Ukrayna",
+                    PhoneNumber="5556667788",
+                    EmailConfirmed=true
+                },
+                new User
+                {
+                    FirstName="Trinity",
+                    LastName="Neo",
+                    UserName="trinityneo",
+                    NormalizedUserName="TIRINITYNEO",
+                    Email="trinityneo@gmail.com",
+                    NormalizedEmail="TRINITYNEO@GMAIL.COM",
+                    Gender="Kadın",
+                    DateOfBirth=new DateTime(1965,7,20),
+                    Address="Matrix Caddesi Makine Sokak No:34 D:34 Türkiye",
+                    City="Zion",
                     PhoneNumber="5556667788",
                     EmailConfirmed=true
                 }
@@ -104,6 +119,8 @@ namespace DegerliMadenSatis.Data.Extensions
             users[1].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
             users[2].PasswordHash = passwordHasher.HashPassword(users[2], "Qwe123.");
             users[3].PasswordHash = passwordHasher.HashPassword(users[3], "Qwe123.");
+            users[4].PasswordHash = passwordHasher.HashPassword(users[4], "Qwe123.");
+
 
 
             #endregion
@@ -133,6 +150,12 @@ namespace DegerliMadenSatis.Data.Extensions
                 {
                   UserId=users[3].Id,
                   RoleId=roles[2].Id 
+                }
+                ,
+                new IdentityUserRole<string>
+                {
+                  UserId=users[4].Id,
+                  RoleId=roles[1].Id
                 }
             };
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);
