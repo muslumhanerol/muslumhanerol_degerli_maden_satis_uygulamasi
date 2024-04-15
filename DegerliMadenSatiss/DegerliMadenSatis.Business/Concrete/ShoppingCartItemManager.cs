@@ -54,6 +54,9 @@ namespace DegerliMadenSatis.Business.Concrete
             return Response<NoContent>.Success();
         }
 
-       
+        public Task GetShoppingCartByUserIdAsync(string userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

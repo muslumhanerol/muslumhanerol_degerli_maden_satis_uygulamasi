@@ -39,9 +39,16 @@ namespace DegerliMadenSatis.MVC.Controllers
                 City = user.City,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                Note = "Lütfen yeni tarihli gönderiniz."
+                Note = "Lütfen yeni tarihli gönderiniz.",
+                CardNumber="4987490000000002",
+                CardName="Müslüm Han Erol",
+                ExpirationMonth="12",
+                ExpirationYear="2029",
+                Cvc="111",
+                ShoppingCart=shoppingCart.Data
+                
             };
-            orderViewModel.shoppingCart=shoppingCart.Data;
+            //orderViewModel.ShoppingCart=shoppingCart.Data;
             return View();
         }
     }

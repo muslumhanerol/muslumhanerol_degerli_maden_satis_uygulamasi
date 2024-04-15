@@ -113,7 +113,7 @@
                             <li>BSMV Hariç Tutar: <span>@($"{cartSubTotal:C0}")</span></li>
                             <li>BSMV Dahil Tutar: <span>@($"{cartTotal:C0}")</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Ödeme Adımına Geç</a>
+                        <a asp-area="" asp-controller="Order" asp-action="Checkout"  class="primary-btn">Ödeme Adımına Geç</a>
                     </div>
                 </div>
             </div>
