@@ -37,20 +37,21 @@
             <div class="col-lg-3">
                 <div class="header__right">
                     <div class="header__right__auth">
-                        @if (!User.Identity.IsAuthenticated) @*Login olunmuşsa olmamışsa aşağıdakileri göster.*@
+                        @*Login olunmuşsa olmamışsa aşağıdakileri göster.*@
+                        @if (!User.Identity.IsAuthenticated)
                         {
 
-                            <a asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
-                            <a asp-area="" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
+                        <a asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
+                        <a asp-area="" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
                         }
                         else
                         {
                             if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
                             {
-                                <a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
+                        <a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
                             }
-                            <a asp-area="" asp-controller="Account" asp-action="Profile">Hesabım</a>
-                            <a asp-area="" asp-controller="Account" asp-action="Logout">Çıkış Yap</a>
+                        <a asp-area="" asp-controller="Account" asp-action="Profile">Hesabım</a>
+                        <a asp-area="" asp-controller="Account" asp-action="Logout">Çıkış Yap</a>
                         }
 
                     </div>
