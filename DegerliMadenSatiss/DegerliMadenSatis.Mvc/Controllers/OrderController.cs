@@ -55,6 +55,9 @@ namespace DegerliMadenSatis.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Checkout(OrderViewModel orderViewModel)
         {
+            var userId = _userManager.GetUserId(User);
+            var cart = await _shoppingCartManager.GetShoppingCartByUserIdAsync(userId);
+
             return Redirect("~/");
         }
 
