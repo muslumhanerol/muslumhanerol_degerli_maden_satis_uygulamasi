@@ -51,5 +51,12 @@ namespace DegerliMadenSatis.MVC.Controllers
             //orderViewModel.ShoppingCart=shoppingCart.Data;
             return View(orderViewModel);
         }
+        
+        [HttpPost]
+        public async Task<IActionResult> Checkout(OrderViewModel orderViewModel)
+        {
+            return Redirect("~/");
+        }
+
     }
 }
