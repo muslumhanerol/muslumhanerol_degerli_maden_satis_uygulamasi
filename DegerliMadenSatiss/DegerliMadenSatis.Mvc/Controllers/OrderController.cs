@@ -86,13 +86,31 @@ namespace DegerliMadenSatis.MVC.Controllers
 
             //Ödemenin yapılacağı kart için nesne yaratma.
             PaymentCard paymentCard = new PaymentCard();
-            paymentCard.CardHolderName = "John Doe";
-            paymentCard.CardNumber = "5528790000000008";
-            paymentCard.ExpireMonth = "12";
-            paymentCard.ExpireYear = "2030";
-            paymentCard.Cvc = "123";
-            paymentCard.RegisterCard = 0;
+            paymentCard.CardHolderName = orderViewModel.CardName; //Kart üzerindeki isim.
+            paymentCard.CardNumber = orderViewModel.CardNumber; //Kart üzerindeki kart numarası.
+            paymentCard.ExpireMonth = orderViewModel.ExpirationMonth; //Son geçerlilik ayı.
+            paymentCard.ExpireYear = orderViewModel.ExpirationYear; //Son geçerlilik yılı.
+            paymentCard.Cvc = orderViewModel.Cvc; //Güvenlik numarası.
+            paymentCard.RegisterCard = 0; //Kart kayıt etme. Burada o yani kayıtlı değil.
             request.PaymentCard = paymentCard;
+
+
+            //Alıcı bilgileri için nesne yaratma.
+            Buyer buyer = new Buyer();
+            buyer.Id = userId;
+            buyer.Name = orderViewModel.FirstName;//Formda doldurulan isim.
+            buyer.Surname = orderViewModel.LastName;//Formda doldurulan soyisim.
+            buyer.GsmNumber = orderViewModel.PhoneNumber;//Formda doldurulan telefon numarası.
+            buyer.Email = orderViewModel.Email;
+            buyer.IdentityNumber = "74300864791"; //Kimlik numarası, fatura kestiğimiz için.
+            buyer.LastLoginDate = "2015-10-05 12:43:35";
+            buyer.RegistrationDate = "2013-04-21 15:12:09";
+            buyer.RegistrationAddress = orderViewModel.Address;
+            buyer.Ip = "85.34.78.112";
+            buyer.City = orderViewModel.City;
+            buyer.Country = "Türkiye";
+            buyer.ZipCode = "34732";
+            request.Buyer = buyer;
 
 
             return Redirect("~/");
