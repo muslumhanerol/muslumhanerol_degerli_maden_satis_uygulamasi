@@ -80,11 +80,21 @@ namespace DegerliMadenSatis.MVC.Controllers
             request.Currency = Currency.TRY.ToString(); //Para birimi.
             request.Installment = 1; //Taksit sayısı.
             request.BasketId = orderViewModel.ShoppingCart.Id.ToString(); //iyzico da ilgili satışın bir id si oluşacak o basket id.
-            request.PaymentChannel = PaymentChannel.WEB.ToString(); //Ödeme kanalı.
-            request.PaymentGroup = PaymentGroup.PRODUCT.ToString();
+            request.PaymentChannel = PaymentChannel.WEB.ToString(); //Ödeme kanalı. Şuan sadece web sitesi üzerinden alışveriş yapmayı salıyoruz.
+            request.PaymentGroup = PaymentGroup.PRODUCT.ToString(); //Ödemenin ne için yapıldığı. Burada ürün satışı.
 
-            
-            
+
+            //Ödemenin yapılacağı kart için nesne yaratma.
+            PaymentCard paymentCard = new PaymentCard();
+            paymentCard.CardHolderName = "John Doe";
+            paymentCard.CardNumber = "5528790000000008";
+            paymentCard.ExpireMonth = "12";
+            paymentCard.ExpireYear = "2030";
+            paymentCard.Cvc = "123";
+            paymentCard.RegisterCard = 0;
+            request.PaymentCard = paymentCard;
+
+
             return Redirect("~/");
         }
 
