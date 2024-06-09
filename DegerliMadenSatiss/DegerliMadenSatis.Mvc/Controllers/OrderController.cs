@@ -75,12 +75,12 @@ namespace DegerliMadenSatis.MVC.Controllers
             CreatePaymentRequest request = new CreatePaymentRequest();
             request.Locale = Locale.TR.ToString(); // tr yada en seçebiliriz.
             request.ConversationId = "123456789"; //özel filtreleme yapabilmek için kullanılan id üretmemizi söylüyor
-            request.Price = orderViewModel.ShoppingCart.TotalPrice(); //Sepetin toplam tutarı.
-            request.PaidPrice = "1.2";
-            request.Currency = Currency.TRY.ToString();
-            request.Installment = 1;
-            request.BasketId = "B67832";
-            request.PaymentChannel = PaymentChannel.WEB.ToString();
+            request.Price = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(".",","); //Sepetin toplam tutarı.
+            request.PaidPrice = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(".", ",");
+            request.Currency = Currency.TRY.ToString(); //Para birimi.
+            request.Installment = 1; //Taksit sayısı.
+            request.BasketId = orderViewModel.ShoppingCart.Id.ToString(); //iyzico da ilgili satışın bir id si oluşacak o basket id.
+            request.PaymentChannel = PaymentChannel.WEB.ToString(); //Ödeme kanalı.
             request.PaymentGroup = PaymentGroup.PRODUCT.ToString();
 
             
