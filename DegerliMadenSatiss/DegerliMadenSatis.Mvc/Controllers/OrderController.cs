@@ -1,6 +1,9 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Entity.Concrete.identity;
 using DegerliMadenSatis.Shared.ViewModels;
+using Iyzipay;
+using Iyzipay.Model;
+using Iyzipay.Request;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -58,6 +61,30 @@ namespace DegerliMadenSatis.MVC.Controllers
             var userId = _userManager.GetUserId(User);
             var shoppingCart = await _shoppingCartManager.GetShoppingCartByUserIdAsync(userId);
             orderViewModel.ShoppingCart = shoppingCart.Data;
+
+            //Ödeme yöntemi iyzico başlar.
+
+            //Yapılacak ödeme isteğinin Authorization seçenekleri için nesne yaratılıyor.            
+            Options options = new Options();
+            options.ApiKey = "your api key";
+            options.SecretKey = "your secret key";
+            options.BaseUrl = "https://sandbox-api.iyzipay.com";
+
+            
+            //Yapılacak ödeme isteği için nesne yaratılıyor.
+            CreatePaymentRequest request = new CreatePaymentRequest();
+            request.Locale = Locale.TR.ToString(); // tr yada en seçebiliriz.
+            request.ConversationId = "123456789"; //özel filtreleme yapabilmek için kullanılan id üretmemizi söylüyor
+            request.Price = orderViewModel.ShoppingCart.TotalPrice(); //Sepetin toplam tutarı.
+            request.PaidPrice = "1.2";
+            request.Currency = Currency.TRY.ToString();
+            request.Installment = 1;
+            request.BasketId = "B67832";
+            request.PaymentChannel = PaymentChannel.WEB.ToString();
+            request.PaymentGroup = PaymentGroup.PRODUCT.ToString();
+
+            
+            
             return Redirect("~/");
         }
 
