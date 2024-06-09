@@ -112,6 +112,28 @@ namespace DegerliMadenSatis.MVC.Controllers
             buyer.ZipCode = "34732";
             request.Buyer = buyer;
 
+            //Adre bilgileri için nesneler yaratılıyor.
+            Address shippingAddress = new Address();
+            shippingAddress.ContactName = "Jane Doe";
+            shippingAddress.City = "Istanbul";
+            shippingAddress.Country = "Turkey";
+            shippingAddress.Description = "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
+            shippingAddress.ZipCode = "34742";
+            request.ShippingAddress = shippingAddress;
+
+            Address billingAddress = new Address();
+            billingAddress.ContactName = "Jane Doe";
+            billingAddress.City = "Istanbul";
+            billingAddress.Country = "Turkey";
+            billingAddress.Description = "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
+            billingAddress.ZipCode = "34742";
+            request.BillingAddress = billingAddress;
+
+
+            //Sepet ürünleri için nesne yaratılıyor.
+            List<BasketItem> basketItems = new List<BasketItem>();
+            BasketItem firstBasketItem;
+
 
             return Redirect("~/");
         }
