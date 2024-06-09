@@ -132,9 +132,21 @@ namespace DegerliMadenSatis.MVC.Controllers
 
             //Sepet ürünleri için nesne yaratılıyor.
             List<BasketItem> basketItems = new List<BasketItem>();
-            BasketItem firstBasketItem;
+            BasketItem basketItem;
+            foreach(var item in orderViewModel.ShoppingCart.ShoppingCartItems) //Bunların herbirini sırasıyla BasketItem isimli nesnenin içine koycaz.
+            {
+                basketItem = new BasketItem();
+                basketItem.Id = item.ProductId.ToString();
+                basketItem.Name = item.ProductName;
+                basketItem.Category1 = "Külçe Altın";
+                basketItem.Category2 = "";
+                basketItem.ItemType = BasketItemType.PHYSICAL.ToString(); //sanal ürün mü fiziksel ürün mü?
+                basketItem.Price = (item.Quantity * item.ProductPrice).ToString().Replace(".",","); //sepettiki ürünün fiyatı. sadece o ürüne ait fiyat varsa 2 adet *2 olacak şekilde. tüm sepet tutarı değil.
+                basketItems.Add(basketItem);
+            }
+            request.BasketItems = basketItems; //Sepet itemlarımızı basketitem içerisine yazdık.
 
-
+            Payment payment = Payment.Create(request, options);            
             return Redirect("~/");
         }
 
