@@ -66,8 +66,8 @@ namespace DegerliMadenSatis.MVC.Controllers
 
             //Yapılacak ödeme isteğinin Authorization seçenekleri için nesne yaratılıyor.            
             Options options = new Options();
-            options.ApiKey = "your api key";
-            options.SecretKey = "your secret key";
+            options.ApiKey = "sandbox-ZZTLjszzsjFq7ovrnsOYSfkGP08AYbmQ";
+            options.SecretKey = "sandbox-a685D300jgjczi0dz586vtkgGqGntKgs";
             options.BaseUrl = "https://sandbox-api.iyzipay.com";
 
             
