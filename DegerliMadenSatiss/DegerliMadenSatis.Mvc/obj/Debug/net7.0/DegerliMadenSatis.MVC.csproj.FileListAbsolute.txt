@@ -172,3 +172,5 @@ C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\Degerl
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.pdb
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\DegerliMadenSatis.MVC.genruntimeconfig.cache
 C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\obj\Debug\net7.0\ref\DegerliMadenSatis.MVC.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\bin\Debug\net7.0\Iyzipay.dll
+C:\GitHub\muslumhanerol_degerli_maden_satis_uygulamasi\DegerliMadenSatiss\DegerliMadenSatis.Mvc\bin\Debug\net7.0\Newtonsoft.Json.dll
