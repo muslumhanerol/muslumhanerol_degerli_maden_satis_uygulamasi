@@ -75,8 +75,8 @@ namespace DegerliMadenSatis.MVC.Controllers
             CreatePaymentRequest request = new CreatePaymentRequest();
             request.Locale = Locale.TR.ToString(); // tr yada en seçebiliriz.
             request.ConversationId = "123456789"; //özel filtreleme yapabilmek için kullanılan id üretmemizi söylüyor
-            request.Price = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(".",","); //Sepetin toplam tutarı.
-            request.PaidPrice = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(".", ",");
+            request.Price = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(",","."); //Sepetin toplam tutarı.
+            request.PaidPrice = orderViewModel.ShoppingCart.TotalPrice().ToString().Replace(",", ".");
             request.Currency = Currency.TRY.ToString(); //Para birimi.
             request.Installment = 1; //Taksit sayısı.
             request.BasketId = orderViewModel.ShoppingCart.Id.ToString(); //iyzico da ilgili satışın bir id si oluşacak o basket id.
@@ -141,7 +141,7 @@ namespace DegerliMadenSatis.MVC.Controllers
                 basketItem.Category1 = "Külçe Altın";
                 basketItem.Category2 = "";
                 basketItem.ItemType = BasketItemType.PHYSICAL.ToString(); //sanal ürün mü fiziksel ürün mü?
-                basketItem.Price = (item.Quantity * item.ProductPrice).ToString().Replace(".",","); //sepettiki ürünün fiyatı. sadece o ürüne ait fiyat varsa 2 adet *2 olacak şekilde. tüm sepet tutarı değil.
+                basketItem.Price = (item.Quantity * item.ProductPrice).ToString().Replace(",","."); //sepettiki ürünün fiyatı. sadece o ürüne ait fiyat varsa 2 adet *2 olacak şekilde. tüm sepet tutarı değil.
                 basketItems.Add(basketItem);
             }
             request.BasketItems = basketItems; //Sepet itemlarımızı basketitem içerisine yazdık.
