@@ -16,12 +16,14 @@ namespace DegerliMadenSatis.MVC.Controllers
         private readonly UserManager<User> _userManager;
         private readonly IShoppingCartService _shoppingCartManager;
         private readonly IOrderService _orderManager;
+        private readonly IShoppingCartItemService _shoppingCartItemManager;
 
-        public OrderController(UserManager<User> userManager, IShoppingCartService shoppingCartManager, IOrderService orderManager)
+        public OrderController(UserManager<User> userManager, IShoppingCartService shoppingCartManager, IOrderService orderManager, IShoppingCartItemService shoppingCartItemManager)
         {
             _userManager = userManager;
             _shoppingCartManager = shoppingCartManager;
             _orderManager = orderManager;
+            _shoppingCartItemManager = shoppingCartItemManager;
         }
 
         //Kullanıcıya geçmiş siparişi gösterecek.
@@ -176,7 +178,7 @@ namespace DegerliMadenSatis.MVC.Controllers
                     }).ToList()
                 };
                 await _orderManager.CreateAsync(order);
-
+                await _shoppingCartItemManager.ClearShoppingCartAsync(shoppingCart.Data.Id); //_shoppingCartItemManager da ClearShoppingCartAsync metodu var oraya elimizdeki kartın ıd sini gönceriyoruz. Böylelikle kart temizlenmiş oldu. 
             }              
             
             return Redirect("~/");
