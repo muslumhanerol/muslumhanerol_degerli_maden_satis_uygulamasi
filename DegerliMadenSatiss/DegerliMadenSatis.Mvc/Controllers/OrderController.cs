@@ -165,15 +165,19 @@ namespace DegerliMadenSatis.MVC.Controllers
                     Note = orderViewModel.Note,
                     PaymentType = PaymentType.CreditCard,
                     OrderState = OrderState.Waiting,
-                    ConversationId = payment.ConversationId
+                    ConversationId = payment.ConversationId,
+                    PaymentId = payment.PaymentId,
+                    OrderDate = DateTime.Now,
+                    OrderDetails = shoppingCart.Data.ShoppingCartItems.Select(x => new OrderDetail
+                    {
+                        ProductId=x.ProductId,
+                        Price=x.ProductPrice,
+                        Quantity=x.Quantity
+                    }).ToList()
                 };
-            }
-            
-            
-            
-            
-            
-            
+                await _orderManager.CreateAsync(order);
+
+            }              
             
             return Redirect("~/");
         }
