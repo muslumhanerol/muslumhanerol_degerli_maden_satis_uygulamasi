@@ -1,4 +1,5 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
+using DegerliMadenSatis.Entity.Concrete;
 using DegerliMadenSatis.Entity.Concrete.identity;
 using DegerliMadenSatis.Shared.ViewModels;
 using Iyzipay;
@@ -147,6 +148,21 @@ namespace DegerliMadenSatis.MVC.Controllers
             request.BasketItems = basketItems; //Sepet itemlarımızı basketitem içerisine yazdık.
 
             Payment payment = Payment.Create(request, options);            
+            if(payment.Status == "success")
+            {
+                //Ödeme başarılıysa siparişi veritabanına kaydediyoruz.
+                Order order = new Order
+                {
+                    OrderNumber = payment.
+                };
+            }
+            
+            
+            
+            
+            
+            
+            
             return Redirect("~/");
         }
 
