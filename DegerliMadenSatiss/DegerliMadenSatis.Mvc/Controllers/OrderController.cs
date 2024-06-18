@@ -1,6 +1,7 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Entity.Concrete;
 using DegerliMadenSatis.Entity.Concrete.identity;
+using DegerliMadenSatis.Shared.ComplexTypes;
 using DegerliMadenSatis.Shared.ViewModels;
 using Iyzipay;
 using Iyzipay.Model;
@@ -159,7 +160,12 @@ namespace DegerliMadenSatis.MVC.Controllers
                     LastName = orderViewModel.LastName,
                     Address = orderViewModel.Address,
                     City = orderViewModel.City,
-                    PhoneNumber = orderViewModel.PhoneNumber
+                    PhoneNumber = orderViewModel.PhoneNumber,
+                    Email = orderViewModel.Email,
+                    Note = orderViewModel.Note,
+                    PaymentType = PaymentType.CreditCard,
+                    OrderState = OrderState.Waiting,
+                    ConversationId = payment.ConversationId
                 };
             }
             
