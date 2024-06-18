@@ -153,7 +153,13 @@ namespace DegerliMadenSatis.MVC.Controllers
                 //Ödeme başarılıysa siparişi veritabanına kaydediyoruz.
                 Order order = new Order
                 {
-                    OrderNumber = payment.
+                    OrderNumber = payment.PaymentId,
+                    UserId = userId,
+                    FirstName = orderViewModel.FirstName,
+                    LastName = orderViewModel.LastName,
+                    Address = orderViewModel.Address,
+                    City = orderViewModel.City,
+                    PhoneNumber = orderViewModel.PhoneNumber
                 };
             }
             
