@@ -179,9 +179,12 @@ namespace DegerliMadenSatis.MVC.Controllers
                 };
                 await _orderManager.CreateAsync(order);
                 await _shoppingCartItemManager.ClearShoppingCartAsync(shoppingCart.Data.Id); //_shoppingCartItemManager da ClearShoppingCartAsync metodu var oraya elimizdeki kartın ıd sini gönceriyoruz. Böylelikle kart temizlenmiş oldu. 
-            }              
-            
-            return Redirect("~/");
+                
+                return Redirect("~/");
+
+            }
+            ModelState.AddModelError("", payment.ErrorMessage);
+
         }
 
     }
