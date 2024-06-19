@@ -67,9 +67,7 @@ namespace DegerliMadenSatis.MVC.Controllers
             orderViewModel.ShoppingCart = shoppingCart.Data;
 
             if (ModelState.IsValid)
-            {
-
-            
+            {            
             //Ödeme yöntemi iyzico başlar.
 
             //Yapılacak ödeme isteğinin Authorization seçenekleri için nesne yaratılıyor.            
@@ -189,6 +187,7 @@ namespace DegerliMadenSatis.MVC.Controllers
             }
             ModelState.AddModelError("", payment.ErrorMessage);
             }
+            return View(orderViewModel);
         }
     }
 }

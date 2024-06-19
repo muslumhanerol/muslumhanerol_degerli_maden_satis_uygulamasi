@@ -11,7 +11,9 @@
         
         <form asp-area="" asp-controller="Order" asp-action="Checkout" method="post"
         class="checkout__form">
-            <div class="row">
+
+            <div class="row">                
+                <div class="col-lg-12 text-danger mb-3" asp-validation-summary="All"></div> @*iyzicodan gelen hata mesajını gösterir.*@
                 <div class="col-lg-8">
                     <h5>Fatura Bilgileri</h5>
                     <div class="row">
