@@ -1,5 +1,6 @@
 ﻿using DegerliMadenSatis.Business.Abstract;
 using DegerliMadenSatis.Entity.Concrete.identity;
+using DegerliMadenSatis.Shared.ViewModels;
 using DegerliMadenSatis.Shared.ViewModels.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -102,6 +103,7 @@ namespace DegerliMadenSatis.MVC.Controllers
         {
             var userId = _userManager.GetUserId(User);
             var orders = await _orderManager.GetOrdersAsync(userId);
+           
 
             //View e bir order listesi yolluyoruz.Sadece orderleri göstermek istiyoruz diye. Sonraki aşamalarda başka bilgiler eklenebilir.
             return View(orders);
