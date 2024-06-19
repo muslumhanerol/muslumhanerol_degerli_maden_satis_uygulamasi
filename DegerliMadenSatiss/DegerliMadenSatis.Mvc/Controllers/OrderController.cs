@@ -66,6 +66,10 @@ namespace DegerliMadenSatis.MVC.Controllers
             var shoppingCart = await _shoppingCartManager.GetShoppingCartByUserIdAsync(userId);
             orderViewModel.ShoppingCart = shoppingCart.Data;
 
+            if (ModelState.IsValid)
+            {
+
+            
             //Ödeme yöntemi iyzico başlar.
 
             //Yapılacak ödeme isteğinin Authorization seçenekleri için nesne yaratılıyor.            
@@ -184,8 +188,7 @@ namespace DegerliMadenSatis.MVC.Controllers
 
             }
             ModelState.AddModelError("", payment.ErrorMessage);
-
+            }
         }
-
     }
 }
