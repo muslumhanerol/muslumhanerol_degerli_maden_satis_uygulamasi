@@ -1,4 +1,5 @@
-﻿using DegerliMadenSatis.Entity.Concrete.identity;
+﻿using DegerliMadenSatis.Business.Abstract;
+using DegerliMadenSatis.Entity.Concrete.identity;
 using DegerliMadenSatis.Shared.ViewModels.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,11 +10,12 @@ namespace DegerliMadenSatis.MVC.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager; //İçinde login, logout gibi işlemleri yaptıran metotları barındıracak.
-
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly IOrderService _orderManager;
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, IOrderService orderManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _orderManager = orderManager;
         }
 
         [HttpGet]
@@ -91,9 +93,18 @@ namespace DegerliMadenSatis.MVC.Controllers
             return Redirect("~/");
         }
 
-        public async Task<IActionResult> AccessDenied() //Kullanıcı erişmemesi gereken bir yere tıkladığında ona uyaracak.mvc>views>account>accessdenied
+        public IActionResult AccessDenied() //Kullanıcı erişmemesi gereken bir yere tıkladığında ona uyaracak.mvc>views>account>accessdenied
         {
             return View();
+        }
+
+        public async Task<IActionResult> Profile()
+        {
+            var userId = _userManager.GetUserId(User);
+            var orders = await _orderManager.GetOrdersAsync(userId);
+
+            //View e bir order listesi yolluyoruz.Sadece orderleri göstermek istiyoruz diye. Sonraki aşamalarda başka bilgiler eklenebilir.
+            return View(orders);
         }
     }
 }
